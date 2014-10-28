@@ -35,10 +35,16 @@ public class Stoker {
     }
   };
 
-  public Stoker(Resource metaDataFileLocation, Resource detailDataFolder) throws IOException {
+  public Stoker(Resource metaDataFileLocation, Resource detailDataFolder) throws Exception {
     this.detailDataFolder = detailDataFolder;
     this.objectMapper = new ObjectMapper();
     this.stokerData = objectMapper.readValue(IOUtils.toString(metaDataFileLocation.getInputStream()), StokerData.class);
+    for(StokerEntry stokerEntry: getEduGainServiceProviders()) {
+      String filename = calculateFilename(stokerEntry.getEntityId());
+      Document document = parseDetailData(filename);
+      addContactPersonsFromDocument(stokerEntry, document);
+    }
+
   }
 
   public Collection<StokerEntry> getEduGainServiceProviders() {
@@ -55,15 +61,7 @@ public class Stoker {
   }
 
   public StokerEntry getEduGainServiceProvider(String spEntityId) {
-    StokerEntry stokerEntry = getEduGainServiceProviders(Arrays.asList(spEntityId)).iterator().next();
-    try {
-      String filename = calculateFilename(spEntityId);
-      Document document = parseDetailData(filename);
-      addContactPersonsFromDocument(stokerEntry, document);
-    } catch (Exception e) {
-      throw new RuntimeException(e);
-    }
-    return stokerEntry;
+    return getEduGainServiceProviders(Arrays.asList(spEntityId)).iterator().next();
   }
 
   private void addContactPersonsFromDocument(StokerEntry stokerEntry, Document document) {

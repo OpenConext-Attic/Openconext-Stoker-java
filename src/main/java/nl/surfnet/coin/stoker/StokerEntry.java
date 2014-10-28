@@ -61,4 +61,30 @@ public class StokerEntry {
   public void addContactPerson(ContactPerson contactPerson) {
     this.contactPersons.add(contactPerson);
   }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+
+    StokerEntry that = (StokerEntry) o;
+
+    if (!entityId.equals(that.entityId)) return false;
+
+    return true;
+  }
+
+  @Override
+  public int hashCode() {
+    return entityId.hashCode();
+  }
+
+  @Override
+  public String toString() {
+    return "StokerEntry{" +
+      "types=" + types +
+      ", entityId='" + entityId + '\'' +
+      ", displayNameEn='" + displayNameEn + '\'' +
+      '}';
+  }
 }
