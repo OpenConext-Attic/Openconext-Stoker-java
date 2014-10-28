@@ -18,6 +18,14 @@
             ]
         },
         {
+            "displayNameEn": "IASA - GRNET",
+            "displayNameNl": "IASA - GRNET",
+            "entityId": "https://appdb-dev.marie.hellasgrid.gr/edugain-connect",
+            "types": [
+                "sp"
+            ]
+        },
+        {
             "displayNameEn": "CERN Service Provider Proxy",
             "displayNameNl": "CERN Service Provider Proxy",
             "entityId": "https://cern.ch/login",

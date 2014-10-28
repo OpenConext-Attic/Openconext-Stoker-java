@@ -2,6 +2,7 @@ package nl.surfnet.coin.stoker;
 
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -10,7 +11,8 @@ public class StokerEntry {
   private String displayNameEn;
   private String displayNameNl;
   private String entityId;
-  private Collection<String> types;
+  private Collection<String> types = new ArrayList<>();
+  private Collection<ContactPerson> contactPersons = new ArrayList<>();
 
   public String getDisplayNameEn() {
     return displayNameEn;
@@ -46,5 +48,17 @@ public class StokerEntry {
 
   public boolean isServiceProvider() {
     return types != null && types.contains(TYPE_SERVICE_PROVIDER);
+  }
+
+  public Collection<ContactPerson> getContactPersons() {
+    return contactPersons;
+  }
+
+  public void setContactPersons(Collection<ContactPerson> contactPersons) {
+    this.contactPersons = contactPersons;
+  }
+
+  public void addContactPerson(ContactPerson contactPerson) {
+    this.contactPersons.add(contactPerson);
   }
 }
