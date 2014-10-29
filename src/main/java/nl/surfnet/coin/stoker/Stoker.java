@@ -4,6 +4,8 @@ import com.google.common.base.Predicate;
 import com.google.common.collect.Collections2;
 import org.apache.commons.io.IOUtils;
 import org.codehaus.jackson.map.ObjectMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.core.io.Resource;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -28,6 +30,9 @@ public class Stoker {
   private final ObjectMapper objectMapper;
   private final Resource detailDataFolder;
   private final StokerData stokerData;
+
+  private static final Logger LOG = LoggerFactory.getLogger(Stoker.class);
+
   private final static Predicate<StokerEntry> onlyServiceProviders = new Predicate<StokerEntry>() {
     @Override
     public boolean apply(StokerEntry input) {
@@ -85,6 +90,11 @@ public class Stoker {
             fullName = String.format("%s %s", fullName, surNameNodes.item(0).getTextContent()).trim();
           }
 
+          NodeList companyNodes = contactPersonNode.getElementsByTagNameNS(NAMESPACE_URI, "Company");
+          if (any(companyNodes)) {
+            fullName = String.format("%s %s", fullName, companyNodes.item(0).getTextContent()).trim();
+          }
+
 
           stokerEntry.addContactPerson(new ContactPerson(contactType, fullName, emailAddress));
         }
@@ -115,6 +125,7 @@ public class Stoker {
     while (filename.length() < 32) {
       filename = "0" + filename;
     }
+    LOG.debug("Calculated filename for entityId {} is {}.xml", spEntityId, filename);
     return filename;
   }
 }

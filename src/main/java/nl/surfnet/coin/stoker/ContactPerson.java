@@ -66,7 +66,7 @@ public class ContactPerson {
   public String toString() {
     return "ContactPerson{" +
       "type='" + type + '\'' +
-      ", givenName='" + fullName + '\'' +
+      ", fullName='" + fullName + '\'' +
       ", emailAddress='" + emailAddress + '\'' +
       '}';
   }
