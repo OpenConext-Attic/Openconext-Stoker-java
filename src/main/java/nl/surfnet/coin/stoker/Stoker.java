@@ -2,6 +2,8 @@ package nl.surfnet.coin.stoker;
 
 import com.google.common.base.Predicate;
 import com.google.common.collect.Collections2;
+import com.google.common.collect.ImmutableMap;
+import com.google.common.collect.Maps;
 import org.apache.commons.io.IOUtils;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.slf4j.Logger;
@@ -24,9 +26,41 @@ import java.util.Arrays;
 import java.util.Collection;
 
 import static javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING;
+import static org.w3c.dom.Node.ELEMENT_NODE;
 
 public class Stoker {
+
+  public static final String ELEMENT_NAME_ID_FORMAT = "NameIDFormat";
+  public static final String ELEMENT_ASSERTION_CONSUMER_SERVICE = "AssertionConsumerService";
+
+  private static interface ElementHandler {
+    void handle(Element element, StokerEntry stokerEntry);
+  }
+
+  private static class ElementTemplate {
+    private final Document document;
+    private final StokerEntry stokerEntry;
+
+    public ElementTemplate(Document document, StokerEntry stokerEntry) {
+      this.document = document;
+      this.stokerEntry = stokerEntry;
+    }
+
+    public void doForElements(String elementName, ElementHandler elementHandler) {
+      NodeList nodes = document.getElementsByTagNameNS(NAMESPACE_URI, elementName);
+      for (int i = 0; i < nodes.getLength(); i++) {
+        if (nodes.item(i).getNodeType() == ELEMENT_NODE) {
+          Element element = (Element) nodes.item(i);
+          elementHandler.handle(element, stokerEntry);
+        }
+      }
+    }
+  }
+
   public static final String NAMESPACE_URI = "urn:oasis:names:tc:SAML:2.0:metadata";
+  public static final String ATTR_BINDING = "Binding";
+  public static final String ATTR_LOCATION = "Location";
+  public static final String ATTR_INDEX = "index";
   private final ObjectMapper objectMapper;
   private final Resource detailDataFolder;
   private final StokerData stokerData;
@@ -44,12 +78,42 @@ public class Stoker {
     this.detailDataFolder = detailDataFolder;
     this.objectMapper = new ObjectMapper();
     this.stokerData = objectMapper.readValue(IOUtils.toString(metaDataFileLocation.getInputStream()), StokerData.class);
-    for(StokerEntry stokerEntry: getEduGainServiceProviders()) {
+    for (StokerEntry stokerEntry : getEduGainServiceProviders()) {
       String filename = calculateFilename(stokerEntry.getEntityId());
       Document document = parseDetailData(filename);
-      addContactPersonsFromDocument(stokerEntry, document);
+      ElementTemplate elementTemplate = new ElementTemplate(document, stokerEntry);
+      addContactPersonsFromDocument(elementTemplate);
+      addAssertionConsumerServices(elementTemplate);
+      addNameIdFormats(elementTemplate);
     }
 
+  }
+
+  private void addNameIdFormats(ElementTemplate elementTemplate) {
+    elementTemplate.doForElements(ELEMENT_NAME_ID_FORMAT, new ElementHandler() {
+      @Override
+      public void handle(Element element, StokerEntry stokerEntry) {
+        stokerEntry.addNameIdFormat(element.getTextContent());
+      }
+    });
+  }
+
+  private void addAssertionConsumerServices(ElementTemplate elementTemplate) {
+    elementTemplate.doForElements(ELEMENT_ASSERTION_CONSUMER_SERVICE, new ElementHandler() {
+      @Override
+      public void handle(Element element, StokerEntry stokerEntry) {
+        String binding = getAttrValueFromElement(element, ATTR_BINDING);
+        String location = getAttrValueFromElement(element, ATTR_LOCATION);
+        String index = getAttrValueFromElement(element, ATTR_INDEX);
+        stokerEntry.addAssertionConsumerService(
+          ImmutableMap.of(
+            ATTR_BINDING, binding,
+            ATTR_LOCATION, location,
+            ATTR_INDEX, index
+          )
+        );
+      }
+    });
   }
 
   public Collection<StokerEntry> getEduGainServiceProviders() {
@@ -69,37 +133,42 @@ public class Stoker {
     return getEduGainServiceProviders(Arrays.asList(spEntityId)).iterator().next();
   }
 
-  private void addContactPersonsFromDocument(StokerEntry stokerEntry, Document document) {
+  private void addContactPersonsFromDocument(ElementTemplate elementTemplate) {
 
-    NodeList contactPersons = document.getElementsByTagNameNS(NAMESPACE_URI, "ContactPerson");
-    for (int i = 0; i < contactPersons.getLength(); i++) {
-      if (contactPersons.item(i).getNodeType() == Node.ELEMENT_NODE) {
-
-        Element contactPersonNode = (Element) contactPersons.item(i);
-        String contactType = contactPersonNode.getAttributes().getNamedItem("contactType").getTextContent();
-        NodeList emailAddressNodes = contactPersonNode.getElementsByTagNameNS(NAMESPACE_URI, "EmailAddress");
+    elementTemplate.doForElements("ContactPerson", new ElementHandler() {
+      @Override
+      public void handle(Element element, StokerEntry stokerEntry) {
+        String contactType = getAttrValueFromElement(element, "contactType");
+        NodeList emailAddressNodes = element.getElementsByTagNameNS(NAMESPACE_URI, "EmailAddress");
         if (any(emailAddressNodes)) {
           String emailAddress = emailAddressNodes.item(0).getTextContent().replaceAll("mailto:", "");
-          NodeList givenNameNodes = contactPersonNode.getElementsByTagNameNS(NAMESPACE_URI, "GivenName");
+          NodeList givenNameNodes = element.getElementsByTagNameNS(NAMESPACE_URI, "GivenName");
           String fullName = "";
           if (any(givenNameNodes)) {
             fullName = givenNameNodes.item(0).getTextContent();
           }
-          NodeList surNameNodes = contactPersonNode.getElementsByTagNameNS(NAMESPACE_URI, "SurName");
+          NodeList surNameNodes = element.getElementsByTagNameNS(NAMESPACE_URI, "SurName");
           if (any(surNameNodes)) {
             fullName = String.format("%s %s", fullName, surNameNodes.item(0).getTextContent()).trim();
           }
 
-          NodeList companyNodes = contactPersonNode.getElementsByTagNameNS(NAMESPACE_URI, "Company");
+          NodeList companyNodes = element.getElementsByTagNameNS(NAMESPACE_URI, "Company");
           if (any(companyNodes)) {
             fullName = String.format("%s %s", fullName, companyNodes.item(0).getTextContent()).trim();
           }
-
-
           stokerEntry.addContactPerson(new ContactPerson(contactType, fullName, emailAddress));
         }
       }
-    }
+    });
+  }
+
+  private String getAttrValueFromElement(Element element, String attribute) {
+    Node node = element.getAttributes().getNamedItem(attribute);
+    return node == null ? "" : node.getTextContent();
+  }
+
+  private NodeList getElementsFromDocument(Document document, String nodeName) {
+    return document.getElementsByTagNameNS(NAMESPACE_URI, nodeName);
   }
 
   private boolean any(NodeList nodes) {

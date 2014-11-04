@@ -6,7 +6,9 @@ import org.springframework.core.io.FileSystemResource;
 
 import java.io.IOException;
 import java.util.Collection;
+import java.util.Map;
 
+import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.core.IsCollectionContaining.hasItem;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
@@ -58,6 +60,7 @@ public class StokerTest {
 
   @Test
   public void testParseContactPersonWithOnlyCompanyCorrectly() throws Exception {
+    //2ae3ff2a2b9a0223e745e0a52a2b1e1b.xml
     stoker = new Stoker(new ClassPathResource("/parse-contact-person-with-only-company-name.json"), BASE_FOLDER);
     StokerEntry actual = stoker.getEduGainServiceProvider("https://bodportal.geant.net/autobahn-gui");
 
@@ -65,6 +68,25 @@ public class StokerTest {
     assertEquals(2, actual.getContactPersons().size());
     assertThat(actual.getContactPersons(), hasItem(new ContactPerson("support", "DANTE IT Support", "DANTEITSupport@dante.net")));
     assertThat(actual.getContactPersons(), hasItem(new ContactPerson("technical", "DANTE IT", "it@dante.net")));
+  }
 
+  @Test
+  public void testParsesTheAssertionConsumerService() throws Exception {
+    //2ae3ff2a2b9a0223e745e0a52a2b1e1b.xml
+    stoker = new Stoker(new ClassPathResource("/parse-contact-person-with-only-company-name.json"), BASE_FOLDER);
+
+    StokerEntry actual = stoker.getEduGainServiceProvider("https://bodportal.geant.net/autobahn-gui");
+
+    assertEquals(2, actual.getAssertionConsumerServices().size());
+    Map<String, String> first = actual.getAssertionConsumerServices().get(0);
+    assertEquals("urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST", first.get("Binding"));
+    assertEquals("https://bodportal.geant.net/autobahn-gui/saml/SAMLAssertionConsumer", first.get("Location"));
+    assertEquals("0", first.get("index"));
+
+    assertThat(actual.getNameIdFormats(), hasItems(
+      "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress",
+      "urn:oasis:names:tc:SAML:2.0:nameid-format:persistent",
+      "urn:oasis:names:tc:SAML:2.0:nameid-format:transient"
+    ));
   }
 }

@@ -4,6 +4,8 @@ import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
+import java.util.Map;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class StokerEntry {
@@ -13,6 +15,8 @@ public class StokerEntry {
   private String entityId;
   private Collection<String> types = new ArrayList<>();
   private Collection<ContactPerson> contactPersons = new ArrayList<>();
+  private List<Map<String, String>> assertionConsumerServices = new ArrayList<>();
+  private List<String> nameIdFormats = new ArrayList<>();
 
   public String getDisplayNameEn() {
     return displayNameEn;
@@ -62,6 +66,30 @@ public class StokerEntry {
     this.contactPersons.add(contactPerson);
   }
 
+  public List<Map<String, String>> getAssertionConsumerServices() {
+    return assertionConsumerServices;
+  }
+
+  public void setAssertionConsumerServices(List<Map<String, String>> assertionConsumerServices) {
+    this.assertionConsumerServices = assertionConsumerServices;
+  }
+
+  public void addAssertionConsumerService(Map<String, String> assertionConsumerService) {
+    this.assertionConsumerServices.add(assertionConsumerService);
+  }
+
+  public List<String> getNameIdFormats() {
+    return nameIdFormats;
+  }
+
+  public void setNameIdFormats(List<String> nameIdFormats) {
+    this.nameIdFormats = nameIdFormats;
+  }
+
+  public void addNameIdFormat(String nameIdFormat) {
+    this.nameIdFormats.add(nameIdFormat);
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
@@ -87,4 +115,5 @@ public class StokerEntry {
       ", displayNameEn='" + displayNameEn + '\'' +
       '}';
   }
+
 }
