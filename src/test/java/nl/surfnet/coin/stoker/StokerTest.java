@@ -25,14 +25,14 @@ public class StokerTest {
 
   @Test
   public void testReturnServices() throws Exception {
-    stoker = new Stoker(new ClassPathResource("/metadata.index.formatted.json"), BASE_FOLDER);
+    stoker = stoker();
     Collection<StokerEntry> serviceProviders = stoker.getEduGainServiceProviders();
     assertEquals(3, serviceProviders.size());
   }
 
   @Test
   public void testReturnsSingleService() throws Exception {
-    stoker = new Stoker(new ClassPathResource("/metadata.index.formatted.json"), BASE_FOLDER);
+    stoker = stoker();
     StokerEntry actual = stoker.getEduGainServiceProvider("http://saml.ps-ui-test.qalab.geant.net");
 
     assertEquals("http://saml.ps-ui-test.qalab.geant.net", actual.getEntityId());
@@ -43,13 +43,17 @@ public class StokerTest {
 
   @Test
   public void testReturnsSingleServiceWithNamespaceInXml() throws Exception {
-    stoker = new Stoker(new ClassPathResource("/metadata.index.formatted.json"), BASE_FOLDER);
+    stoker = stoker();
     StokerEntry actual = stoker.getEduGainServiceProvider("https://appdb-dev.marie.hellasgrid.gr/edugain-connect");
 
     assertEquals("https://appdb-dev.marie.hellasgrid.gr/edugain-connect", actual.getEntityId());
     assertEquals(2, actual.getContactPersons().size());
     assertThat(actual.getContactPersons(), hasItem(new ContactPerson("technical", "Marios Chatziangelou", "mhaggel@iasa.gr")));
     assertThat(actual.getContactPersons(), hasItem(new ContactPerson("support", "Marios Chatziangelou", "appdb-support@iasa.gr")));
+  }
+
+  private Stoker stoker() throws Exception {
+    return new Stoker(new ClassPathResource("/metadata.index.formatted.json"), BASE_FOLDER);
   }
 
   @Test
