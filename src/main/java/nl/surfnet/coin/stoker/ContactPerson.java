@@ -6,39 +6,22 @@ import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 public class ContactPerson {
 
   private String type;
-  private String fullName;
+  private String givenName;
+  private String surName;
   private String emailAddress;
+  private String telephoneNumber;
+  private String company;
 
-  public ContactPerson(String type, String fullName, String emailAddress) {
+  public ContactPerson(String type, String givenName, String surName, String emailAddress, String telephoneNumber, String company) {
     this.type = type;
-    this.fullName = fullName;
+    this.givenName = givenName;
+    this.surName = surName;
     this.emailAddress = emailAddress;
-  }
-
-  @Override
-  public boolean equals(Object o) {
-    if (this == o) return true;
-    if (o == null || getClass() != o.getClass()) return false;
-
-    ContactPerson that = (ContactPerson) o;
-
-    if (emailAddress != null ? !emailAddress.equals(that.emailAddress) : that.emailAddress != null) return false;
-    if (fullName != null ? !fullName.equals(that.fullName) : that.fullName != null) return false;
-    if (type != null ? !type.equals(that.type) : that.type != null) return false;
-
-    return true;
-  }
-
-  @Override
-  public int hashCode() {
-    int result = type != null ? type.hashCode() : 0;
-    result = 31 * result + (fullName != null ? fullName.hashCode() : 0);
-    result = 31 * result + (emailAddress != null ? emailAddress.hashCode() : 0);
-    return result;
+    this.telephoneNumber = telephoneNumber;
+    this.company = company;
   }
 
   public String getType() {
-
     return type;
   }
 
@@ -46,12 +29,20 @@ public class ContactPerson {
     this.type = type;
   }
 
-  public String getFullName() {
-    return fullName;
+  public String getGivenName() {
+    return givenName;
   }
 
-  public void setFullName(String fullName) {
-    this.fullName = fullName;
+  public void setGivenName(String givenName) {
+    this.givenName = givenName;
+  }
+
+  public String getSurName() {
+    return surName;
+  }
+
+  public void setSurName(String surName) {
+    this.surName = surName;
   }
 
   public String getEmailAddress() {
@@ -62,12 +53,60 @@ public class ContactPerson {
     this.emailAddress = emailAddress;
   }
 
+  public String getTelephoneNumber() {
+    return telephoneNumber;
+  }
+
+  public void setTelephoneNumber(String telephoneNumber) {
+    this.telephoneNumber = telephoneNumber;
+  }
+
+  public String getCompany() {
+    return company;
+  }
+
+  public void setCompany(String company) {
+    this.company = company;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+
+    ContactPerson that = (ContactPerson) o;
+
+    if (company != null ? !company.equals(that.company) : that.company != null) return false;
+    if (emailAddress != null ? !emailAddress.equals(that.emailAddress) : that.emailAddress != null) return false;
+    if (givenName != null ? !givenName.equals(that.givenName) : that.givenName != null) return false;
+    if (surName != null ? !surName.equals(that.surName) : that.surName != null) return false;
+    if (telephoneNumber != null ? !telephoneNumber.equals(that.telephoneNumber) : that.telephoneNumber != null)
+      return false;
+    if (type != null ? !type.equals(that.type) : that.type != null) return false;
+
+    return true;
+  }
+
+  @Override
+  public int hashCode() {
+    int result = type != null ? type.hashCode() : 0;
+    result = 31 * result + (givenName != null ? givenName.hashCode() : 0);
+    result = 31 * result + (surName != null ? surName.hashCode() : 0);
+    result = 31 * result + (emailAddress != null ? emailAddress.hashCode() : 0);
+    result = 31 * result + (telephoneNumber != null ? telephoneNumber.hashCode() : 0);
+    result = 31 * result + (company != null ? company.hashCode() : 0);
+    return result;
+  }
+
   @Override
   public String toString() {
     return "ContactPerson{" +
       "type='" + type + '\'' +
-      ", fullName='" + fullName + '\'' +
+      ", givenName='" + givenName + '\'' +
+      ", surName='" + surName + '\'' +
       ", emailAddress='" + emailAddress + '\'' +
+      ", telephoneNumber='" + telephoneNumber + '\'' +
+      ", company='" + company + '\'' +
       '}';
   }
 }

@@ -139,28 +139,29 @@ public class Stoker {
       @Override
       public void handle(Element element, StokerEntry stokerEntry) {
         String contactType = getAttrValueFromElement(element, "contactType");
-        NodeList emailAddressNodes = element.getElementsByTagNameNS(NAMESPACE_URI, "EmailAddress");
-        if (any(emailAddressNodes)) {
-          String emailAddress = emailAddressNodes.item(0).getTextContent().replaceAll("mailto:", "");
-          NodeList givenNameNodes = element.getElementsByTagNameNS(NAMESPACE_URI, "GivenName");
-          String fullName = "";
-          if (any(givenNameNodes)) {
-            fullName = givenNameNodes.item(0).getTextContent();
-          }
-          NodeList surNameNodes = element.getElementsByTagNameNS(NAMESPACE_URI, "SurName");
-          if (any(surNameNodes)) {
-            fullName = String.format("%s %s", fullName, surNameNodes.item(0).getTextContent()).trim();
-          }
 
-          NodeList companyNodes = element.getElementsByTagNameNS(NAMESPACE_URI, "Company");
-          if (any(companyNodes)) {
-            fullName = String.format("%s %s", fullName, companyNodes.item(0).getTextContent()).trim();
-          }
-          stokerEntry.addContactPerson(new ContactPerson(contactType, fullName, emailAddress));
-        }
+        String emailAddress = getTextFromElement(element, "EmailAddress").replaceAll("mailto:", "");
+        String givenName = getTextFromElement(element, "GivenName");
+        String surName = getTextFromElement(element, "SurName");
+        String company = getTextFromElement(element, "Company");
+        String phone = getTextFromElement(element, "TelephoneNumber");
+
+        stokerEntry.addContactPerson(new ContactPerson(contactType, givenName, surName, emailAddress, phone, company));
       }
+
+
     });
   }
+
+  private String getTextFromElement(Element element, String nodeName) {
+    String text = "";
+    NodeList emailAddressNodes = element.getElementsByTagNameNS(NAMESPACE_URI, nodeName);
+    if (any(emailAddressNodes)) {
+      text = emailAddressNodes.item(0).getTextContent();
+    }
+    return text;
+  }
+
 
   private String getAttrValueFromElement(Element element, String attribute) {
     Node node = element.getAttributes().getNamedItem(attribute);
