@@ -1,8 +1,9 @@
 package nl.surfnet.coin.stoker;
 
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+import org.springframework.util.StringUtils;
 
-@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonIgnoreProperties(value= {"displayName"}, ignoreUnknown = true)
 public class ContactPerson {
 
   private String type;
@@ -67,6 +68,22 @@ public class ContactPerson {
 
   public void setCompany(String company) {
     this.company = company;
+  }
+
+  public String getDisplayName() {
+    String displayName = "";
+    if(StringUtils.hasText(this.givenName)) {
+      displayName = givenName;
+    }
+
+    if(StringUtils.hasText(this.surName)) {
+      displayName = " " + surName;
+    }
+
+    if(StringUtils.isEmpty(displayName)) {
+      displayName = this.company;
+    }
+    return displayName.trim();
   }
 
   @Override
