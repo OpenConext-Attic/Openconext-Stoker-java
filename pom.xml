@@ -4,7 +4,7 @@
 
   <groupId>org.surfnet.coin</groupId>
   <artifactId>stoker</artifactId>
-  <version>0.0.5-SNAPSHOT</version>
+  <version>0.0.5</version>
 
 
   <inceptionYear>2009</inceptionYear>
@@ -20,7 +20,7 @@
     <connection>scm:git:git@github.com:OpenConext/Openconext-Stoker-java.git</connection>
     <url>scm:git:git@github.com:OpenConext/Openconext-Stoker-java.git</url>
     <developerConnection>scm:git:git@github.com:OpenConext/Openconext-Stoker-java.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>stoker-0.0.5</tag>
   </scm>
 
   <properties>
