@@ -1,0 +1,75 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://www.ebi.ac.uk/ega/">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://www.csc.fi/haka">
+        <mdrpi:RegistrationPolicy xml:lang="en">http://www.csc.fi/english/institutions/haka/instructions/join/eduGAINRegistrationStatement/</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://www.ebi.ac.uk/ega/Shibboleth.sso/Login" index="1"/>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="en">The European Genome-phenome Archive</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="fi">European Genome-phenome Archive</mdui:DisplayName>
+          <mdui:Description xml:lang="fi">European Genome-phenome Archive on EMBL-EBI:n ylläpitämä datan arkistointi- ja jakopalvelu  biolääketieteen tutkimusprojekteille.</mdui:Description>
+          <mdui:Description xml:lang="en">The European Genome-phenome Archive is a service from the EMBL-EBI to archive and disseminate data from biomedical research projects.</mdui:Description>
+          <mdui:Logo height="62" width="180">https://www.ebi.ac.uk/ega/sites/ebi.ac.uk.ega/files/documents/images/EMBL_EBI_RGB_petrol_lo-res.jpg</mdui:Logo>
+          <mdui:Keywords xml:lang="en">NGS genotype variation cancer diabetes disease</mdui:Keywords>
+          <mdui:InformationURL xml:lang="en">https://www.ebi.ac.uk/ega/</mdui:InformationURL>
+          <mdui:PrivacyStatementURL xml:lang="en">http://www.ebi.ac.uk/about/cookies</mdui:PrivacyStatementURL>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIIDAzCCAeugAwIBAgIJAMOTGo+6cOgBMA0GCSqGSIb3DQEBBQUAMB8xHTAbBgNV
+BAMTFHZlcy1lYmktMTAuZWJpLmFjLnVrMB4XDTEyMTEyMjA5MTc1MloXDTIyMTEy
+MDA5MTc1MlowHzEdMBsGA1UEAxMUdmVzLWViaS0xMC5lYmkuYWMudWswggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDjS5ePByst+LtG8/i7+C7nl/qWQLsF
+mgFWJIafuoUSc/Iy85sQCJYUSpwMvaV+XqxjMjQj79z0aOkA0wyw+MnRnAQnr9jJ
+adbVNMwZOlqPPXAXfZmwW1DkM2fdz8COipBfW9b5lvNu1hZ8Rm0nd1biSxp1+AhL
+4p6FXqM0pjXMO4mZnesmPkoC9IK5TcpVpOE3WWazsLCTlSmE7+iDLO6dwkEE4IYV
+/zRkrQ56hBIxCVui/hrXatbcJy8dPn6JREsnYhZCTJclb+liqxcv9c266aUx5hTf
+WItvFQNkpPp7FsJhzEZOMcUkGebWLr/n5Dw6ERR+/ZM1n/1rhdzfD9hdAgMBAAGj
+QjBAMB8GA1UdEQQYMBaCFHZlcy1lYmktMTAuZWJpLmFjLnVrMB0GA1UdDgQWBBTg
+/BOPCQZP1Tpzz3MVM/ijVkrHVjANBgkqhkiG9w0BAQUFAAOCAQEAZQf3HB46uhJ+
+vw+3ir6C5r9+6H3B4wVFVgXm9XIZB2orryui4Pub/jfoSoxUFkM65G0lnTqtZ66z
+rOTPJz202ya77jRn2uTXmy2YLLPO5aWPqlgGwrCche1RoFoCUEi9vMACp0XDosEO
+sfLW43EnSzV7e0PSQWCpyd4zM9o5AXFN8W5DxT3xxDgSLKVLfcPhhmWZY0j0Smif
+0OgHpkYrmnMoXOPgcKOQORrB7QD1ULnn3eYFaGxbi7J5/tkB8eFPphWtBI7p5YzZ
+5NBxB7QhViLbVlolHx/UoJnmcnFcHXtdEcgvmCcxqlFSE17911r3zKWdRIXiNoot
+u7YBIOFkbw==</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.ebi.ac.uk/ega/Shibboleth.sso/SAML2/POST" index="1" isDefault="true"/>
+      <md:AttributeConsumingService index="1" isDefault="true">
+        <md:ServiceName xml:lang="fi">European Genome-phenome Archive</md:ServiceName>
+        <md:ServiceName xml:lang="en">The European Genome-phenome Archive</md:ServiceName>
+        <md:ServiceDescription xml:lang="fi">European Genome-phenome Archive on EMBL-EBI:n yllapitama datan arkistointi- ja jakopalvelu  biolaaketieteen tutkimusprojekteille.</md:ServiceDescription>
+        <md:ServiceDescription xml:lang="en">The European Genome-phenome Archive is a service from the EMBL-EBI to archive and disseminate data from biomedical research projects.</md:ServiceDescription>
+        <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+      </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="fi">EMBL-EBI    European Bioinformatics Institute</md:OrganizationName>
+      <md:OrganizationName xml:lang="en">EMBL-EBI    European Bioinformatics Institute</md:OrganizationName>
+      <md:OrganizationName xml:lang="sv">EMBL-EBI    European Bioinformatics Institute</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="fi">EMBL-EBI    European Bioinformatics Institute</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="en">EMBL-EBI    European Bioinformatics Institute</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="sv">EMBL-EBI    European Bioinformatics Institute</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="fi">http://www.ebi.ac.uk/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">http://www.ebi.ac.uk/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="sv">http://www.ebi.ac.uk/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Jag</md:GivenName>
+      <md:SurName>Kandasamy</md:SurName>
+      <md:EmailAddress>mailto:kandaj@ebi.ac.uk</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>Jag</md:GivenName>
+      <md:SurName>Kandasamy</md:SurName>
+      <md:EmailAddress>mailto:kandaj@ebi.ac.uk</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

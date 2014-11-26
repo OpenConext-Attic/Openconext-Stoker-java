@@ -1,0 +1,86 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://vm-idp.paris-sorbonne.fr/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2013-07-02T10:38:53Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">paris-sorbonne.fr</shibmd:Scope>
+        <shibmd:Scope regexp="false">univ-paris4.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">Paris-Sorbonne Universite</mdui:DisplayName>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDTDCCAjSgAwIBAgIVAMI/RmCj23hGRPU+v9uRMFWtW9obMA0GCSqGSIb3DQEB
+BQUAMCMxITAfBgNVBAMTGHZtLWlkcC5wYXJpcy1zb3Jib25uZS5mcjAeFw0xMzA3
+MjQxNDAxMDNaFw0zMzA3MjQxNDAxMDNaMCMxITAfBgNVBAMTGHZtLWlkcC5wYXJp
+cy1zb3Jib25uZS5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMK/
+pDQMCJZT2BMJ90P5vE9++hFyrdBmzGN/bxcPpJP+QU1pt0JtKG1YxAuGCIuWRYG2
+I1P1KIxyzHBl8hw3fG0JXosKwr2UgflOMLWLFpOpGboQWMH3DowM7/ljJYylEeO6
+PDUrjBUjPpdXmfGf+WWxp8Pg0vWXOW1qW4TND1n9+l2MBQaO8CBzg+eGG7G67u73
+xXl2VaYDZhgLHWHa72CpiCKZqZ23SWEuSDtgncQfnYUMHAxsCqAYPJVmAagAMsAN
+yaKhNHIEGC7fSemyDRRtAvaoWlTNsGvBu+nV0DPkJcH0vBWc+AxUAzDaAn/gRD8/
+FhEeCXXQI5I/up3XTe8CAwEAAaN3MHUwVAYDVR0RBE0wS4IYdm0taWRwLnBhcmlz
+LXNvcmJvbm5lLmZyhi9odHRwczovL3ZtLWlkcC5wYXJpcy1zb3Jib25uZS5mci9p
+ZHAvc2hpYmJvbGV0aDAdBgNVHQ4EFgQU8B2ktyp27dZeWdcyJelNcFHP7RgwDQYJ
+KoZIhvcNAQEFBQADggEBACXuIAmAz7T7SXDdAVkSUSaRCd0WzhvG8TtN+VWtl3Uu
+kDLaNuh/dFuk+nCIv5V6Wpof7eLi5RAzfe/iHGknL6W4frMqA9bkIPZCIFTpzUrp
+wO9+6ygvgDnsPqPBwH80Bn7GKBd0/sXSLfXWOlFehgKxOJ+zG0UwvhoID7IqDNQL
+C2AglrZ2PAyVyFeA9T4sDI83Hw0TBXCGFlPKXAkxWw/DuATXn5ChB2ixfTmsxqvl
+KIhv18lDXRbS+DWI8nyXf/0TFFjjKFbfApQc11hVeHZWwDzjMexG2L/6pbt8rjDs
+hJGtnPWpe4IxhR2gkYkT1DdmPuvOIWlF0FJjuUGBBlA=
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDSzCCAjOgAwIBAgIUc0FQTVYKXqv1YkZNpjccybeOcxMwDQYJKoZIhvcNAQEF
+BQAwIzEhMB8GA1UEAxMYdm0taWRwLnBhcmlzLXNvcmJvbm5lLmZyMB4XDTEzMDYx
+ODEzMTg0OFoXDTMzMDYxODEzMTg0OFowIzEhMB8GA1UEAxMYdm0taWRwLnBhcmlz
+LXNvcmJvbm5lLmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgPr/
+zq25BPrGBr/mp2KiN/5DhfHpmyjlVOb6b0txBrdLP1s2WzgY0HJPFsxzrh2Ms91E
+apkaQLyB9iqQPL49QKybBuGRkj/wXXXULzlG4bciAJ4vTwsiChXmvG7L1GXfvqRX
+vLrXLGcSts3MKbKTopqsrYI2MnoTxu95FiUoaxseT+ogy+e31n6iKd6ncR09cYGN
+4aeh4eTRwIsEkrTwYWzQJO0m8UXc1WKzKyhqA+Z4mOMwQbq261M2UHfyimBHqOTt
+VXELAQTGLd/2vBsLa9imthQ+P9DoEaeYbssgnKkNQyoqbDpBAq0Zs457W2A4N6o8
+WCg5bxcOBowGbfAxEQIDAQABo3cwdTBUBgNVHREETTBLghh2bS1pZHAucGFyaXMt
+c29yYm9ubmUuZnKGL2h0dHBzOi8vdm0taWRwLnBhcmlzLXNvcmJvbm5lLmZyL2lk
+cC9zaGliYm9sZXRoMB0GA1UdDgQWBBT7V2DX3R7WhN/ABHzjj6lZgnJz1DANBgkq
+hkiG9w0BAQUFAAOCAQEAZLSTb8R1WTiDwWaRwDQ+W2Zv3cPWay9bN8zm/zGOHnuM
+8ksyIPTQ0navE6gzty8E9GXMD2ymTjuycMuTkR6xZP9F3SB6GRtNIljpLIYxOdbZ
+gYR1+xemNL+5i2VJ5C5Lah2pPVtUiiOUEd8EBHtq5l5hlMslZMFeKgriLnf9ah4l
+rd2bCFrxuxvvj5td6FA+RgFyJyZ9UTAmzwVXzly6vxG9yGh9XXYzNXmcJtK07FDf
+I9JBAYDkTmGHFdS+c5GS+S4hUxdUCsnY9yNgwB3Ew/7r+IDDI2asBlICoLlCaO39
+lS5dpBgbSWTr2qcKD9KMAsG2n1+05Z0NNeohOEIEXg==
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://vm-idp.paris-sorbonne.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://vm-idp.paris-sorbonne.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://vm-idp.paris-sorbonne.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Paris-Sorbonne Universite</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Paris-Sorbonne Universite</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>NGUYEN Manh Hung</md:SurName>
+      <md:EmailAddress>manh-hung.nguyen@paris-sorbonne.fr</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>Brahim MARIR</md:SurName>
+      <md:EmailAddress>brahim.marir@paris-sorbonne.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

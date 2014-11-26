@@ -1,0 +1,126 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://shibboleth.nkp.cz/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://www.eduid.cz/" registrationInstant="2010-09-15T15:29:31Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">http://www.eduid.cz/wiki/_media/en/eduid/policy/policy_eduid_en-1_1.pdf</mdrpi:RegistrationPolicy>
+        <mdrpi:RegistrationPolicy xml:lang="cs">http://www.eduid.cz/wiki/_media/eduid/policy/policy_eduid_cz-1_1-3.pdf</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+      <mdattr:EntityAttributes>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://eduid.cz/uri/idp-group/library</saml:AttributeValue>
+        </saml:Attribute>
+      </mdattr:EntityAttributes>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">nkp.cz</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:Description xml:lang="en">Identity provider for employees the National Library of the Czech Republic</mdui:Description>
+          <mdui:Description xml:lang="cs">Identity provider pro zaměstnance Národní knihovnu České republiky</mdui:Description>
+          <mdui:DisplayName xml:lang="en">The National Library of the Czech Republic</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="cs">Národní knihovna České republiky</mdui:DisplayName>
+          <mdui:InformationURL xml:lang="en">http://www.en.nkp.cz/</mdui:InformationURL>
+          <mdui:InformationURL xml:lang="cs">http://www.nkp.cz/</mdui:InformationURL>
+          <mdui:Logo height="472" width="500">https://www2.eduid.cz/idp-loga/nkp.png</mdui:Logo>
+        </mdui:UIInfo>
+        <eduidmd:RepublishRequest xmlns:eduidmd="http://eduid.cz/schema/metadata/1.0">
+          <eduidmd:RepublishTarget>http://edugain.org/</eduidmd:RepublishTarget>
+        </eduidmd:RepublishRequest>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIEhTCCA22gAwIBAgIRAPEPRVT7rSQP6fkTB6zdejAwDQYJKoZIhvcNAQEFBQAw
+NjELMAkGA1UEBhMCTkwxDzANBgNVBAoTBlRFUkVOQTEWMBQGA1UEAxMNVEVSRU5B
+IFNTTCBDQTAeFw0xMzAxMzAwMDAwMDBaFw0xNjAxMzAyMzU5NTlaMF4xCzAJBgNV
+BAYTAkNaMTMwMQYDVQQKEypUaGUgTmF0aW9uYWwgTGlicmFyeSBvZiB0aGUgQ3pl
+Y2ggUmVwdWJsaWMxGjAYBgNVBAMTEXNoaWJib2xldGgubmtwLmN6MIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxVz9glo7tIF0FV6n1PNww6xY1RXXH863
+lHNc2GIdZPHjjqjZLEuRY80rRawhlCtRhis0zfwnwlfFE5svgQzs2VhSS+858BJe
+rWKkDhx2NkGOVAvhVpikk8+dslRxYAGh8zMbEfdJccZdpx397gaCLhHxbpbDxKlQ
+K0Cv6nHhmv1gb1q/KOgNpFDGPByjQQ6yZN5q0UQ1jYUtb/yoydt2hbtBFCE9/5Zo
+ehK3Qr8GMkF36bL8yXxezRXX3gK9rM5n2M/6bM86D+YHG40r4Q3XvQLdAPMMphr4
+b1C3sfkX8iGjolxgQEm8YfUYVXUFG4Qx5mxwJQPOaQj863wwn4EYGwIDAQABo4IB
+ZDCCAWAwHwYDVR0jBBgwFoAUDL2TaAzz3qujSWsrN1dH6pDjue0wHQYDVR0OBBYE
+FBXpVcpKQRux0SxErHIOSwZzsq16MA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8E
+AjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAYBgNVHSAEETAPMA0G
+CysGAQQBsjEBAgIdMDoGA1UdHwQzMDEwL6AtoCuGKWh0dHA6Ly9jcmwudGNzLnRl
+cmVuYS5vcmcvVEVSRU5BU1NMQ0EuY3JsMG0GCCsGAQUFBwEBBGEwXzA1BggrBgEF
+BQcwAoYpaHR0cDovL2NydC50Y3MudGVyZW5hLm9yZy9URVJFTkFTU0xDQS5jcnQw
+JgYIKwYBBQUHMAGGGmh0dHA6Ly9vY3NwLnRjcy50ZXJlbmEub3JnMBwGA1UdEQQV
+MBOCEXNoaWJib2xldGgubmtwLmN6MA0GCSqGSIb3DQEBBQUAA4IBAQCJokHGcY4h
+y9JK4CIPAHM/y0dwMHMMkkq/VOt9Uefw3AUjFY88J5C7y8fP5CcL9mjF3ju6BgCc
+AWheiYFqdoyp6+A8Vj2bTLw01buM7vR+Tf0uGifsA2mwM+GhBfFfWyQtP/seRsbm
+djnx/F1oz/xk1IpzldKYSHaBKgyU/U0q3Ow5wlGlbvTJ6YOcbruT16Abppt50cte
+xmdVCMK5UEKKXtyyAnpzRiyMtk9ZZWc43aoG9u8g6QnQAvL13eUZCckfkhw20QIo
+6Np3O+ShRrAGEZ1+BEKuslKeFR7s24CAMvHYCmZM1d1l28D/tQ2qUOvshwSFaLye
+sSo3OKOyCBTf
+                    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://shibboleth.nkp.cz:8443/idp/profile/SAML1/SOAP/ArtifactResolution" index="1"/>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://shibboleth.nkp.cz:8443/idp/profile/SAML2/SOAP/ArtifactResolution" index="2"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://shibboleth.nkp.cz/idp/profile/Shibboleth/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://shibboleth.nkp.cz/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://shibboleth.nkp.cz/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://shibboleth.nkp.cz/idp/profile/SAML2/Redirect/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">nkp.cz</shibmd:Scope>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIEhTCCA22gAwIBAgIRAPEPRVT7rSQP6fkTB6zdejAwDQYJKoZIhvcNAQEFBQAw
+NjELMAkGA1UEBhMCTkwxDzANBgNVBAoTBlRFUkVOQTEWMBQGA1UEAxMNVEVSRU5B
+IFNTTCBDQTAeFw0xMzAxMzAwMDAwMDBaFw0xNjAxMzAyMzU5NTlaMF4xCzAJBgNV
+BAYTAkNaMTMwMQYDVQQKEypUaGUgTmF0aW9uYWwgTGlicmFyeSBvZiB0aGUgQ3pl
+Y2ggUmVwdWJsaWMxGjAYBgNVBAMTEXNoaWJib2xldGgubmtwLmN6MIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxVz9glo7tIF0FV6n1PNww6xY1RXXH863
+lHNc2GIdZPHjjqjZLEuRY80rRawhlCtRhis0zfwnwlfFE5svgQzs2VhSS+858BJe
+rWKkDhx2NkGOVAvhVpikk8+dslRxYAGh8zMbEfdJccZdpx397gaCLhHxbpbDxKlQ
+K0Cv6nHhmv1gb1q/KOgNpFDGPByjQQ6yZN5q0UQ1jYUtb/yoydt2hbtBFCE9/5Zo
+ehK3Qr8GMkF36bL8yXxezRXX3gK9rM5n2M/6bM86D+YHG40r4Q3XvQLdAPMMphr4
+b1C3sfkX8iGjolxgQEm8YfUYVXUFG4Qx5mxwJQPOaQj863wwn4EYGwIDAQABo4IB
+ZDCCAWAwHwYDVR0jBBgwFoAUDL2TaAzz3qujSWsrN1dH6pDjue0wHQYDVR0OBBYE
+FBXpVcpKQRux0SxErHIOSwZzsq16MA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8E
+AjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAYBgNVHSAEETAPMA0G
+CysGAQQBsjEBAgIdMDoGA1UdHwQzMDEwL6AtoCuGKWh0dHA6Ly9jcmwudGNzLnRl
+cmVuYS5vcmcvVEVSRU5BU1NMQ0EuY3JsMG0GCCsGAQUFBwEBBGEwXzA1BggrBgEF
+BQcwAoYpaHR0cDovL2NydC50Y3MudGVyZW5hLm9yZy9URVJFTkFTU0xDQS5jcnQw
+JgYIKwYBBQUHMAGGGmh0dHA6Ly9vY3NwLnRjcy50ZXJlbmEub3JnMBwGA1UdEQQV
+MBOCEXNoaWJib2xldGgubmtwLmN6MA0GCSqGSIb3DQEBBQUAA4IBAQCJokHGcY4h
+y9JK4CIPAHM/y0dwMHMMkkq/VOt9Uefw3AUjFY88J5C7y8fP5CcL9mjF3ju6BgCc
+AWheiYFqdoyp6+A8Vj2bTLw01buM7vR+Tf0uGifsA2mwM+GhBfFfWyQtP/seRsbm
+djnx/F1oz/xk1IpzldKYSHaBKgyU/U0q3Ow5wlGlbvTJ6YOcbruT16Abppt50cte
+xmdVCMK5UEKKXtyyAnpzRiyMtk9ZZWc43aoG9u8g6QnQAvL13eUZCckfkhw20QIo
+6Np3O+ShRrAGEZ1+BEKuslKeFR7s24CAMvHYCmZM1d1l28D/tQ2qUOvshwSFaLye
+sSo3OKOyCBTf
+                    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://shibboleth.nkp.cz:8443/idp/profile/SAML1/SOAP/AttributeQuery"/>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://shibboleth.nkp.cz:8443/idp/profile/SAML2/SOAP/AttributeQuery"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    </md:AttributeAuthorityDescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">The National Library of the Czech Republic</md:OrganizationName>
+      <md:OrganizationName xml:lang="cs">Národní knihovna České republiky</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">The National Library of the Czech Republic</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="cs">Národní knihovna České republiky</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://www.en.nkp.cz/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="cs">http://www.nkp.cz/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Ivan</md:GivenName>
+      <md:SurName>Petřík</md:SurName>
+      <md:EmailAddress>ivan.petrik@nkp.cz</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

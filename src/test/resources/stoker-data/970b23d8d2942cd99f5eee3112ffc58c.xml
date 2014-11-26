@@ -1,0 +1,58 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://idp.ens.fr/idp/idp">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2012-01-18T15:41:42Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">ens.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">Ecole normale supérieure</mdui:DisplayName>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDEzCCAfugAwIBAgIUUlGCB1tXdKMlojKQasf9KdmcqBkwDQYJKoZIhvcNAQEF
+BQAwFTETMBEGA1UEAxMKaWRwLmVucy5mcjAeFw0xMTA4MDMwOTIzMDdaFw0zMTA4
+MDMwOTIzMDdaMBUxEzARBgNVBAMTCmlkcC5lbnMuZnIwggEiMA0GCSqGSIb3DQEB
+AQUAA4IBDwAwggEKAoIBAQC7h6xC+WGiUlpC70MJcuYS8Oc9FhxbVbg33IE1bM4R
+4bLY6ve5nNq4yE2EaTtYy1qskb3B55l6M1nSGKxl3Ey5ovh4cBE5r6fd2fjwlkgB
+5hqNxAbZhA9NPoval38EMYlepR6QtJny+faKWmCe9h4G9MRD+I8tP35z7Gq+3bPT
+ivLLgzBjGumdyj0ggNN/qvd1EisO3TPB+DHR9ygtRm6iNcV7om25k4QZVMHqNyKL
+8J/XDkBkyqqZPJv30xM5xfBP6dK6eRYOLXOCvdwuWNwqS5mtItc+b8S3Oj5K5AcR
+EuDXjgEMCRXo8eNxkjbJlGkgD0l2O0pXJhZFjr+ygsclAgMBAAGjWzBZMDgGA1Ud
+EQQxMC+CCmlkcC5lbnMuZnKGIWh0dHBzOi8vaWRwLmVucy5mci9pZHAvc2hpYmJv
+bGV0aDAdBgNVHQ4EFgQUHX2nM2/snLOaYle+MS5sYYpqXWAwDQYJKoZIhvcNAQEF
+BQADggEBAE09V2ugOzVp7Ow5RQWnsKEgkdIqcNiXcjZTLqCTmbHmG3kGlRG6h0vx
+gy83fcPTkzdaI6ZwVWQF8b+T4Pl+0o1x9vk9CrGHMP0I2smHc1vp/Xqsk+d03tRx
+D2hRBVIDMR95A1pa4yFD2NrWQSLcpfzo3I1TyktpQsncW6LGr7DFi0WwiUAKXO2n
+1Vb9HK0GFd1U2HbFaF5Qc0Hu7rB0UCCmMBzu8brmlMsBgI9Y66zu19Rhmbyx/PdM
+xwVSXwnkIA97hjG91++g6nE8RqtobQ6nIiz3Gv/JjedaSpF5QuRNM8nJYS8Uhmpn
+W+Qzc6tGLNnwcdwm81JXYmMju+ipIhM=
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.ens.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.ens.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.ens.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Ecole normale supérieure</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Ecole normale supérieure</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>Julien Moutel</md:SurName>
+      <md:EmailAddress>julien.moutel@ens.fr</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>Jean-François Barbé</md:SurName>
+      <md:EmailAddress>jean-francois.barbe@ens.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

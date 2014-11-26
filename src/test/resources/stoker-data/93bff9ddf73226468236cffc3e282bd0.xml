@@ -1,0 +1,57 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://federation.upf.pf/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2013-05-31T22:29:12Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">upf.pf</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="en">University of French Polynesia</mdui:DisplayName>
+          <mdui:Description xml:lang="en">Employee, Student</mdui:Description>
+          <mdui:DisplayName xml:lang="fr">Université de Polynésie française</mdui:DisplayName>
+          <mdui:Description xml:lang="fr">Personnels, Etudiants</mdui:Description>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDLzCCAhegAwIBAgIUFC0XwDnBlYK71GiAUaF7vx7MRXIwDQYJKoZIhvcNAQEF
+BQAwHDEaMBgGA1UEAxMRZmVkZXJhdGlvbi51cGYucGYwHhcNMTMwNDE4MDI1NjA5
+WhcNMzMwNDE4MDI1NjA5WjAcMRowGAYDVQQDExFmZWRlcmF0aW9uLnVwZi5wZjCC
+ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMKdTj5nsNnLZKNJKeb8m9lf
+eGVP3AjbhAJo0Fc0KjE3mFUUOc8ScnvT5ms3tD3fvY4OM57ysI+6fXIfqks+K3fU
+p6dbTUUA7EayO/AXEeEZIYmGobqhFbf/+HL+XbaNj6Fu66otgU83ENyz9hWKsd7L
+UoKc/IpYYb5lxRiZObLsD3cZLkQUdaEKmVqBnsl4QBRFgqbbujg9+b9yGc7S6tWt
+tiz0VU9mmDzYz7RvUg3rlxrt/XHTdv9pyNIBfXyWbHwBl20x9RLWantPh5B/gzMg
+NG9Gsxrg2s6jOJkWExAaJui9udv6ZG4Om006MXimSQQJQjefxaFf5tMPkohQuQMC
+AwEAAaNpMGcwRgYDVR0RBD8wPYIRZmVkZXJhdGlvbi51cGYucGaGKGh0dHBzOi8v
+ZmVkZXJhdGlvbi51cGYucGYvaWRwL3NoaWJib2xldGgwHQYDVR0OBBYEFErV+rWb
+dP0OnShtmHsMw4ScsryqMA0GCSqGSIb3DQEBBQUAA4IBAQCQtbM/X3jSinJzQ/iM
+GssEbM/bT5sysN1Y1rsSXCn/Voy27ikk5WN5dbfWZZ1KIYnZtFvJwk3JUUpAXvYS
+TjDkoYhatlfdXSR0ZDJUrtGeo+Rpf8s4Y1UX6EuiywKKU/rxUaGs5m4sG94Xixys
++/WSNcRFx+Oub984KlUVGNJdFsW4QJhLm0SIlzhn1XmHyF8Zk6111bBBVXVGqO7r
+bA2FN5TC8+oLwbU4vngFuLBu3cNt0xDE5C3760iVBLU++kah8FBjAZQsK0dnXyM3
+Jlfc1EsNYvnxkLXlrcZIC5yU8s+4ht45VLUahR9HNHB+sCw9hGlcbV3QigKTlJav
+pbip
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://federation.upf.pf/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://federation.upf.pf/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://federation.upf.pf/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Université de Polynésie française</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Université de Polynésie française</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:EmailAddress>dsi@upf.pf</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

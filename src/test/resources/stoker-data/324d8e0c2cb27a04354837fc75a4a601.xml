@@ -1,0 +1,88 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://idp.u-clermont1.fr/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2009-04-16T09:12:33Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">u-clermont1.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">Université de Clermont Ferrand 1 - Auvergne</mdui:DisplayName>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDMzCCAhugAwIBAgIUNwZDNaZ3tdkFE1H1v5fQOZ0h7xIwDQYJKoZIhvcNAQEF
+BQAwHTEbMBkGA1UEAxMSaWRwLnUtY2xlcm1vbnQxLmZyMB4XDTA4MTEyNjA4MjQy
+OFoXDTI4MTEyNjA4MjQyOFowHTEbMBkGA1UEAxMSaWRwLnUtY2xlcm1vbnQxLmZy
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoz9+2ei+Cj+D9fmqSgXV
+iDUF2Fv9KCEoRmxpIVmQJExVgGpBPzAToKzPu6vP0UXnJTItEGq0cQiOZvdkiwjb
+i9lYCJTzp6NA8kSjfI0F7/U3DMAOaqBMIv5NaLkZTH+6YPAqMOBQOb1oBs4YsjW+
+elFvesreBaPmbSotHWCYgfnb29OLAg37CgAmqDjL7ymPAsE0tPgr9USyjtUhWXsI
+kz2A2OPd3Qy+EizPJevne5gNu/2nfa0RwxTUG7p9Q2FXhJj1Jg3Ijs0PwWpqSM/q
+qrmKActd9uzeHenor13kprK47Ep+K+xIV3CC0gFlRxbZohFrpqvXUun4Gyk3dOuq
+/QIDAQABo2swaTBIBgNVHREEQTA/ghJpZHAudS1jbGVybW9udDEuZnKGKWh0dHBz
+Oi8vaWRwLnUtY2xlcm1vbnQxLmZyL2lkcC9zaGliYm9sZXRoMB0GA1UdDgQWBBTP
+x7ipW2IlVbBux4f/glTdrZcq8zANBgkqhkiG9w0BAQUFAAOCAQEAAUqxVk6Dm5ZS
+jQl1fY+x4Qcc7kSE7vksmWNlhO5WC7NMftDOSzJaoyOlPlP15ONoSPaH/0R2rBRE
+FTvvQNQ7Mpckur1lnTFvLpkAaZ9YSe+wiksHeXQhxN8vb6PYT4Td1CS98efueae4
+1bFIzour2gi4h4e86Zgv18YAr5eBmp38mYYOghxwk67uVdwU2trVIi2EjSbE4AWL
++tu/H6jCK1dMSPCt0UZnv0jSOGU+eCtDPOhD2P/338GEPw2NfwpB85TlGIOf5u0a
+KmDbVb0p+dFwUH3zICKCDJM7OBcUNDM/fcHMBWJ64r17AiGtdZ5Cj0dZQt4ClMC9
+Mcelq5/l9A==
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.u-clermont1.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.u-clermont1.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.u-clermont1.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">u-clermont1.fr</shibmd:Scope>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDMzCCAhugAwIBAgIUNwZDNaZ3tdkFE1H1v5fQOZ0h7xIwDQYJKoZIhvcNAQEF
+BQAwHTEbMBkGA1UEAxMSaWRwLnUtY2xlcm1vbnQxLmZyMB4XDTA4MTEyNjA4MjQy
+OFoXDTI4MTEyNjA4MjQyOFowHTEbMBkGA1UEAxMSaWRwLnUtY2xlcm1vbnQxLmZy
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoz9+2ei+Cj+D9fmqSgXV
+iDUF2Fv9KCEoRmxpIVmQJExVgGpBPzAToKzPu6vP0UXnJTItEGq0cQiOZvdkiwjb
+i9lYCJTzp6NA8kSjfI0F7/U3DMAOaqBMIv5NaLkZTH+6YPAqMOBQOb1oBs4YsjW+
+elFvesreBaPmbSotHWCYgfnb29OLAg37CgAmqDjL7ymPAsE0tPgr9USyjtUhWXsI
+kz2A2OPd3Qy+EizPJevne5gNu/2nfa0RwxTUG7p9Q2FXhJj1Jg3Ijs0PwWpqSM/q
+qrmKActd9uzeHenor13kprK47Ep+K+xIV3CC0gFlRxbZohFrpqvXUun4Gyk3dOuq
+/QIDAQABo2swaTBIBgNVHREEQTA/ghJpZHAudS1jbGVybW9udDEuZnKGKWh0dHBz
+Oi8vaWRwLnUtY2xlcm1vbnQxLmZyL2lkcC9zaGliYm9sZXRoMB0GA1UdDgQWBBTP
+x7ipW2IlVbBux4f/glTdrZcq8zANBgkqhkiG9w0BAQUFAAOCAQEAAUqxVk6Dm5ZS
+jQl1fY+x4Qcc7kSE7vksmWNlhO5WC7NMftDOSzJaoyOlPlP15ONoSPaH/0R2rBRE
+FTvvQNQ7Mpckur1lnTFvLpkAaZ9YSe+wiksHeXQhxN8vb6PYT4Td1CS98efueae4
+1bFIzour2gi4h4e86Zgv18YAr5eBmp38mYYOghxwk67uVdwU2trVIi2EjSbE4AWL
++tu/H6jCK1dMSPCt0UZnv0jSOGU+eCtDPOhD2P/338GEPw2NfwpB85TlGIOf5u0a
+KmDbVb0p+dFwUH3zICKCDJM7OBcUNDM/fcHMBWJ64r17AiGtdZ5Cj0dZQt4ClMC9
+Mcelq5/l9A==
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.u-clermont1.fr/idp/AA"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    </md:AttributeAuthorityDescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Université de Clermont Ferrand 1 - Auvergne</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Université de Clermont Ferrand 1 - Auvergne</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:EmailAddress>Fed-Admin@u-clermont1.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

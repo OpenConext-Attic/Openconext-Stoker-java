@@ -1,0 +1,59 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://idp.cpe.fr/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2011-05-05T09:34:59Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">cpe.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">CPE Lyon</mdui:DisplayName>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIEJDCCAwygAwIBAgIJAIuC7i5giNpjMA0GCSqGSIb3DQEBBQUAMGkxEzARBgNV
+BAMTCmlkcC5jcGUuZnIxLjAsBgNVBAoTJUVDT0xFIFNVUCBDSElNSUUgUEhZUyBF
+TEVDVFJPTklRIExZT04xFTATBgNVBAcTDFZJTExFVVJCQU5ORTELMAkGA1UEBhMC
+RlIwHhcNMTQwMjIwMDgwNTA5WhcNMjQwMjE4MDgwNTA5WjBpMRMwEQYDVQQDEwpp
+ZHAuY3BlLmZyMS4wLAYDVQQKEyVFQ09MRSBTVVAgQ0hJTUlFIFBIWVMgRUxFQ1RS
+T05JUSBMWU9OMRUwEwYDVQQHEwxWSUxMRVVSQkFOTkUxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAocIpHMAzh/c23VTx4XYN3+LB
+AjUpoogp3vpofbkduSkz/FjaRNPaIkN9ktXTUB2KTDPw6q36znFvSGZmRk75szn5
+QitoLMxjuu3vEappnszPBzUxSOiNkjkeXrhx7wi2DKvPEH9/lnITPGWVTukdyE4Z
+R/5WMSQxrPlJVdiqhh5NL/z7ffHezZczVlOkQTIew9srvWT3tAf3d1taJ163PPJZ
+3O/+tNHSZcnZkBVWrpXGVVZxmEb7xvJVKwLpoHMHbnD2KHw0SGWC1nKFkbr+VxH5
+T7Q+MlIa5DFJLU1XCx9AqMQBoDqDlgNDOb3pskWm3nSbeHf4/WbjfWzRV3a1jwID
+AQABo4HOMIHLMB0GA1UdDgQWBBSMZBt4Ak7Vg2PxKHncCs16Qai6IzCBmwYDVR0j
+BIGTMIGQgBSMZBt4Ak7Vg2PxKHncCs16Qai6I6FtpGswaTETMBEGA1UEAxMKaWRw
+LmNwZS5mcjEuMCwGA1UEChMlRUNPTEUgU1VQIENISU1JRSBQSFlTIEVMRUNUUk9O
+SVEgTFlPTjEVMBMGA1UEBxMMVklMTEVVUkJBTk5FMQswCQYDVQQGEwJGUoIJAIuC
+7i5giNpjMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADggEBABwupHR6LVNW
+pTEB8I6nVYqHYSMduk89SzUK3U9JSqlGDE5L19IaEvYoelfEEGbxZ9UM0RQaneJI
+NcGTD/z3H+eOGAuq2sWew2XbBRGVHBU5Fdgy8H6XQicHSjurL0u+eu+Oul8xH54p
+MD9JupVLbRI/GZghxNmNtyJZQoi2+/PuFnW/c8R0zRoYOfn8fio7nLf7peRpPEdB
+I/Ce+bYCmQLQokoxkd07B/tD6TE+A/wnfI6DzGvM5zxMJHJDe1v7PiRx6GdPRbNT
+zfGHWrfvbx7aQaJ07RVUo4o+AdqHYl0eWuQ3cy+3lXgxuaasrb+XbB/CL+5yisby
+h34f/9zZRRI=
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.cpe.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.cpe.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.cpe.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">CPE Lyon</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">CPE Lyon</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:EmailAddress>webmaster@cpe.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

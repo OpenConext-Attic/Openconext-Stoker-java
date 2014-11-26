@@ -1,0 +1,225 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://idp.fh-rosenheim.de/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://www.aai.dfn.de" registrationInstant="2013-10-17T07:15:42Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://www.aai.dfn.de/en/join/</mdrpi:RegistrationPolicy>
+        <mdrpi:RegistrationPolicy xml:lang="de">https://www.aai.dfn.de/teilnahme/</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">fh-rosenheim.de</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">Hochschule Rosenheim</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">University of Applied Sciences Rosenheim</mdui:DisplayName>
+          <mdui:Description xml:lang="de">Identity Provider der Hochschule Rosenheim</mdui:Description>
+          <mdui:Description xml:lang="en">Identity Provider of the University of Applied Sciences Rosenheim</mdui:Description>
+          <mdui:Logo height="40" width="40">https://www.fh-rosenheim.de/fileadmin/user_upload/Fakultaeten_und_Abteilungen/Rechenzentrum/Icons/fh_rosenheim_logo_klein.jpg</mdui:Logo>
+          <mdui:Logo height="75" width="75">https://www.fh-rosenheim.de/fileadmin/user_upload/Fakultaeten_und_Abteilungen/Rechenzentrum/Icons/fh_rosenheim_logo.jpg</mdui:Logo>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:KeyName>idp.fh-rosenheim.de</ds:KeyName>
+          <ds:X509Data>
+            <ds:X509SubjectName>CN=idp.fh-rosenheim.de,OU=Rechenzentrum,O=Hochschule Rosenheim,L=Rosenheim,ST=Bayern,C=DE</ds:X509SubjectName>
+            <ds:X509Certificate>MIIF0DCCBLigAwIBAgIHF2RxhsjERzANBgkqhkiG9w0BAQUFADBhMQswCQYDVQQG
+EwJERTEhMB8GA1UEChMYRmFjaGhvY2hzY2h1bGUgUm9zZW5oZWltMRYwFAYDVQQL
+Ew1SZWNoZW56ZW50cnVtMRcwFQYDVQQDEw5GSC1STyBDQSAtIEcwMjAeFw0xNDA0
+MDkwNzE3MTFaFw0xOTAzMTMwMDAwMDBaMIGHMQswCQYDVQQGEwJERTEPMA0GA1UE
+CBMGQmF5ZXJuMRIwEAYDVQQHEwlSb3NlbmhlaW0xHTAbBgNVBAoTFEhvY2hzY2h1
+bGUgUm9zZW5oZWltMRYwFAYDVQQLEw1SZWNoZW56ZW50cnVtMRwwGgYDVQQDExNp
+ZHAuZmgtcm9zZW5oZWltLmRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+AQEAwKgmaIEAqXR+2l8VZY+aoV3rzcik13hBrEsZqFqJeY7rBqc+rQ5Tk+YPeKCk
+8fX0qoZ68TqkNbeMiEztXdAGNwX5uOEP3oSoLU93TE41SUMVmU9HjBuetej33PZy
+tjslCOcApqfRZL1/ilQkkiawYegkfwWTy7jJAKzHyVAelr6TxExuusV216nhRh8t
+SOo2YA0Tr7wH3rIoXtm7rypbttdIQMn28TSAaKwd2pf7sdVbVvRliT9meEWD1A4t
+4VJwutGUcZcrxvFYXcBQY6/0/6ZLQ0mYR5yOk1Qpd0SXXhtbZZKcmF8hgQFjceG1
+YXKUgw8a6UJV21U9Deuy267k8QIDAQABo4ICZDCCAmAwOQYDVR0gBDIwMDARBg8r
+BgEEAYGtIYIsAQEEAwEwEQYPKwYBBAGBrSGCLAIBBAMBMAgGBmeBDAECAjAJBgNV
+HRMEAjAAMAsGA1UdDwQEAwIF4DAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUH
+AwEwHQYDVR0OBBYEFL3z1fkYF/NmtM2ZroB49hFsL5q/MB8GA1UdIwQYMBaAFCBm
+biUvqWNNouAnuol/yxW6P66RMDoGA1UdEQQzMDGCE2lkcC5maC1yb3NlbmhlaW0u
+ZGWBGnJ6LXN1cHBvcnRAZmgtcm9zZW5oZWltLmRlMIGPBgNVHR8EgYcwgYQwQKA+
+oDyGOmh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZmgtcm9zZW5oZWltLWNhL3B1Yi9j
+cmwvZ19jYWNybC5jcmwwQKA+oDyGOmh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZmgt
+cm9zZW5oZWltLWNhL3B1Yi9jcmwvZ19jYWNybC5jcmwwgd0GCCsGAQUFBwEBBIHQ
+MIHNMDMGCCsGAQUFBzABhidodHRwOi8vb2NzcC5wY2EuZGZuLmRlL09DU1AtU2Vy
+dmVyL09DU1AwSgYIKwYBBQUHMAKGPmh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZmgt
+cm9zZW5oZWltLWNhL3B1Yi9jYWNlcnQvZ19jYWNlcnQuY3J0MEoGCCsGAQUFBzAC
+hj5odHRwOi8vY2RwMi5wY2EuZGZuLmRlL2ZoLXJvc2VuaGVpbS1jYS9wdWIvY2Fj
+ZXJ0L2dfY2FjZXJ0LmNydDANBgkqhkiG9w0BAQUFAAOCAQEAbPzQZcFemHgov7uQ
+gQe0OiaRLs2+kFDJGXPJSz3itUPX0Lgx1qx2DUcETDHolpKslUUZRD7L7zkjid+/
+oB+JSEowqxuosH+6xTWtok34uVLoCMAkiGD9I0Ccbxe+8q9puWJX8ZSdAN6yf0aB
+yLzKKxpLdoqvTDg3h51FAlBeA0AJnIJTJ1E2peU73xdZAJWLjSV6TMLEAu1WnCcD
+f3kIDrpEHJ90v7y1J3kXNT49/CBsKqp0SrcLo8j507TVCCBuyXBYcZP2Ixj6FyUo
+4A4ZvZgVb6Rt+2SnHFoB1ax0EG75805kZIt7qgCMGwxr0CNpxvpS2Z9q4tpmG+vh
+nflFJg==
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor use="encryption">
+        <ds:KeyInfo>
+          <ds:KeyName>idp.fh-rosenheim.de</ds:KeyName>
+          <ds:X509Data>
+            <ds:X509SubjectName>CN=idp.fh-rosenheim.de,OU=Rechenzentrum,O=Hochschule Rosenheim,L=Rosenheim,ST=Bayern,C=DE</ds:X509SubjectName>
+            <ds:X509Certificate>MIIF0DCCBLigAwIBAgIHF2RxhsjERzANBgkqhkiG9w0BAQUFADBhMQswCQYDVQQG
+EwJERTEhMB8GA1UEChMYRmFjaGhvY2hzY2h1bGUgUm9zZW5oZWltMRYwFAYDVQQL
+Ew1SZWNoZW56ZW50cnVtMRcwFQYDVQQDEw5GSC1STyBDQSAtIEcwMjAeFw0xNDA0
+MDkwNzE3MTFaFw0xOTAzMTMwMDAwMDBaMIGHMQswCQYDVQQGEwJERTEPMA0GA1UE
+CBMGQmF5ZXJuMRIwEAYDVQQHEwlSb3NlbmhlaW0xHTAbBgNVBAoTFEhvY2hzY2h1
+bGUgUm9zZW5oZWltMRYwFAYDVQQLEw1SZWNoZW56ZW50cnVtMRwwGgYDVQQDExNp
+ZHAuZmgtcm9zZW5oZWltLmRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+AQEAwKgmaIEAqXR+2l8VZY+aoV3rzcik13hBrEsZqFqJeY7rBqc+rQ5Tk+YPeKCk
+8fX0qoZ68TqkNbeMiEztXdAGNwX5uOEP3oSoLU93TE41SUMVmU9HjBuetej33PZy
+tjslCOcApqfRZL1/ilQkkiawYegkfwWTy7jJAKzHyVAelr6TxExuusV216nhRh8t
+SOo2YA0Tr7wH3rIoXtm7rypbttdIQMn28TSAaKwd2pf7sdVbVvRliT9meEWD1A4t
+4VJwutGUcZcrxvFYXcBQY6/0/6ZLQ0mYR5yOk1Qpd0SXXhtbZZKcmF8hgQFjceG1
+YXKUgw8a6UJV21U9Deuy267k8QIDAQABo4ICZDCCAmAwOQYDVR0gBDIwMDARBg8r
+BgEEAYGtIYIsAQEEAwEwEQYPKwYBBAGBrSGCLAIBBAMBMAgGBmeBDAECAjAJBgNV
+HRMEAjAAMAsGA1UdDwQEAwIF4DAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUH
+AwEwHQYDVR0OBBYEFL3z1fkYF/NmtM2ZroB49hFsL5q/MB8GA1UdIwQYMBaAFCBm
+biUvqWNNouAnuol/yxW6P66RMDoGA1UdEQQzMDGCE2lkcC5maC1yb3NlbmhlaW0u
+ZGWBGnJ6LXN1cHBvcnRAZmgtcm9zZW5oZWltLmRlMIGPBgNVHR8EgYcwgYQwQKA+
+oDyGOmh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZmgtcm9zZW5oZWltLWNhL3B1Yi9j
+cmwvZ19jYWNybC5jcmwwQKA+oDyGOmh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZmgt
+cm9zZW5oZWltLWNhL3B1Yi9jcmwvZ19jYWNybC5jcmwwgd0GCCsGAQUFBwEBBIHQ
+MIHNMDMGCCsGAQUFBzABhidodHRwOi8vb2NzcC5wY2EuZGZuLmRlL09DU1AtU2Vy
+dmVyL09DU1AwSgYIKwYBBQUHMAKGPmh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZmgt
+cm9zZW5oZWltLWNhL3B1Yi9jYWNlcnQvZ19jYWNlcnQuY3J0MEoGCCsGAQUFBzAC
+hj5odHRwOi8vY2RwMi5wY2EuZGZuLmRlL2ZoLXJvc2VuaGVpbS1jYS9wdWIvY2Fj
+ZXJ0L2dfY2FjZXJ0LmNydDANBgkqhkiG9w0BAQUFAAOCAQEAbPzQZcFemHgov7uQ
+gQe0OiaRLs2+kFDJGXPJSz3itUPX0Lgx1qx2DUcETDHolpKslUUZRD7L7zkjid+/
+oB+JSEowqxuosH+6xTWtok34uVLoCMAkiGD9I0Ccbxe+8q9puWJX8ZSdAN6yf0aB
+yLzKKxpLdoqvTDg3h51FAlBeA0AJnIJTJ1E2peU73xdZAJWLjSV6TMLEAu1WnCcD
+f3kIDrpEHJ90v7y1J3kXNT49/CBsKqp0SrcLo8j507TVCCBuyXBYcZP2Ixj6FyUo
+4A4ZvZgVb6Rt+2SnHFoB1ax0EG75805kZIt7qgCMGwxr0CNpxvpS2Z9q4tpmG+vh
+nflFJg==
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.fh-rosenheim.de:8443/idp/profile/SAML1/SOAP/ArtifactResolution" index="1"/>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.fh-rosenheim.de:8443/idp/profile/SAML2/SOAP/ArtifactResolution" index="2"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.fh-rosenheim.de/idp/profile/SAML2/Redirect/SLO"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.fh-rosenheim.de/idp/profile/SAML2/POST/SLO"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.fh-rosenheim.de:8443/idp/profile/SAML2/SOAP/SLO"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.fh-rosenheim.de/idp/profile/Shibboleth/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.fh-rosenheim.de/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://idp.fh-rosenheim.de/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.fh-rosenheim.de/idp/profile/SAML2/Redirect/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">fh-rosenheim.de</shibmd:Scope>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:KeyName>idp.fh-rosenheim.de</ds:KeyName>
+          <ds:X509Data>
+            <ds:X509SubjectName>CN=idp.fh-rosenheim.de,OU=Rechenzentrum,O=Hochschule Rosenheim,L=Rosenheim,ST=Bayern,C=DE</ds:X509SubjectName>
+            <ds:X509Certificate>MIIF0DCCBLigAwIBAgIHF2RxhsjERzANBgkqhkiG9w0BAQUFADBhMQswCQYDVQQG
+EwJERTEhMB8GA1UEChMYRmFjaGhvY2hzY2h1bGUgUm9zZW5oZWltMRYwFAYDVQQL
+Ew1SZWNoZW56ZW50cnVtMRcwFQYDVQQDEw5GSC1STyBDQSAtIEcwMjAeFw0xNDA0
+MDkwNzE3MTFaFw0xOTAzMTMwMDAwMDBaMIGHMQswCQYDVQQGEwJERTEPMA0GA1UE
+CBMGQmF5ZXJuMRIwEAYDVQQHEwlSb3NlbmhlaW0xHTAbBgNVBAoTFEhvY2hzY2h1
+bGUgUm9zZW5oZWltMRYwFAYDVQQLEw1SZWNoZW56ZW50cnVtMRwwGgYDVQQDExNp
+ZHAuZmgtcm9zZW5oZWltLmRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+AQEAwKgmaIEAqXR+2l8VZY+aoV3rzcik13hBrEsZqFqJeY7rBqc+rQ5Tk+YPeKCk
+8fX0qoZ68TqkNbeMiEztXdAGNwX5uOEP3oSoLU93TE41SUMVmU9HjBuetej33PZy
+tjslCOcApqfRZL1/ilQkkiawYegkfwWTy7jJAKzHyVAelr6TxExuusV216nhRh8t
+SOo2YA0Tr7wH3rIoXtm7rypbttdIQMn28TSAaKwd2pf7sdVbVvRliT9meEWD1A4t
+4VJwutGUcZcrxvFYXcBQY6/0/6ZLQ0mYR5yOk1Qpd0SXXhtbZZKcmF8hgQFjceG1
+YXKUgw8a6UJV21U9Deuy267k8QIDAQABo4ICZDCCAmAwOQYDVR0gBDIwMDARBg8r
+BgEEAYGtIYIsAQEEAwEwEQYPKwYBBAGBrSGCLAIBBAMBMAgGBmeBDAECAjAJBgNV
+HRMEAjAAMAsGA1UdDwQEAwIF4DAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUH
+AwEwHQYDVR0OBBYEFL3z1fkYF/NmtM2ZroB49hFsL5q/MB8GA1UdIwQYMBaAFCBm
+biUvqWNNouAnuol/yxW6P66RMDoGA1UdEQQzMDGCE2lkcC5maC1yb3NlbmhlaW0u
+ZGWBGnJ6LXN1cHBvcnRAZmgtcm9zZW5oZWltLmRlMIGPBgNVHR8EgYcwgYQwQKA+
+oDyGOmh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZmgtcm9zZW5oZWltLWNhL3B1Yi9j
+cmwvZ19jYWNybC5jcmwwQKA+oDyGOmh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZmgt
+cm9zZW5oZWltLWNhL3B1Yi9jcmwvZ19jYWNybC5jcmwwgd0GCCsGAQUFBwEBBIHQ
+MIHNMDMGCCsGAQUFBzABhidodHRwOi8vb2NzcC5wY2EuZGZuLmRlL09DU1AtU2Vy
+dmVyL09DU1AwSgYIKwYBBQUHMAKGPmh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZmgt
+cm9zZW5oZWltLWNhL3B1Yi9jYWNlcnQvZ19jYWNlcnQuY3J0MEoGCCsGAQUFBzAC
+hj5odHRwOi8vY2RwMi5wY2EuZGZuLmRlL2ZoLXJvc2VuaGVpbS1jYS9wdWIvY2Fj
+ZXJ0L2dfY2FjZXJ0LmNydDANBgkqhkiG9w0BAQUFAAOCAQEAbPzQZcFemHgov7uQ
+gQe0OiaRLs2+kFDJGXPJSz3itUPX0Lgx1qx2DUcETDHolpKslUUZRD7L7zkjid+/
+oB+JSEowqxuosH+6xTWtok34uVLoCMAkiGD9I0Ccbxe+8q9puWJX8ZSdAN6yf0aB
+yLzKKxpLdoqvTDg3h51FAlBeA0AJnIJTJ1E2peU73xdZAJWLjSV6TMLEAu1WnCcD
+f3kIDrpEHJ90v7y1J3kXNT49/CBsKqp0SrcLo8j507TVCCBuyXBYcZP2Ixj6FyUo
+4A4ZvZgVb6Rt+2SnHFoB1ax0EG75805kZIt7qgCMGwxr0CNpxvpS2Z9q4tpmG+vh
+nflFJg==
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor use="encryption">
+        <ds:KeyInfo>
+          <ds:KeyName>idp.fh-rosenheim.de</ds:KeyName>
+          <ds:X509Data>
+            <ds:X509SubjectName>CN=idp.fh-rosenheim.de,OU=Rechenzentrum,O=Hochschule Rosenheim,L=Rosenheim,ST=Bayern,C=DE</ds:X509SubjectName>
+            <ds:X509Certificate>MIIF0DCCBLigAwIBAgIHF2RxhsjERzANBgkqhkiG9w0BAQUFADBhMQswCQYDVQQG
+EwJERTEhMB8GA1UEChMYRmFjaGhvY2hzY2h1bGUgUm9zZW5oZWltMRYwFAYDVQQL
+Ew1SZWNoZW56ZW50cnVtMRcwFQYDVQQDEw5GSC1STyBDQSAtIEcwMjAeFw0xNDA0
+MDkwNzE3MTFaFw0xOTAzMTMwMDAwMDBaMIGHMQswCQYDVQQGEwJERTEPMA0GA1UE
+CBMGQmF5ZXJuMRIwEAYDVQQHEwlSb3NlbmhlaW0xHTAbBgNVBAoTFEhvY2hzY2h1
+bGUgUm9zZW5oZWltMRYwFAYDVQQLEw1SZWNoZW56ZW50cnVtMRwwGgYDVQQDExNp
+ZHAuZmgtcm9zZW5oZWltLmRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+AQEAwKgmaIEAqXR+2l8VZY+aoV3rzcik13hBrEsZqFqJeY7rBqc+rQ5Tk+YPeKCk
+8fX0qoZ68TqkNbeMiEztXdAGNwX5uOEP3oSoLU93TE41SUMVmU9HjBuetej33PZy
+tjslCOcApqfRZL1/ilQkkiawYegkfwWTy7jJAKzHyVAelr6TxExuusV216nhRh8t
+SOo2YA0Tr7wH3rIoXtm7rypbttdIQMn28TSAaKwd2pf7sdVbVvRliT9meEWD1A4t
+4VJwutGUcZcrxvFYXcBQY6/0/6ZLQ0mYR5yOk1Qpd0SXXhtbZZKcmF8hgQFjceG1
+YXKUgw8a6UJV21U9Deuy267k8QIDAQABo4ICZDCCAmAwOQYDVR0gBDIwMDARBg8r
+BgEEAYGtIYIsAQEEAwEwEQYPKwYBBAGBrSGCLAIBBAMBMAgGBmeBDAECAjAJBgNV
+HRMEAjAAMAsGA1UdDwQEAwIF4DAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUH
+AwEwHQYDVR0OBBYEFL3z1fkYF/NmtM2ZroB49hFsL5q/MB8GA1UdIwQYMBaAFCBm
+biUvqWNNouAnuol/yxW6P66RMDoGA1UdEQQzMDGCE2lkcC5maC1yb3NlbmhlaW0u
+ZGWBGnJ6LXN1cHBvcnRAZmgtcm9zZW5oZWltLmRlMIGPBgNVHR8EgYcwgYQwQKA+
+oDyGOmh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZmgtcm9zZW5oZWltLWNhL3B1Yi9j
+cmwvZ19jYWNybC5jcmwwQKA+oDyGOmh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZmgt
+cm9zZW5oZWltLWNhL3B1Yi9jcmwvZ19jYWNybC5jcmwwgd0GCCsGAQUFBwEBBIHQ
+MIHNMDMGCCsGAQUFBzABhidodHRwOi8vb2NzcC5wY2EuZGZuLmRlL09DU1AtU2Vy
+dmVyL09DU1AwSgYIKwYBBQUHMAKGPmh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZmgt
+cm9zZW5oZWltLWNhL3B1Yi9jYWNlcnQvZ19jYWNlcnQuY3J0MEoGCCsGAQUFBzAC
+hj5odHRwOi8vY2RwMi5wY2EuZGZuLmRlL2ZoLXJvc2VuaGVpbS1jYS9wdWIvY2Fj
+ZXJ0L2dfY2FjZXJ0LmNydDANBgkqhkiG9w0BAQUFAAOCAQEAbPzQZcFemHgov7uQ
+gQe0OiaRLs2+kFDJGXPJSz3itUPX0Lgx1qx2DUcETDHolpKslUUZRD7L7zkjid+/
+oB+JSEowqxuosH+6xTWtok34uVLoCMAkiGD9I0Ccbxe+8q9puWJX8ZSdAN6yf0aB
+yLzKKxpLdoqvTDg3h51FAlBeA0AJnIJTJ1E2peU73xdZAJWLjSV6TMLEAu1WnCcD
+f3kIDrpEHJ90v7y1J3kXNT49/CBsKqp0SrcLo8j507TVCCBuyXBYcZP2Ixj6FyUo
+4A4ZvZgVb6Rt+2SnHFoB1ax0EG75805kZIt7qgCMGwxr0CNpxvpS2Z9q4tpmG+vh
+nflFJg==
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.fh-rosenheim.de:8443/idp/profile/SAML1/SOAP/AttributeQuery"/>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.fh-rosenheim.de:8443/idp/profile/SAML2/SOAP/AttributeQuery"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+    </md:AttributeAuthorityDescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="de">e360</md:OrganizationName>
+      <md:OrganizationName xml:lang="en">e360</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="de">Hochschule Rosenheim</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="en">University of Applied Sciences Rosenheim</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="de">http://www.fh-rosenheim.de</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">http://www.fh-rosenheim.de</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Robert</md:GivenName>
+      <md:SurName>Meier</md:SurName>
+      <md:EmailAddress>mailto:robert.meier@fh-rosenheim.de</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>Robert</md:GivenName>
+      <md:SurName>Meier</md:SurName>
+      <md:EmailAddress>mailto:idm-support@fh-rosenheim.de</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

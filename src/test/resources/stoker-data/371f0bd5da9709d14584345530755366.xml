@@ -1,0 +1,117 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://idp.utia.cas.cz/idp/shibboleth">
+    <md:Extensions>
+      <eduidmd:RepublishRequest xmlns:eduidmd="http://eduid.cz/schema/metadata/1.0">
+        <eduidmd:RepublishTarget>http://edugain.org/</eduidmd:RepublishTarget>
+      </eduidmd:RepublishRequest>
+      <mdrpi:RegistrationInfo registrationAuthority="http://www.eduid.cz/" registrationInstant="2014-03-07T08:48:51Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">http://www.eduid.cz/wiki/_media/en/eduid/policy/policy_eduid_en-1_1.pdf</mdrpi:RegistrationPolicy>
+        <mdrpi:RegistrationPolicy xml:lang="cs">http://www.eduid.cz/wiki/_media/eduid/policy/policy_eduid_cz-1_1-3.pdf</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+      <mdattr:EntityAttributes>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://eduid.cz/uri/idp-group/avcr</saml:AttributeValue>
+        </saml:Attribute>
+      </mdattr:EntityAttributes>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">utia.cas.cz</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="en">Institute of Information Theory and Automation AS CR</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="cs">Ústav teorie informace a automatizace AV ČR</mdui:DisplayName>
+          <mdui:Description xml:lang="en">Identity Provider UTIA AV CR employees.</mdui:Description>
+          <mdui:Description xml:lang="cs">Identity Provider pro zaměstnance ÚTIA AV ČR</mdui:Description>
+          <mdui:InformationURL xml:lang="en">http://www.utia.cas.cz/</mdui:InformationURL>
+          <mdui:InformationURL xml:lang="cs">http://www.utia.cas.cz/</mdui:InformationURL>
+          <mdui:Logo height="44" width="74">https://jiftach.cas.cz/loga/logo-utia-44.png</mdui:Logo>
+          <mdui:Logo height="411" width="960">https://jiftach.cas.cz/loga/logo-utia-411.png</mdui:Logo>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIDKDCCAhCgAwIBAgIVAPWAIIDpvyOIAKgxvS8uAGvErbFIMA0GCSqGSIb3DQEB
+BQUAMBoxGDAWBgNVBAMTD2lkcC51dGlhLmNhcy5jejAeFw0xNDAxMjExMzQ5MzFa
+Fw0zNDAxMjExMzQ5MzFaMBoxGDAWBgNVBAMTD2lkcC51dGlhLmNhcy5jejCCASIw
+DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIMlroofDB1hzFwO3vg/GyYuWHzq
+ltlkURfEPJOAnKG/W2ax+ljT+4OvFochFR3Tn2z9k9BzjK2TNbK4SSHnojSn/7ml
+UEe5GcSqUzWRz7N6IPWqq95bpHAjttP9GChbwn9TWbiim+rom7azfJ5GMNpECE6x
+J6hnZLLqe9tH3MRjHq/g1EgoYwkRN4p+GH50zpPfZmqdChoxN4+ipiwodGHUGLbK
+qjrCkusd3nx9hjkZNsB9Xwcws4HJhnfKmUaRXccBeXI+93rOVTVgRdzC4AoV18xZ
+DT4mZJHi0rAr+S8k/qHpYapp4BJX8FlGxzfUM/KtJft6aupc2KkacFeJzXkCAwEA
+AaNlMGMwQgYDVR0RBDswOYIPaWRwLnV0aWEuY2FzLmN6hiZodHRwczovL2lkcC51
+dGlhLmNhcy5jei9pZHAvc2hpYmJvbGV0aDAdBgNVHQ4EFgQULF0CAFze9Eoavjce
+J1fkA5ZwtzEwDQYJKoZIhvcNAQEFBQADggEBAEdPs/pVXrBbxB8Gs7V3a9gGn7Va
+4svNZ7mosAAWvlXPLGKzdmp8GdqH1UNjNZouxSXJDVC4sbOKcFiyu7gr+Bc+SbhH
+vd5/D4EzzaF5LrfCcy4z0z/Z2GmoejJUkysYTnvfDJwUk57JKfeF7JP0WTxtGwBX
+us9wwyhp00Lvq91NAddg0YCHgYkNNJ+nEqinRTUHtF1/NM0kOxj5Bldl+Ea5ofMi
+4xHhOx6IKjHfhU+xSBtA5JalGefjXT8reS2EPc8NY8YQE7fxytldlc3C4nkLilwp
+p6lZaMAngitaUamaZdgJTVokp6H6D9o6qommaXW6BFw0RskMVAO4QKWnanc=
+
+                    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.utia.cas.cz:8443/idp/profile/SAML1/SOAP/ArtifactResolution" index="1"/>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.utia.cas.cz:8443/idp/profile/SAML2/SOAP/ArtifactResolution" index="2"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.utia.cas.cz/idp/profile/SAML2/Redirect/SLO"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.utia.cas.cz/idp/profile/SAML2/POST/SLO"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.utia.cas.cz:8443/idp/profile/SAML2/SOAP/SLO"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.utia.cas.cz/idp/profile/Shibboleth/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.utia.cas.cz/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://idp.utia.cas.cz/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.utia.cas.cz/idp/profile/SAML2/Redirect/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">utia.cas.cz</shibmd:Scope>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIDKDCCAhCgAwIBAgIVAPWAIIDpvyOIAKgxvS8uAGvErbFIMA0GCSqGSIb3DQEB
+BQUAMBoxGDAWBgNVBAMTD2lkcC51dGlhLmNhcy5jejAeFw0xNDAxMjExMzQ5MzFa
+Fw0zNDAxMjExMzQ5MzFaMBoxGDAWBgNVBAMTD2lkcC51dGlhLmNhcy5jejCCASIw
+DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIMlroofDB1hzFwO3vg/GyYuWHzq
+ltlkURfEPJOAnKG/W2ax+ljT+4OvFochFR3Tn2z9k9BzjK2TNbK4SSHnojSn/7ml
+UEe5GcSqUzWRz7N6IPWqq95bpHAjttP9GChbwn9TWbiim+rom7azfJ5GMNpECE6x
+J6hnZLLqe9tH3MRjHq/g1EgoYwkRN4p+GH50zpPfZmqdChoxN4+ipiwodGHUGLbK
+qjrCkusd3nx9hjkZNsB9Xwcws4HJhnfKmUaRXccBeXI+93rOVTVgRdzC4AoV18xZ
+DT4mZJHi0rAr+S8k/qHpYapp4BJX8FlGxzfUM/KtJft6aupc2KkacFeJzXkCAwEA
+AaNlMGMwQgYDVR0RBDswOYIPaWRwLnV0aWEuY2FzLmN6hiZodHRwczovL2lkcC51
+dGlhLmNhcy5jei9pZHAvc2hpYmJvbGV0aDAdBgNVHQ4EFgQULF0CAFze9Eoavjce
+J1fkA5ZwtzEwDQYJKoZIhvcNAQEFBQADggEBAEdPs/pVXrBbxB8Gs7V3a9gGn7Va
+4svNZ7mosAAWvlXPLGKzdmp8GdqH1UNjNZouxSXJDVC4sbOKcFiyu7gr+Bc+SbhH
+vd5/D4EzzaF5LrfCcy4z0z/Z2GmoejJUkysYTnvfDJwUk57JKfeF7JP0WTxtGwBX
+us9wwyhp00Lvq91NAddg0YCHgYkNNJ+nEqinRTUHtF1/NM0kOxj5Bldl+Ea5ofMi
+4xHhOx6IKjHfhU+xSBtA5JalGefjXT8reS2EPc8NY8YQE7fxytldlc3C4nkLilwp
+p6lZaMAngitaUamaZdgJTVokp6H6D9o6qommaXW6BFw0RskMVAO4QKWnanc=
+
+                    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.utia.cas.cz:8443/idp/profile/SAML1/SOAP/AttributeQuery"/>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.utia.cas.cz:8443/idp/profile/SAML2/SOAP/AttributeQuery"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+    </md:AttributeAuthorityDescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Institute of Information Theory and Automation</md:OrganizationName>
+      <md:OrganizationName xml:lang="cs">Ústav teorie informace a automatizace AV ČR</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Institute of Information Theory and Automation, Public Research Institution</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="cs">Ústav teorie informace a automatizace AV ČR, v.v.i.</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://www.utia.cas.cz/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="cs">http://www.utia.cas.cz/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Petr</md:GivenName>
+      <md:SurName>Vaníček</md:SurName>
+      <md:EmailAddress>vanicekp@utia.cas.cz</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

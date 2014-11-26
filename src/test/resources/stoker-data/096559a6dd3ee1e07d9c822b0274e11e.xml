@@ -1,0 +1,65 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://shib.u-paris10.fr/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2014-04-30T10:12:46Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">u-paris10.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">Université Paris Ouest Nanterre La Défense</mdui:DisplayName>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIEbzCCA1egAwIBAgIQZbrrSlxkQhTabmBhnkMIcjANBgkqhkiG9w0BAQUFADA2
+MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
+U1NMIENBMB4XDTE0MDQyOTAwMDAwMFoXDTE3MDQyODIzNTk1OVowPzEhMB8GA1UE
+CxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMRowGAYDVQQDExFzaGliLnUtcGFy
+aXMxMC5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOXQot32/G4U
+65ArzPTHDzV0pukloeif+NPsD1UJ2jRxzVXdalcqbxIo50XubnqASgfJI8quCcQI
+UivML6Pid61W+G1xaFDFH3oqv4rUz+3cvl+e3rk/7EOxv6mCIhsagERX6/7tPG6Q
+nhy5yUAmnPXVG+N5c8+VD0tDnL3GY7kUFIl6EK0kYObmdpX8jJZeQ4LmPBGxIAWX
+zonq0y2/2MDAMiiX4qVmTJphw0LpxILXBcP8ODsSu9EIA01iC0hqr0ZJaGnmm9jF
+e5GR856RaR5IYoWDhJ2B5rA0gnAp1ORkDwxW22SISQeWLE6XFV3Zee+7aQBP6qWo
+GYqJMGQgo4ECAwEAAaOCAW4wggFqMB8GA1UdIwQYMBaAFAy9k2gM896ro0lrKzdX
+R+qQ47ntMB0GA1UdDgQWBBQUr2hjbMrOoM0u5PrMn5ks6PmoKzAOBgNVHQ8BAf8E
+BAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUH
+AwIwIgYDVR0gBBswGTANBgsrBgEEAbIxAQICHTAIBgZngQwBAgEwOgYDVR0fBDMw
+MTAvoC2gK4YpaHR0cDovL2NybC50Y3MudGVyZW5hLm9yZy9URVJFTkFTU0xDQS5j
+cmwwbQYIKwYBBQUHAQEEYTBfMDUGCCsGAQUFBzAChilodHRwOi8vY3J0LnRjcy50
+ZXJlbmEub3JnL1RFUkVOQVNTTENBLmNydDAmBggrBgEFBQcwAYYaaHR0cDovL29j
+c3AudGNzLnRlcmVuYS5vcmcwHAYDVR0RBBUwE4IRc2hpYi51LXBhcmlzMTAuZnIw
+DQYJKoZIhvcNAQEFBQADggEBAHvXqPlH0S0iV2DZuBMgkVjm0FojB9jefcIojoP+
+W5v120m9tvbtWJmE+xOKQi2y+Zct/SWFDKcV+otWus9O0IyfoZcXHwPmPntlhNkD
+NmIWXzwJnDXnnoc0TG2edyNMmtuQMNIjeDSsnCDbspTfymBdnIYKuuuPLy2hSH+V
+wC8FqLmFxsFhnsy4AYicdZyv2zf5e3zIFbaIqJOunr+K1ovMan9M+B+pme5Da7n9
+HmJ60tKDP/4kWNMI1ciPuZ+tFjQFDjbCZTGEL9fcx2+FpHFBc3rLBFqnU4wTr8g+
+tX8DeAKftA5fK5bves4MG9LRLqWMkHmYHZ40TOv95xpE40k=
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://shib.u-paris10.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://shib.u-paris10.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://shib.u-paris10.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Université Paris Ouest Nanterre La Défense</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Université Paris Ouest Nanterre La Défense</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>Driss Bouzekhrout</md:SurName>
+      <md:EmailAddress>driss@u-paris10.fr</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>Gaël Merlin</md:SurName>
+      <md:EmailAddress>gmerlin@u-paris10.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

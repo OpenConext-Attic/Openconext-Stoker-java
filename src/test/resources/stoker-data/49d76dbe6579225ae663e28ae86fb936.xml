@@ -1,0 +1,143 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://login.athena-innovation.gr/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://aai.grnet.gr/">
+        <mdrpi:RegistrationPolicy xml:lang="en">http://aai.grnet.gr/static/policy/policy-en-1.1.0.pdf</mdrpi:RegistrationPolicy>
+        <mdrpi:RegistrationPolicy xml:lang="el">http://aai.grnet.gr/static/policy/policy-el-1.1.0.pdf</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">athena-innovation.gr</shibmd:Scope>
+        <shibmd:Scope regexp="false">imis.athena-innovation.gr</shibmd:Scope>
+        <shibmd:Scope regexp="false">ilsp.athena-innovation.gr</shibmd:Scope>
+        <shibmd:Scope regexp="false">ceti.athena-innovation.gr</shibmd:Scope>
+        <shibmd:Scope regexp="false">isi.athena-innovation.gr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="en">Athena - Research and Innovation Center</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="el">Αθηνά - Ερευνητικό Κέντρο Καινοτομίας</mdui:DisplayName>
+          <mdui:InformationURL xml:lang="en">http://www.athena-innovation.gr/en.html</mdui:InformationURL>
+          <mdui:InformationURL xml:lang="el">http://www.athena-innovation.gr/el.html</mdui:InformationURL>
+          <mdui:Logo height="90" width="73">https://login.athena-innovation.gr/logo.png</mdui:Logo>
+        </mdui:UIInfo>
+        <mdui:DiscoHints>
+          <mdui:DomainHint>athena-innovation.gr</mdui:DomainHint>
+          <mdui:DomainHint>imis.athena-innovation.gr</mdui:DomainHint>
+          <mdui:DomainHint>ilsp.gr</mdui:DomainHint>
+          <mdui:DomainHint>ceti.gr</mdui:DomainHint>
+          <mdui:DomainHint>isi.gr</mdui:DomainHint>
+          <mdui:IPHint>195.251.63.0/24</mdui:IPHint>
+          <mdui:IPHint>195.251.3.0/24</mdui:IPHint>
+          <mdui:IPHint>195.251.58.0/24</mdui:IPHint>
+          <mdui:IPHint>194.177.192.0/24</mdui:IPHint>
+          <mdui:IPHint>194.177.217.0/24</mdui:IPHint>
+          <mdui:IPHint>2001:648:2600::/48</mdui:IPHint>
+          <mdui:GeolocationHint>geo:38.0365046,23.802512</mdui:GeolocationHint>
+        </mdui:DiscoHints>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+                            MIIEmzCCA4OgAwIBAgIQTEvhgWFGJLdkM4ZD5wBQTDANBgkqhkiG9w0BAQUFADA2
+                            MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
+                            U1NMIENBMB4XDTE0MDQwOTAwMDAwMFoXDTE3MDQwODIzNTk1OVowSDEhMB8GA1UE
+                            CxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMSMwIQYDVQQDExpsb2dpbi5hdGhl
+                            bmEtaW5ub3ZhdGlvbi5ncjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
+                            AKaZpSw3Pb3kDBhJzRXUcnUqFZqJSoLjvSMHnxt0GDjBsvmQZwDflsuIu5nbXQ86
+                            DnK7ImdQszT42hal7RFODHrD9F1TC/7zoQRd5DoLnHdKOeHQRAa2WF+IwkrtiyQT
+                            gMhswaqal8wXr7sM+f0bDOYvU3Q2MVdAmE1TefrlPx90hHys+SbreRjj/HUCCsBI
+                            zgfnFcy56Mmr0m9Olbh56VhAs+qZhYpWDyGhuHaRaNEhuJCx0R7IZmFhNGZ/+2+s
+                            CdK1j/hq08c1L7wON/ZDdSBGbM5cuCoxPqIcLyyEgEh4ieo/c8e04ZfxwBFU9XZI
+                            ApX4niHSErzC/bNDMWR+f3kCAwEAAaOCAZEwggGNMB8GA1UdIwQYMBaAFAy9k2gM
+                            896ro0lrKzdXR+qQ47ntMB0GA1UdDgQWBBR0AyJjhZwmKiXLMvyVR6BYE68JYTAO
+                            BgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcD
+                            AQYIKwYBBQUHAwIwIgYDVR0gBBswGTANBgsrBgEEAbIxAQICHTAIBgZngQwBAgEw
+                            OgYDVR0fBDMwMTAvoC2gK4YpaHR0cDovL2NybC50Y3MudGVyZW5hLm9yZy9URVJF
+                            TkFTU0xDQS5jcmwwbQYIKwYBBQUHAQEEYTBfMDUGCCsGAQUFBzAChilodHRwOi8v
+                            Y3J0LnRjcy50ZXJlbmEub3JnL1RFUkVOQVNTTENBLmNydDAmBggrBgEFBQcwAYYa
+                            aHR0cDovL29jc3AudGNzLnRlcmVuYS5vcmcwPwYDVR0RBDgwNoIabG9naW4uYXRo
+                            ZW5hLWlubm92YXRpb24uZ3KCGGlkcC5hdGhlbmEtaW5ub3ZhdGlvbi5ncjANBgkq
+                            hkiG9w0BAQUFAAOCAQEAA1a3pfD6Iq6rMgZgmJeUEge9y3uLN5YGzJYjsNYvznhZ
+                            tnfuKighFcdQwH/Ph/ceZYtwcIMXstZFxXsFM878PiEehLSghYJorC0e9EDszIsc
+                            QgbzraX/vEjWRZ4ywQU1nsc1+3EYZyIfxmi35FiT8g0xSEVpSj4O1RoDO3xUz8NJ
+                            zDycQMlH2qMDDNdgYGqs/U3habyE1MeAHbz6zWhX6Sa1oeIy6gijvGUUadDULhX3
+                            iVNxJAYr4coKFN/Xj58Ay6JjomJCgmve/lnkdQRuvAZFcu7UiGJfDpBiJNr1Qyzp
+                            bH/fFKDIDSjRobYahs2BQ/SwbEwwA7e0gx0vS/ACwA==
+                        </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://login.athena-innovation.gr:8443/idp/profile/SAML1/SOAP/ArtifactResolution" index="1"/>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://login.athena-innovation.gr:8443/idp/profile/SAML2/SOAP/ArtifactResolution" index="2"/>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://login.athena-innovation.gr/idp/profile/Shibboleth/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://login.athena-innovation.gr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://login.athena-innovation.gr/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://login.athena-innovation.gr/idp/profile/SAML2/Redirect/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">athena-innovation.gr</shibmd:Scope>
+        <shibmd:Scope regexp="false">imis.athena-innovation.gr</shibmd:Scope>
+        <shibmd:Scope regexp="false">ilsp.athena-innovation.gr</shibmd:Scope>
+        <shibmd:Scope regexp="false">ceti.athena-innovation.gr</shibmd:Scope>
+        <shibmd:Scope regexp="false">isi.athena-innovation.gr</shibmd:Scope>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+                            MIIEmzCCA4OgAwIBAgIQTEvhgWFGJLdkM4ZD5wBQTDANBgkqhkiG9w0BAQUFADA2
+                            MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
+                            U1NMIENBMB4XDTE0MDQwOTAwMDAwMFoXDTE3MDQwODIzNTk1OVowSDEhMB8GA1UE
+                            CxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMSMwIQYDVQQDExpsb2dpbi5hdGhl
+                            bmEtaW5ub3ZhdGlvbi5ncjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
+                            AKaZpSw3Pb3kDBhJzRXUcnUqFZqJSoLjvSMHnxt0GDjBsvmQZwDflsuIu5nbXQ86
+                            DnK7ImdQszT42hal7RFODHrD9F1TC/7zoQRd5DoLnHdKOeHQRAa2WF+IwkrtiyQT
+                            gMhswaqal8wXr7sM+f0bDOYvU3Q2MVdAmE1TefrlPx90hHys+SbreRjj/HUCCsBI
+                            zgfnFcy56Mmr0m9Olbh56VhAs+qZhYpWDyGhuHaRaNEhuJCx0R7IZmFhNGZ/+2+s
+                            CdK1j/hq08c1L7wON/ZDdSBGbM5cuCoxPqIcLyyEgEh4ieo/c8e04ZfxwBFU9XZI
+                            ApX4niHSErzC/bNDMWR+f3kCAwEAAaOCAZEwggGNMB8GA1UdIwQYMBaAFAy9k2gM
+                            896ro0lrKzdXR+qQ47ntMB0GA1UdDgQWBBR0AyJjhZwmKiXLMvyVR6BYE68JYTAO
+                            BgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcD
+                            AQYIKwYBBQUHAwIwIgYDVR0gBBswGTANBgsrBgEEAbIxAQICHTAIBgZngQwBAgEw
+                            OgYDVR0fBDMwMTAvoC2gK4YpaHR0cDovL2NybC50Y3MudGVyZW5hLm9yZy9URVJF
+                            TkFTU0xDQS5jcmwwbQYIKwYBBQUHAQEEYTBfMDUGCCsGAQUFBzAChilodHRwOi8v
+                            Y3J0LnRjcy50ZXJlbmEub3JnL1RFUkVOQVNTTENBLmNydDAmBggrBgEFBQcwAYYa
+                            aHR0cDovL29jc3AudGNzLnRlcmVuYS5vcmcwPwYDVR0RBDgwNoIabG9naW4uYXRo
+                            ZW5hLWlubm92YXRpb24uZ3KCGGlkcC5hdGhlbmEtaW5ub3ZhdGlvbi5ncjANBgkq
+                            hkiG9w0BAQUFAAOCAQEAA1a3pfD6Iq6rMgZgmJeUEge9y3uLN5YGzJYjsNYvznhZ
+                            tnfuKighFcdQwH/Ph/ceZYtwcIMXstZFxXsFM878PiEehLSghYJorC0e9EDszIsc
+                            QgbzraX/vEjWRZ4ywQU1nsc1+3EYZyIfxmi35FiT8g0xSEVpSj4O1RoDO3xUz8NJ
+                            zDycQMlH2qMDDNdgYGqs/U3habyE1MeAHbz6zWhX6Sa1oeIy6gijvGUUadDULhX3
+                            iVNxJAYr4coKFN/Xj58Ay6JjomJCgmve/lnkdQRuvAZFcu7UiGJfDpBiJNr1Qyzp
+                            bH/fFKDIDSjRobYahs2BQ/SwbEwwA7e0gx0vS/ACwA==
+                        </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://login.athena-innovation.gr:8443/idp/profile/SAML1/SOAP/AttributeQuery"/>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://login.athena-innovation.gr:8443/idp/profile/SAML2/SOAP/AttributeQuery"/>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+    </md:AttributeAuthorityDescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Athena - Research and Innovation Center in Information, Communication and Knowledge Technologies</md:OrganizationName>
+      <md:OrganizationName xml:lang="el">Αθηνά - Ερευνητικό Κέντρο Καινοτομίας στις Τεχνολογίες της Πληροφορίας, των Επικοινωνιών και της Γνώσης</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Athena - Research and Innovation Center</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="el">Αθηνά - Ερευνητικό Κέντρο Καινοτομίας</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://www.athena-innovation.gr/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="el">http://www.athena-innovation.gr/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:Company>Research Center Athena - Institute for the Management of Information Systems</md:Company>
+      <md:EmailAddress>staff@imis.athena-innovation.gr</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="support">
+      <md:Company>Research Center Athena - Institute for the Management of Information Systems</md:Company>
+      <md:EmailAddress>staff@imis.athena-innovation.gr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

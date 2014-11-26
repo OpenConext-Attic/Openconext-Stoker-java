@@ -1,0 +1,59 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://idp.normandie-univ.fr/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2013-10-03T17:47:41Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">normandie-univ.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">Normandie Université</mdui:DisplayName>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDLzCCAhegAwIBAgIUfjtraZCnuk4ayIJfZ7jOPQ0/p80wDQYJKoZIhvcNAQEF
+BQAwHDEaMBgGA1UEAxMRaWRwcHAudW5yLXJ1bm4uZnIwHhcNMTMwMjIxMTQwODMw
+WhcNMzMwMjIxMTQwODMwWjAcMRowGAYDVQQDExFpZHBwcC51bnItcnVubi5mcjCC
+ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAN2HpbBKeZVmYAS0cQ+9Sv6R
+0EqFnIcPr1gk3F3TSlOwKfptwg/YcC5i0sgQYeNCsVKeOclPPIS60eerF5RdiUbs
+WLKsrkHWja7virusalMVQZJA6o+A5zu3+y7BuZRi8/cEnpUjz3S5N1TarB9lYSsD
+/dxPB1bboefJbLfEQFAQc+SOobBineniffnGahR03jAoaJni9DUERtF8fSo4+s4m
+5I6MeiBV6GNfkGHamCtEdNQ/u0HjQYYv8+BB9SbYpEY4FvYq2oelE5ET01vxogQr
+ZYkAcuOfZVWqNX2mH5aBZewDcaE0DTfMDd5WR9Wjvv7MRF3uTOIF1jLxks/5eIkC
+AwEAAaNpMGcwRgYDVR0RBD8wPYIRaWRwcHAudW5yLXJ1bm4uZnKGKGh0dHBzOi8v
+aWRwcHAudW5yLXJ1bm4uZnIvaWRwL3NoaWJib2xldGgwHQYDVR0OBBYEFP25fp7f
+nTtS3FfVhWpKfZa6X3BoMA0GCSqGSIb3DQEBBQUAA4IBAQBhqb/05bggrq/L5c1e
+LNnETROqzlxr47ECX/6vcOEov37EV2PCvIjMj1TOuEVSyy3LfOzYswy6d2fzG7Om
+NIXxg7m8CjccJ3F4H2Kp4pZDdqoI+O4oqGHLuqBAxF+B0qHlnGzL7OF6eIv3yCkR
+6uIuKyRiYpH1jAPbE1RHEzYHbB521IkdlCuoA3D41OmQzhVH48UEK+KUmqqTguEW
+yRCIhApqHi9Zy2lgW794ZMOtzPiNJ1Glj48RKGvexub/yT8ete5sk2hfDn06Z+ef
+GOF9hV4E1rvASF9pmubrSBzfuRDcwF7YEVvjUIdS0bdulO2oE+pmwowZkEEoTq9t
+7qXl
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.normandie-univ.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.normandie-univ.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.normandie-univ.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Normandie Université</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Normandie Université</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>Gallot Jérôme</md:SurName>
+      <md:EmailAddress>jerome.gallot@normandie-univ.fr</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>Houdelette Arnaud</md:SurName>
+      <md:EmailAddress>arnaud.houdelette@normandie-univ.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

@@ -1,0 +1,54 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://shibboleth.univ-savoie.fr/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2009-09-18T11:18:18Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">univ-savoie.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">Université de Savoie</mdui:DisplayName>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDUDCCAjigAwIBAgIVAOCN4YQhvq5Sv3vtQso0xMZI5ttnMA0GCSqGSIb3DQEB
+BQUAMCQxIjAgBgNVBAMTGXNoaWJib2xldGgudW5pdi1zYXZvaWUuZnIwHhcNMTIw
+NjA4MTMzMzIwWhcNMzIwNjA4MTMzMzIwWjAkMSIwIAYDVQQDExlzaGliYm9sZXRo
+LnVuaXYtc2F2b2llLmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA
+h/Lp4hxtoYybi7jGd4Kz/DRgpdKdfRE4OAoYzhejo67XVyQxHXgR02HodAroX54a
+WePk5fNovnQn/IhGFCVKrvLpoRVc3LB6CpGdkTRsK7ytoM27mHHIEjw8WkA72Zpp
+YcuxyVqHmXkrOM8o2BO6gB9LHscMcAyym7mJViKP3UX0qeur6qkSV57jFMm58lXx
+3QneHV4QC7LAu0up9dg8JBFR24fiUxWWMQW52dN2akzDZAnlpUuk6tXs8jtKOlCm
+ijyb4lC5d8BjytJrND/L80FtToFb+kN1/Lzo8/Z33dgQiYCt1UDI2ow4ffzRhK98
+zHOY3ut2l9pNlnF/qa0cbwIDAQABo3kwdzBWBgNVHREETzBNghlzaGliYm9sZXRo
+LnVuaXYtc2F2b2llLmZyhjBodHRwczovL3NoaWJib2xldGgudW5pdi1zYXZvaWUu
+ZnIvaWRwL3NoaWJib2xldGgwHQYDVR0OBBYEFDrclfWLO3Mi8ua3uUmtjqaKn6m+
+MA0GCSqGSIb3DQEBBQUAA4IBAQBztZW6PM4sJs6GEjKLjErybGaVbFCR8tTaTR9e
+q7xDCH4hgSYf9y0QhZnd2vjWqEwjNNr3CDz+pv1KYwBMq/suwisliWgW38vdF+Cs
+GYwkdO6IyIRgwJ9ZViYwzYsSSA4SYQ/dfLBG2iJyB/22gMjA7xW385fbWt3JbMFK
+W9owxoUf+fPjvX5Ty7b119CywDW9VRH4Z8S28n4nzg7uMhsFlS7O8tp2/37N8erp
++NlgMF1DgA8x2HmDU9K2W+cDxSf7STvLM+4I767LY4lCR6E6/w4SyobMV6/H5bWY
+fRpaYtLzzvazSNT3CXWP0kJT5+P6Ck0s8cpcMlV7frEEnL4u
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://shibboleth.univ-savoie.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://shibboleth.univ-savoie.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://shibboleth.univ-savoie.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Université de Savoie</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Université de Savoie</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:EmailAddress>admin@univ-savoie.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

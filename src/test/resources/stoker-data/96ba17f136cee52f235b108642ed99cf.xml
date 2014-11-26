@@ -1,0 +1,53 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://auth.univ-pau.fr/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2009-04-03T16:39:33Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">univ-pau.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">Université de Pau et des Pays de l'Adour</mdui:DisplayName>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDIjCCAgoCCQC3OrRBueQaizANBgkqhkiG9w0BAQUFADBTMQswCQYDVQQGEwJG
+UjEMMAoGA1UEBxMDUGF1MQ0wCwYDVQQKEwRVUFBBMQwwCgYDVQQLEwNDUkkxGTAX
+BgNVBAMTEGF1dGgudW5pdi1wYXUuZnIwHhcNMTMwMjE5MTQ0NTQ4WhcNMjMwMjE3
+MTQ0NTQ4WjBTMQswCQYDVQQGEwJGUjEMMAoGA1UEBxMDUGF1MQ0wCwYDVQQKEwRV
+UFBBMQwwCgYDVQQLEwNDUkkxGTAXBgNVBAMTEGF1dGgudW5pdi1wYXUuZnIwggEi
+MA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDWTM/siVuTExMzX3c7YRDl71NX
+0wRsW3qKUbSwM1BI1x4eP9aXECEujPvKYaaudMZziwsAeP+ZCh2RU2URqu9YEGb4
+9ZBFBnFj6GgPtEUZuiJt6vJVKL5l7SUm2NBuNAVRFhFTYkvBQGzS/zd79W2S/8zr
+gMx9tJ7bVi8ZNIheYRJl2FZFqGHhFKKgqSkeFW7qGjiJfy2jY62Ba8TMM7cIDIZ+
+IJ6SmPLFSTONxDZ0hEuinFpO9DCA+ga6nzDXeyMSsU1xdjgn8BD58OBKBZtOjI/T
+58BVHfWrcagqK06C98vQNk97+H8xF+49l0fGXwaSRl1Uf2fqh5RJyupPTtIdAgMB
+AAEwDQYJKoZIhvcNAQEFBQADggEBAI2cHyACJMLw0Xjx7zOYUjwLWakZxNnBiEjX
+MX2t8nr8bi/ZUoABWYP5cypHk9jIY/XngWOmEDwaa5GZiuNokWNfH8glmqFKVTgB
+PILrumLWtA0/CkgmnlaBhgU4pRbxSGZ6FENYIY/P5Grp5P0DzOP8znSDvucrpXf5
+DPGkthWJn/ooDngwBJqQBwxShiRmL1bwRMvdRG9N1bZKO8kYGK1txDkLLOB2n+dA
+mXWnKcQd4kpmpFEoppdN4qgpgZjla+xLPhswKXB81UJ+csh+c7/+oikJZuAS5vPb
+U2avjI5AfKIKKFQYpjP1qpGGUNecL4Bw28IOM+JyrH4T6CmGgq8=
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://auth.univ-pau.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://auth.univ-pau.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://auth.univ-pau.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Université de Pau et des Pays de l'Adour</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Université de Pau et des Pays de l'Adour</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:EmailAddress>fed-admin@univ-pau.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

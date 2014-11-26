@@ -1,0 +1,140 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://federation2.univ-brest.fr/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2009-06-26T15:36:06Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">univ-brest.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">Université de Bretagne Occidentale</mdui:DisplayName>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDTzCCAjegAwIBAgIUbLNw35nuqDWZoyy6h3P4LlkzPIAwDQYJKoZIhvcNAQEF
+BQAwJDEiMCAGA1UEAxMZZmVkZXJhdGlvbjIudW5pdi1icmVzdC5mcjAeFw0xMzAz
+MTIyMTE1MDVaFw0zMzAzMTIyMTE1MDVaMCQxIjAgBgNVBAMTGWZlZGVyYXRpb24y
+LnVuaXYtYnJlc3QuZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCe
+kMm2n9YaUsOi8wAXfTnfE7/jehc3Mnc5UP4iR2A9mTF6fZc025FTK/O5O3lEowUh
+FCT8cD2sYjRm+hX+G8qqKDM6zPkvq2IOB5T9WxOMi/M7oaXrhnDUieoc0Bf72R9W
+Q/yBigsLVTCCxFP/qf6lsqpgtaZgQXm9Js4AuHKvcrxoZgJvmwH7r8ON0uJrP2rJ
+fUEgNYsCYx/R3yogLteMYKS01YUSmL0Q6rVUyZRC3VmU8bWJENBNkKhdUfP4dW0w
+eXR6heUDqvoP3xJzpsH0o6bGXYa684T3rbWWt0Kpc1mQVsmTWsxwZMaSrMiPH9OW
+W0J8sZuQjLzex1XcuAjVAgMBAAGjeTB3MFYGA1UdEQRPME2CGWZlZGVyYXRpb24y
+LnVuaXYtYnJlc3QuZnKGMGh0dHBzOi8vZmVkZXJhdGlvbjIudW5pdi1icmVzdC5m
+ci9pZHAvc2hpYmJvbGV0aDAdBgNVHQ4EFgQUOemOV1cIWomxjeTIq5jtpWN1HEow
+DQYJKoZIhvcNAQEFBQADggEBAD/ZBa+xOskPywe5pYfAusdeil2y0z7Nhse5HcnJ
+Odjkk3n1qeYUE7agiStMzh2i2I4VY2WM5/vmhodmdIn4hYcDpWz8PSj+uLcVBcQO
+czrADiucBs72+PSEYiaOjrEQZOkLuyszWEWLkwID6n8e4nbJoK2NNf5ujIqm9C2s
+2RHyJVXxVHUczOR/0hnZtc2fyrRY5281u6Caenoxgoed88E4ua7FSnzjZnnBb0+T
+YvneR/KwwVHLp54Fg5QDQlLHbcDX3O+H59/Jmi2dRUgl7+SdCyug2APyBTWvNI6K
+V6haQaNennUWPfKNVUx9kRADhvU84XK1fH8ynIIBY7o3zIg=
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDTzCCAjegAwIBAgIUcGVhc58lBOziviLuEFA04RVPhjAwDQYJKoZIhvcNAQEF
+BQAwJDEiMCAGA1UEAxMZZmVkZXJhdGlvbjIudW5pdi1icmVzdC5mcjAeFw0wOTAy
+MDUxMTUxNDFaFw0yOTAyMDUxMTUxNDFaMCQxIjAgBgNVBAMTGWZlZGVyYXRpb24y
+LnVuaXYtYnJlc3QuZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCW
+RzPe3Vq2lpziOaEyUzKIEfjZXr23PfYVy/rwvT64y+Zk+eKNvgjWHMpSqbuX7nqx
+/2q5G/mox/pk1xaG0iZlsVu97qoUlSJ+POQCp8dAIJNKYpP/vFGUW1RTdE9vzACT
+U8NRNgZz1Df1e/SwwDUyFOfU58xEgsSUhgxc1skKCvJSpkTH8aDavnVvbKGv08Dr
+cjvKakemcoPeil5fV40/REHDGHHLtFgE/k8wHIvtRxw+UZ3qF/Pwss1Yvszph5aU
+b2f/nP9KL6cCIwomwrJYZcQ/llP+ksuwjum6m0V/H0wQYL+EkebIFh1M055RdpAP
+ilBFaCiL5geQo0RSBrqhAgMBAAGjeTB3MFYGA1UdEQRPME2CGWZlZGVyYXRpb24y
+LnVuaXYtYnJlc3QuZnKGMGh0dHBzOi8vZmVkZXJhdGlvbjIudW5pdi1icmVzdC5m
+ci9pZHAvc2hpYmJvbGV0aDAdBgNVHQ4EFgQUbnsYQCi+qnK7dB3sTYe7ArIKwlQw
+DQYJKoZIhvcNAQEFBQADggEBAIHQBrg0VjCQ1ApOWOBpOVDujQHG7/+oazQ/kJWA
+YxWZCLCzg5yW74ut1rxxwYlSN/c3ZYU5paZRUeok61SiCNs0ggzqEy6pYt4yJqCu
+gdmhUHokWFzxzReL34u+XCXzZjd/g52B3DDvHU8OLKzOqc7EXppiuFLh2hRjffjX
+XIZgjVVgHmtDcih29YmV+LcRlQrHpze8o976ovyXcM/katGaUei8OHAy8LJh7cvu
+9Xvuti2J+axxQXdzeUa4KIQ8Gi7EUEEwQ5PVGE/T0AP/fSWlCHuQWk+y9wESI1NL
+dZkkc0h92MuezOhzNpM1FfXU/7Zb8eYTeQZbOUQhqiLTogg=
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://federation2.univ-brest.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://federation2.univ-brest.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://federation2.univ-brest.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">univ-brest.fr</shibmd:Scope>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDTzCCAjegAwIBAgIUbLNw35nuqDWZoyy6h3P4LlkzPIAwDQYJKoZIhvcNAQEF
+BQAwJDEiMCAGA1UEAxMZZmVkZXJhdGlvbjIudW5pdi1icmVzdC5mcjAeFw0xMzAz
+MTIyMTE1MDVaFw0zMzAzMTIyMTE1MDVaMCQxIjAgBgNVBAMTGWZlZGVyYXRpb24y
+LnVuaXYtYnJlc3QuZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCe
+kMm2n9YaUsOi8wAXfTnfE7/jehc3Mnc5UP4iR2A9mTF6fZc025FTK/O5O3lEowUh
+FCT8cD2sYjRm+hX+G8qqKDM6zPkvq2IOB5T9WxOMi/M7oaXrhnDUieoc0Bf72R9W
+Q/yBigsLVTCCxFP/qf6lsqpgtaZgQXm9Js4AuHKvcrxoZgJvmwH7r8ON0uJrP2rJ
+fUEgNYsCYx/R3yogLteMYKS01YUSmL0Q6rVUyZRC3VmU8bWJENBNkKhdUfP4dW0w
+eXR6heUDqvoP3xJzpsH0o6bGXYa684T3rbWWt0Kpc1mQVsmTWsxwZMaSrMiPH9OW
+W0J8sZuQjLzex1XcuAjVAgMBAAGjeTB3MFYGA1UdEQRPME2CGWZlZGVyYXRpb24y
+LnVuaXYtYnJlc3QuZnKGMGh0dHBzOi8vZmVkZXJhdGlvbjIudW5pdi1icmVzdC5m
+ci9pZHAvc2hpYmJvbGV0aDAdBgNVHQ4EFgQUOemOV1cIWomxjeTIq5jtpWN1HEow
+DQYJKoZIhvcNAQEFBQADggEBAD/ZBa+xOskPywe5pYfAusdeil2y0z7Nhse5HcnJ
+Odjkk3n1qeYUE7agiStMzh2i2I4VY2WM5/vmhodmdIn4hYcDpWz8PSj+uLcVBcQO
+czrADiucBs72+PSEYiaOjrEQZOkLuyszWEWLkwID6n8e4nbJoK2NNf5ujIqm9C2s
+2RHyJVXxVHUczOR/0hnZtc2fyrRY5281u6Caenoxgoed88E4ua7FSnzjZnnBb0+T
+YvneR/KwwVHLp54Fg5QDQlLHbcDX3O+H59/Jmi2dRUgl7+SdCyug2APyBTWvNI6K
+V6haQaNennUWPfKNVUx9kRADhvU84XK1fH8ynIIBY7o3zIg=
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDTzCCAjegAwIBAgIUcGVhc58lBOziviLuEFA04RVPhjAwDQYJKoZIhvcNAQEF
+BQAwJDEiMCAGA1UEAxMZZmVkZXJhdGlvbjIudW5pdi1icmVzdC5mcjAeFw0wOTAy
+MDUxMTUxNDFaFw0yOTAyMDUxMTUxNDFaMCQxIjAgBgNVBAMTGWZlZGVyYXRpb24y
+LnVuaXYtYnJlc3QuZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCW
+RzPe3Vq2lpziOaEyUzKIEfjZXr23PfYVy/rwvT64y+Zk+eKNvgjWHMpSqbuX7nqx
+/2q5G/mox/pk1xaG0iZlsVu97qoUlSJ+POQCp8dAIJNKYpP/vFGUW1RTdE9vzACT
+U8NRNgZz1Df1e/SwwDUyFOfU58xEgsSUhgxc1skKCvJSpkTH8aDavnVvbKGv08Dr
+cjvKakemcoPeil5fV40/REHDGHHLtFgE/k8wHIvtRxw+UZ3qF/Pwss1Yvszph5aU
+b2f/nP9KL6cCIwomwrJYZcQ/llP+ksuwjum6m0V/H0wQYL+EkebIFh1M055RdpAP
+ilBFaCiL5geQo0RSBrqhAgMBAAGjeTB3MFYGA1UdEQRPME2CGWZlZGVyYXRpb24y
+LnVuaXYtYnJlc3QuZnKGMGh0dHBzOi8vZmVkZXJhdGlvbjIudW5pdi1icmVzdC5m
+ci9pZHAvc2hpYmJvbGV0aDAdBgNVHQ4EFgQUbnsYQCi+qnK7dB3sTYe7ArIKwlQw
+DQYJKoZIhvcNAQEFBQADggEBAIHQBrg0VjCQ1ApOWOBpOVDujQHG7/+oazQ/kJWA
+YxWZCLCzg5yW74ut1rxxwYlSN/c3ZYU5paZRUeok61SiCNs0ggzqEy6pYt4yJqCu
+gdmhUHokWFzxzReL34u+XCXzZjd/g52B3DDvHU8OLKzOqc7EXppiuFLh2hRjffjX
+XIZgjVVgHmtDcih29YmV+LcRlQrHpze8o976ovyXcM/katGaUei8OHAy8LJh7cvu
+9Xvuti2J+axxQXdzeUa4KIQ8Gi7EUEEwQ5PVGE/T0AP/fSWlCHuQWk+y9wESI1NL
+dZkkc0h92MuezOhzNpM1FfXU/7Zb8eYTeQZbOUQhqiLTogg=
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://federation2.univ-brest.fr//idp/profile/SAML1/SOAP/AttributeQuery"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    </md:AttributeAuthorityDescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Université de Bretagne Occidentale</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Université de Bretagne Occidentale</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:EmailAddress>federation@univ-brest.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

@@ -1,0 +1,128 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://idp.lib.cas.cz/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://www.eduid.cz/" registrationInstant="2010-09-15T13:21:26Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">http://www.eduid.cz/wiki/_media/en/eduid/policy/policy_eduid_en-1_1.pdf</mdrpi:RegistrationPolicy>
+        <mdrpi:RegistrationPolicy xml:lang="cs">http://www.eduid.cz/wiki/_media/eduid/policy/policy_eduid_cz-1_1-3.pdf</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+      <mdattr:EntityAttributes>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://eduid.cz/uri/idp-group/library</saml:AttributeValue>
+        </saml:Attribute>
+      </mdattr:EntityAttributes>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">lib.cas.cz</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="en">Academy of Sciences Library</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="cs">Knihovna AV ČR</mdui:DisplayName>
+          <mdui:Description xml:lang="en">Identity Provider for registered readers the Academy of Sciences Library</mdui:Description>
+          <mdui:Description xml:lang="cs">Identity Provider pro registrované čtenáře Knihovny AV ČR, v. v. i.</mdui:Description>
+          <mdui:InformationURL xml:lang="en">http://www.lib.cas.cz/en/</mdui:InformationURL>
+          <mdui:InformationURL xml:lang="cs">http://www.lib.cas.cz/</mdui:InformationURL>
+          <mdui:Logo height="160" width="160">https://www2.eduid.cz/idp-loga/kav.jpg</mdui:Logo>
+        </mdui:UIInfo>
+        <eduidmd:RepublishRequest xmlns:eduidmd="http://eduid.cz/schema/metadata/1.0">
+          <eduidmd:RepublishTarget>http://edugain.org/</eduidmd:RepublishTarget>
+        </eduidmd:RepublishRequest>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIEajCCA1KgAwIBAgIRANDI+WBJrLja3Za/spT310swDQYJKoZIhvcNAQEFBQAw
+NjELMAkGA1UEBhMCTkwxDzANBgNVBAoTBlRFUkVOQTEWMBQGA1UEAxMNVEVSRU5B
+IFNTTCBDQTAeFw0xMzExMDYwMDAwMDBaFw0xNjExMDUyMzU5NTlaMDwxITAfBgNV
+BAsTGERvbWFpbiBDb250cm9sIFZhbGlkYXRlZDEXMBUGA1UEAxMOaWRwLmxpYi5j
+YXMuY3owggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC2UiWcB63g2umI
+piuSQxJCqI1o14aO+Mw8olLBRIzlXILWvNLERmiGpoJLi/St+mtSBIGkfCglX2EB
+a3BSRu8y39Az8ZRjZIuG/VTnuAMKD9wJZceL8TVFnfX1zlj1SgLWvwnAyp2SFSh5
+y27JjbgBp8ClksUClyOUylzJZXybgaYHkDeCyZn7pAlxZyEeVFZwiC4hjoFXJ2gm
+OujJsC0X447F8Kvc6ke5c0UgoFILkXQoms658pgDBu2qHXuUh4A5lW6ODrylKibk
+ZChPVjRWBOSt7gehbgbAWV5zazX3+7uZ3afmAUer7FSQdreuOGIaWy/8U73KEe58
+LtwxyiO7AgMBAAGjggFrMIIBZzAfBgNVHSMEGDAWgBQMvZNoDPPeq6NJays3V0fq
+kOO57TAdBgNVHQ4EFgQUMY5I3fB9tUmaTSXXXh11pvaZPUswDgYDVR0PAQH/BAQD
+AgWgMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMC
+MCIGA1UdIAQbMBkwDQYLKwYBBAGyMQECAh0wCAYGZ4EMAQIBMDoGA1UdHwQzMDEw
+L6AtoCuGKWh0dHA6Ly9jcmwudGNzLnRlcmVuYS5vcmcvVEVSRU5BU1NMQ0EuY3Js
+MG0GCCsGAQUFBwEBBGEwXzA1BggrBgEFBQcwAoYpaHR0cDovL2NydC50Y3MudGVy
+ZW5hLm9yZy9URVJFTkFTU0xDQS5jcnQwJgYIKwYBBQUHMAGGGmh0dHA6Ly9vY3Nw
+LnRjcy50ZXJlbmEub3JnMBkGA1UdEQQSMBCCDmlkcC5saWIuY2FzLmN6MA0GCSqG
+SIb3DQEBBQUAA4IBAQA+Vri4AZx75skYb+IXgYCSE1STg5WzXh8F8yNlU4I2bNc0
+dB+0yKtsx2NUOi5nQfri4D+2m6t8rH8XfB2EPZw8cgYBwtCG9WiZbWPOoq9rJA0y
+L25v25ABvthARggMuToDzEwGmyiAxYC+eBp/FxgluZ4XHCDYz867+t/LkrlzgIH8
+CyKrEqjEQonEbsjXcmQR3x6RAi15ZsMtSfBaZsNsX8/GnetwKXnZ08MSkKkttzpr
+QKFpdZa8ynMvul92d7lW3wfdKHolmbmRHBzRGLvuVgAGNYTSB4CdiW9rfFtB6mkL
+MZs3uXaOQApwJdtTtWG5OieRs7RQptTPuExaKZdb
+		    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.lib.cas.cz:8443/idp/profile/SAML1/SOAP/ArtifactResolution" index="1"/>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.lib.cas.cz:8443/idp/profile/SAML2/SOAP/ArtifactResolution" index="2"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.lib.cas.cz/idp/profile/Shibboleth/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.lib.cas.cz/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://idp.lib.cas.cz/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.lib.cas.cz/idp/profile/SAML2/Redirect/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">lib.cas.cz</shibmd:Scope>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIEajCCA1KgAwIBAgIRANDI+WBJrLja3Za/spT310swDQYJKoZIhvcNAQEFBQAw
+NjELMAkGA1UEBhMCTkwxDzANBgNVBAoTBlRFUkVOQTEWMBQGA1UEAxMNVEVSRU5B
+IFNTTCBDQTAeFw0xMzExMDYwMDAwMDBaFw0xNjExMDUyMzU5NTlaMDwxITAfBgNV
+BAsTGERvbWFpbiBDb250cm9sIFZhbGlkYXRlZDEXMBUGA1UEAxMOaWRwLmxpYi5j
+YXMuY3owggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC2UiWcB63g2umI
+piuSQxJCqI1o14aO+Mw8olLBRIzlXILWvNLERmiGpoJLi/St+mtSBIGkfCglX2EB
+a3BSRu8y39Az8ZRjZIuG/VTnuAMKD9wJZceL8TVFnfX1zlj1SgLWvwnAyp2SFSh5
+y27JjbgBp8ClksUClyOUylzJZXybgaYHkDeCyZn7pAlxZyEeVFZwiC4hjoFXJ2gm
+OujJsC0X447F8Kvc6ke5c0UgoFILkXQoms658pgDBu2qHXuUh4A5lW6ODrylKibk
+ZChPVjRWBOSt7gehbgbAWV5zazX3+7uZ3afmAUer7FSQdreuOGIaWy/8U73KEe58
+LtwxyiO7AgMBAAGjggFrMIIBZzAfBgNVHSMEGDAWgBQMvZNoDPPeq6NJays3V0fq
+kOO57TAdBgNVHQ4EFgQUMY5I3fB9tUmaTSXXXh11pvaZPUswDgYDVR0PAQH/BAQD
+AgWgMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMC
+MCIGA1UdIAQbMBkwDQYLKwYBBAGyMQECAh0wCAYGZ4EMAQIBMDoGA1UdHwQzMDEw
+L6AtoCuGKWh0dHA6Ly9jcmwudGNzLnRlcmVuYS5vcmcvVEVSRU5BU1NMQ0EuY3Js
+MG0GCCsGAQUFBwEBBGEwXzA1BggrBgEFBQcwAoYpaHR0cDovL2NydC50Y3MudGVy
+ZW5hLm9yZy9URVJFTkFTU0xDQS5jcnQwJgYIKwYBBQUHMAGGGmh0dHA6Ly9vY3Nw
+LnRjcy50ZXJlbmEub3JnMBkGA1UdEQQSMBCCDmlkcC5saWIuY2FzLmN6MA0GCSqG
+SIb3DQEBBQUAA4IBAQA+Vri4AZx75skYb+IXgYCSE1STg5WzXh8F8yNlU4I2bNc0
+dB+0yKtsx2NUOi5nQfri4D+2m6t8rH8XfB2EPZw8cgYBwtCG9WiZbWPOoq9rJA0y
+L25v25ABvthARggMuToDzEwGmyiAxYC+eBp/FxgluZ4XHCDYz867+t/LkrlzgIH8
+CyKrEqjEQonEbsjXcmQR3x6RAi15ZsMtSfBaZsNsX8/GnetwKXnZ08MSkKkttzpr
+QKFpdZa8ynMvul92d7lW3wfdKHolmbmRHBzRGLvuVgAGNYTSB4CdiW9rfFtB6mkL
+MZs3uXaOQApwJdtTtWG5OieRs7RQptTPuExaKZdb
+		    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.lib.cas.cz:8443/idp/profile/SAML1/SOAP/AttributeQuery"/>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.lib.cas.cz:8443/idp/profile/SAML2/SOAP/AttributeQuery"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+    </md:AttributeAuthorityDescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Academy of Sciences Library</md:OrganizationName>
+      <md:OrganizationName xml:lang="cs">Knihovna AV ČR, v. v. i.</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Academy of Sciences Library</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="cs">Knihovna AV ČR, v. v. i.</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://www.lib.cas.cz/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="cs">http://www.lib.cas.cz/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Martin</md:GivenName>
+      <md:SurName>Duda</md:SurName>
+      <md:EmailAddress>duda@lib.cas.cz</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

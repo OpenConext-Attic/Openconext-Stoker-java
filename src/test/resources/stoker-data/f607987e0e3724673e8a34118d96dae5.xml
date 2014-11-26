@@ -1,0 +1,90 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://idp.telecom-paristech.fr/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2010-09-06T11:36:26Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">telecom-paristech.fr</shibmd:Scope>
+        <shibmd:Scope regexp="false">mines-telecom.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">Télécom ParisTech</mdui:DisplayName>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDSzCCAjOgAwIBAgIUOdyX2dtbQ38bYSsIYvHC27pbOf4wDQYJKoZIhvcNAQEF
+BQAwIzEhMB8GA1UEAxMYaWRwLnRlbGVjb20tcGFyaXN0ZWNoLmZyMB4XDTEwMDEy
+ODE3MDA0MVoXDTMwMDEyODE3MDA0MVowIzEhMB8GA1UEAxMYaWRwLnRlbGVjb20t
+cGFyaXN0ZWNoLmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiVSP
+MWN9NGSu79LJ5CEhhDAWfKTaaXQRrk26/3axPDtaDJVO9KhJ9oie3SZjlogVvmuE
+UHiONGqWhO4H1eKXfPKQIpq5e+JpR9Nxr8WMsjhXnToCcMZsSes6E44S3YXWVblv
+EmWKE3JFUYWO/cpVGZWjdnWierXziUPo8UcRI8BPBqoCgMQzDkVtJngqNPWim0/M
+S7LbyZmrYbDlwqM74CNFFRK+cknv221xr36sSTVAf9QdbL+zfvxCOxR4vmUxSTG5
+FKD89Js9ELMZoadpJYWEkdIJuvZ0R12dtlXn+rYKpqpOuP/X/kjtJM40WpchSWn7
+o2z0KwtUVkkugtUN/QIDAQABo3cwdTBUBgNVHREETTBLghhpZHAudGVsZWNvbS1w
+YXJpc3RlY2guZnKGL2h0dHBzOi8vaWRwLnRlbGVjb20tcGFyaXN0ZWNoLmZyL2lk
+cC9zaGliYm9sZXRoMB0GA1UdDgQWBBSzcODCJpeqAD7OPTNA7Uf6rJ/73DANBgkq
+hkiG9w0BAQUFAAOCAQEAPkpw2TRt9SQdGPslqaoEq+/Y+3qdoPAFEipXUxEsexVU
+RZiHCQm90wLhAV4+IGmk5XuVVKN5M+3kQVDq/iql3W9IoShV71mQhDEqNQJkztGK
+1XPWYZu2Qgzui0YessRn7F8/Ts3cRm6L43oAKWJvSR0Zad9L4Eeli/ymCZ+3VO86
+hx8qX90cpGu6iYMPfbu+Dl+dFRxJkNY5SGbNGHvv9ZH3FF7f5cN7R8BtWVgo0rTR
+DmlnOFBrEU8tBkHNwNS0wwdZkOuQjoafB1QOZ39oH7koG+DICom7vxCLTWxcAMj+
+4QsS7+VwhxDRJdfBoQvr3mrm+hxwrCDEGlU3qCaenA==
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.telecom-paristech.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.telecom-paristech.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.telecom-paristech.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">telecom-paristech.fr</shibmd:Scope>
+        <shibmd:Scope regexp="false">mines-telecom.fr</shibmd:Scope>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDSzCCAjOgAwIBAgIUOdyX2dtbQ38bYSsIYvHC27pbOf4wDQYJKoZIhvcNAQEF
+BQAwIzEhMB8GA1UEAxMYaWRwLnRlbGVjb20tcGFyaXN0ZWNoLmZyMB4XDTEwMDEy
+ODE3MDA0MVoXDTMwMDEyODE3MDA0MVowIzEhMB8GA1UEAxMYaWRwLnRlbGVjb20t
+cGFyaXN0ZWNoLmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiVSP
+MWN9NGSu79LJ5CEhhDAWfKTaaXQRrk26/3axPDtaDJVO9KhJ9oie3SZjlogVvmuE
+UHiONGqWhO4H1eKXfPKQIpq5e+JpR9Nxr8WMsjhXnToCcMZsSes6E44S3YXWVblv
+EmWKE3JFUYWO/cpVGZWjdnWierXziUPo8UcRI8BPBqoCgMQzDkVtJngqNPWim0/M
+S7LbyZmrYbDlwqM74CNFFRK+cknv221xr36sSTVAf9QdbL+zfvxCOxR4vmUxSTG5
+FKD89Js9ELMZoadpJYWEkdIJuvZ0R12dtlXn+rYKpqpOuP/X/kjtJM40WpchSWn7
+o2z0KwtUVkkugtUN/QIDAQABo3cwdTBUBgNVHREETTBLghhpZHAudGVsZWNvbS1w
+YXJpc3RlY2guZnKGL2h0dHBzOi8vaWRwLnRlbGVjb20tcGFyaXN0ZWNoLmZyL2lk
+cC9zaGliYm9sZXRoMB0GA1UdDgQWBBSzcODCJpeqAD7OPTNA7Uf6rJ/73DANBgkq
+hkiG9w0BAQUFAAOCAQEAPkpw2TRt9SQdGPslqaoEq+/Y+3qdoPAFEipXUxEsexVU
+RZiHCQm90wLhAV4+IGmk5XuVVKN5M+3kQVDq/iql3W9IoShV71mQhDEqNQJkztGK
+1XPWYZu2Qgzui0YessRn7F8/Ts3cRm6L43oAKWJvSR0Zad9L4Eeli/ymCZ+3VO86
+hx8qX90cpGu6iYMPfbu+Dl+dFRxJkNY5SGbNGHvv9ZH3FF7f5cN7R8BtWVgo0rTR
+DmlnOFBrEU8tBkHNwNS0wwdZkOuQjoafB1QOZ39oH7koG+DICom7vxCLTWxcAMj+
+4QsS7+VwhxDRJdfBoQvr3mrm+hxwrCDEGlU3qCaenA==
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.telecom-paristech.fr/idp/profile/SAML1/SOAP/AttributeQuery"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    </md:AttributeAuthorityDescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Télécom ParisTech</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Télécom ParisTech</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:EmailAddress>shibboleth@enst.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

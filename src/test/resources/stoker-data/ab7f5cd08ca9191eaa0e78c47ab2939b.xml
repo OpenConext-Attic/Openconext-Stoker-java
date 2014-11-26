@@ -1,0 +1,65 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://idp.crous-nancy-metz.fr/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2013-07-19T10:43:55Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">crous-nancy-metz.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">CROUS Nancy-Metz Lorraine</mdui:DisplayName>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIEfDCCA2SgAwIBAgIRAM5o4WD6O95qTaaU1z+tWw4wDQYJKoZIhvcNAQEFBQAw
+NjELMAkGA1UEBhMCTkwxDzANBgNVBAoTBlRFUkVOQTEWMBQGA1UEAxMNVEVSRU5B
+IFNTTCBDQTAeFw0xMzAzMjAwMDAwMDBaFw0xNjAzMTkyMzU5NTlaMEUxITAfBgNV
+BAsTGERvbWFpbiBDb250cm9sIFZhbGlkYXRlZDEgMB4GA1UEAxMXaWRwLmNyb3Vz
+LW5hbmN5LW1ldHouZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDL
+R1c4GL3zTfYfOGNLV5wcJIlhDDYdk1286uSM4zbrXIbWc5C+vxbuYKXCN3BJeOpX
+rxGjVMP0Kz/nJQVsWZGAIOxiejcXo4npAEgnPjnHVl0Y263vS5/QrT0H2ttIQsdt
+HBZy2Gq+AOIO4hUOL4MuIFK6uZBC12yqoARb34+IO2DJ77ElbvSHu03bJAoSGLXG
+ERdGIS3lEO0jJTdVbho3EmPR+ht+GysuVfSGrUNWlQf7ZMrche+fI5unjbUS4LRm
+XB92H+3kJA+51EWrgdslcIB43Yr7oxlZUng3V9WByIY5x7/U4GhXobyI/rkyqISo
+q0lzXR5ZQLBgRkil30FdAgMBAAGjggF0MIIBcDAfBgNVHSMEGDAWgBQMvZNoDPPe
+q6NJays3V0fqkOO57TAdBgNVHQ4EFgQUPqT/EG7DgKwpR5aj+ZaZTv2QOlYwDgYD
+VR0PAQH/BAQDAgWgMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEG
+CCsGAQUFBwMCMCIGA1UdIAQbMBkwDQYLKwYBBAGyMQECAh0wCAYGZ4EMAQIBMDoG
+A1UdHwQzMDEwL6AtoCuGKWh0dHA6Ly9jcmwudGNzLnRlcmVuYS5vcmcvVEVSRU5B
+U1NMQ0EuY3JsMG0GCCsGAQUFBwEBBGEwXzA1BggrBgEFBQcwAoYpaHR0cDovL2Ny
+dC50Y3MudGVyZW5hLm9yZy9URVJFTkFTU0xDQS5jcnQwJgYIKwYBBQUHMAGGGmh0
+dHA6Ly9vY3NwLnRjcy50ZXJlbmEub3JnMCIGA1UdEQQbMBmCF2lkcC5jcm91cy1u
+YW5jeS1tZXR6LmZyMA0GCSqGSIb3DQEBBQUAA4IBAQAZXnrox99qVZFbXueFnN9l
+uY6MZnN393FnefeNNGadvEWF0gXyI3rdd3AYKz36cob+ByC3RaMyopOMDJZ5yfX/
+yC1aBqSGPHAkmFazWwFevwegau0rDil+QOhZfrMPJT+YTfFSmvym++tbrgIWyOTF
+2tNGJyeSA8S6qxrnnVFqvxt4W6jNupG5axSfrdvX+WETG9Im9B3Ulc81t3cYzItC
+FtoTzmdJCiKJa0dAguaETSDW9qY/9o3pzAQTehDm0Y0OCimTQNK9LlpYirHCxuig
+GLwPKwHbqAiA7alxm3xMxv+C38F2cIaVxgdXen4sWHqqXDc91gJjIXb9hW8uSo6Z
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.crous-nancy-metz.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.crous-nancy-metz.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.crous-nancy-metz.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">CROUS Nancy-Metz Lorraine</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">CROUS Nancy-Metz Lorraine</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>Bernard ZANGA</md:SurName>
+      <md:EmailAddress>bernard.zanga@crous-nancy-metz.fr</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>Bruno LIENARD</md:SurName>
+      <md:EmailAddress>bruno.lienard@crous-nancy-metz.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

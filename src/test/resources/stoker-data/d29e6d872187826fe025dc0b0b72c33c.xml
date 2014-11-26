@@ -1,0 +1,143 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://idp.its.fz-juelich.de/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://www.aai.dfn.de" registrationInstant="2010-08-13T10:04:08Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://www.aai.dfn.de/en/join/</mdrpi:RegistrationPolicy>
+        <mdrpi:RegistrationPolicy xml:lang="de">https://www.aai.dfn.de/teilnahme/</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">fz-juelich.de</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">Forschungszentrum Jülich GmbH</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">Forschungszentrum Jülich GmbH</mdui:DisplayName>
+          <mdui:Description xml:lang="de">Identity-Provider der Forschungszentrum Jülich GmbH</mdui:Description>
+          <mdui:Description xml:lang="en">Identity-Provider der Forschungszentrum Jülich GmbH</mdui:Description>
+          <mdui:InformationURL xml:lang="de">http://www.fz-juelich.de</mdui:InformationURL>
+          <mdui:InformationURL xml:lang="en">http://www.fz-juelich.de</mdui:InformationURL>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:KeyName>idp.its.fz-juelich.de</ds:KeyName>
+          <ds:X509Data>
+            <ds:X509SubjectName>emailAddress=webmaster@fz-juelich.de,CN=idp.its.fz-juelich.de,O=Forschungszentrum Juelich GmbH,L=Juelich,ST=Nordrhein-Westfalen,C=DE</ds:X509SubjectName>
+            <ds:X509Certificate>MIIF5TCCBM2gAwIBAgIHGFschQrLkzANBgkqhkiG9w0BAQsFADCBgzELMAkGA1UE
+BhMCREUxJzAlBgNVBAoTHkZvcnNjaHVuZ3N6ZW50cnVtIEp1ZWxpY2ggR21iSDEq
+MCgGA1UEAxMhRlpKIENlcnRpZmljYXRpb24gQXV0aG9yaXR5IC0gRzAyMR8wHQYJ
+KoZIhvcNAQkBFhBjYUBmei1qdWVsaWNoLmRlMB4XDTE0MTAxMzA5NDQyMVoXDTE5
+MDcwOTIzNTkwMFowga4xCzAJBgNVBAYTAkRFMRwwGgYDVQQIExNOb3JkcmhlaW4t
+V2VzdGZhbGVuMRAwDgYDVQQHEwdKdWVsaWNoMScwJQYDVQQKEx5Gb3JzY2h1bmdz
+emVudHJ1bSBKdWVsaWNoIEdtYkgxHjAcBgNVBAMTFWlkcC5pdHMuZnotanVlbGlj
+aC5kZTEmMCQGCSqGSIb3DQEJARYXd2VibWFzdGVyQGZ6LWp1ZWxpY2guZGUwggEi
+MA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC5t9fIu0COttZeG5Xo6y/zqMfv
+vIwH5FNJaX0kelKKx49rxcxUxbt2gOEcrAemc+KMsTI4xmOSEzJIkInQUoXXkAkR
+qI7KaUZ/ZzZFLiIdVT7DdTx1cQkzj6Q/yDZA9vv/yHTocq66ujPJZngtemu7PWWo
+nqxd11bkMuCbFOsWUhZ8tTCwiDAOdpXCZH+mqLZCSNu2cr55zO+bHdHlQegOrPeF
+8/GDyMtPVk9ByPcW9msCAhiKsGGYU85Q650/IO6IIDZddCwr1zHNu+QeO/4U52Kg
+A2PWoxBsr2VTqfJPDQBupxm1nuxjL89UnRYqmI4WxcTCtP7abFlsGSEjMrkJAgMB
+AAGjggIvMIICKzBPBgNVHSAESDBGMBEGDysGAQQBga0hgiwBAQQDAjARBg8rBgEE
+AYGtIYIsAgEEAwEwDwYNKwYBBAGBrSGCLAEBBDANBgsrBgEEAYGtIYIsHjAJBgNV
+HRMEAjAAMAsGA1UdDwQEAwIE8DATBgNVHSUEDDAKBggrBgEFBQcDATAdBgNVHQ4E
+FgQUNlyp1PKKm1tbM/BJ6zblU9W9IocwHwYDVR0jBBgwFoAUIL1xiaXJKjMvEeAf
+5ZQmVg8RAiUwIAYDVR0RBBkwF4IVaWRwLml0cy5mei1qdWVsaWNoLmRlMHsGA1Ud
+HwR0MHIwN6A1oDOGMWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZnpqLWNhL3B1Yi9j
+cmwvZ19jYWNybC5jcmwwN6A1oDOGMWh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZnpq
+LWNhL3B1Yi9jcmwvZ19jYWNybC5jcmwwgcsGCCsGAQUFBwEBBIG+MIG7MDMGCCsG
+AQUFBzABhidodHRwOi8vb2NzcC5wY2EuZGZuLmRlL09DU1AtU2VydmVyL09DU1Aw
+QQYIKwYBBQUHMAKGNWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZnpqLWNhL3B1Yi9j
+YWNlcnQvZ19jYWNlcnQuY3J0MEEGCCsGAQUFBzAChjVodHRwOi8vY2RwMi5wY2Eu
+ZGZuLmRlL2Z6ai1jYS9wdWIvY2FjZXJ0L2dfY2FjZXJ0LmNydDANBgkqhkiG9w0B
+AQsFAAOCAQEAjQatrjj9D0sreu0Dj3GsN3NLBiBxwTxyRAApzAiZuGu1960JhtvL
+DsnGukFCe++xd6qco82ZIrwCWrbjK2SQoAexiQqH4TXWqQaPcIr8zDwj0WKv63mN
+LhzmBIePWsND5pIb6qS3a4RvRK9u9BViQllWSQYUlkBNoA8HtulmqNkgVCgt7De9
+ZhDGRZAiGhA+N67ts/h9zW6fT6SqHgCgcTSG6mVSMX2ZR9XTocoAXCfwEV7VkGl7
+L9aUnCact8MBZGMgWHR8NVFyhEofMTBIiXwGawBgzB+bU/xOcBp/3ulxy2K3mfEK
+WsS4+1PQhtDqnQMdqkPWm1zlseEGiXqFtw==
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.its.fz-juelich.de:8443/idp/profile/SAML1/SOAP/ArtifactResolution" index="1"/>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.its.fz-juelich.de:8443/idp/profile/SAML2/SOAP/ArtifactResolution" index="2"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.its.fz-juelich.de/idp/profile/Shibboleth/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.its.fz-juelich.de/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://idp.its.fz-juelich.de/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.its.fz-juelich.de/idp/profile/SAML2/Redirect/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">fz-juelich.de</shibmd:Scope>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:KeyName>idp.its.fz-juelich.de</ds:KeyName>
+          <ds:X509Data>
+            <ds:X509SubjectName>emailAddress=webmaster@fz-juelich.de,CN=idp.its.fz-juelich.de,O=Forschungszentrum Juelich GmbH,L=Juelich,ST=Nordrhein-Westfalen,C=DE</ds:X509SubjectName>
+            <ds:X509Certificate>MIIF5TCCBM2gAwIBAgIHGFschQrLkzANBgkqhkiG9w0BAQsFADCBgzELMAkGA1UE
+BhMCREUxJzAlBgNVBAoTHkZvcnNjaHVuZ3N6ZW50cnVtIEp1ZWxpY2ggR21iSDEq
+MCgGA1UEAxMhRlpKIENlcnRpZmljYXRpb24gQXV0aG9yaXR5IC0gRzAyMR8wHQYJ
+KoZIhvcNAQkBFhBjYUBmei1qdWVsaWNoLmRlMB4XDTE0MTAxMzA5NDQyMVoXDTE5
+MDcwOTIzNTkwMFowga4xCzAJBgNVBAYTAkRFMRwwGgYDVQQIExNOb3JkcmhlaW4t
+V2VzdGZhbGVuMRAwDgYDVQQHEwdKdWVsaWNoMScwJQYDVQQKEx5Gb3JzY2h1bmdz
+emVudHJ1bSBKdWVsaWNoIEdtYkgxHjAcBgNVBAMTFWlkcC5pdHMuZnotanVlbGlj
+aC5kZTEmMCQGCSqGSIb3DQEJARYXd2VibWFzdGVyQGZ6LWp1ZWxpY2guZGUwggEi
+MA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC5t9fIu0COttZeG5Xo6y/zqMfv
+vIwH5FNJaX0kelKKx49rxcxUxbt2gOEcrAemc+KMsTI4xmOSEzJIkInQUoXXkAkR
+qI7KaUZ/ZzZFLiIdVT7DdTx1cQkzj6Q/yDZA9vv/yHTocq66ujPJZngtemu7PWWo
+nqxd11bkMuCbFOsWUhZ8tTCwiDAOdpXCZH+mqLZCSNu2cr55zO+bHdHlQegOrPeF
+8/GDyMtPVk9ByPcW9msCAhiKsGGYU85Q650/IO6IIDZddCwr1zHNu+QeO/4U52Kg
+A2PWoxBsr2VTqfJPDQBupxm1nuxjL89UnRYqmI4WxcTCtP7abFlsGSEjMrkJAgMB
+AAGjggIvMIICKzBPBgNVHSAESDBGMBEGDysGAQQBga0hgiwBAQQDAjARBg8rBgEE
+AYGtIYIsAgEEAwEwDwYNKwYBBAGBrSGCLAEBBDANBgsrBgEEAYGtIYIsHjAJBgNV
+HRMEAjAAMAsGA1UdDwQEAwIE8DATBgNVHSUEDDAKBggrBgEFBQcDATAdBgNVHQ4E
+FgQUNlyp1PKKm1tbM/BJ6zblU9W9IocwHwYDVR0jBBgwFoAUIL1xiaXJKjMvEeAf
+5ZQmVg8RAiUwIAYDVR0RBBkwF4IVaWRwLml0cy5mei1qdWVsaWNoLmRlMHsGA1Ud
+HwR0MHIwN6A1oDOGMWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZnpqLWNhL3B1Yi9j
+cmwvZ19jYWNybC5jcmwwN6A1oDOGMWh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZnpq
+LWNhL3B1Yi9jcmwvZ19jYWNybC5jcmwwgcsGCCsGAQUFBwEBBIG+MIG7MDMGCCsG
+AQUFBzABhidodHRwOi8vb2NzcC5wY2EuZGZuLmRlL09DU1AtU2VydmVyL09DU1Aw
+QQYIKwYBBQUHMAKGNWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZnpqLWNhL3B1Yi9j
+YWNlcnQvZ19jYWNlcnQuY3J0MEEGCCsGAQUFBzAChjVodHRwOi8vY2RwMi5wY2Eu
+ZGZuLmRlL2Z6ai1jYS9wdWIvY2FjZXJ0L2dfY2FjZXJ0LmNydDANBgkqhkiG9w0B
+AQsFAAOCAQEAjQatrjj9D0sreu0Dj3GsN3NLBiBxwTxyRAApzAiZuGu1960JhtvL
+DsnGukFCe++xd6qco82ZIrwCWrbjK2SQoAexiQqH4TXWqQaPcIr8zDwj0WKv63mN
+LhzmBIePWsND5pIb6qS3a4RvRK9u9BViQllWSQYUlkBNoA8HtulmqNkgVCgt7De9
+ZhDGRZAiGhA+N67ts/h9zW6fT6SqHgCgcTSG6mVSMX2ZR9XTocoAXCfwEV7VkGl7
+L9aUnCact8MBZGMgWHR8NVFyhEofMTBIiXwGawBgzB+bU/xOcBp/3ulxy2K3mfEK
+WsS4+1PQhtDqnQMdqkPWm1zlseEGiXqFtw==
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.its.fz-juelich.de:8443/idp/profile/SAML1/SOAP/AttributeQuery"/>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.its.fz-juelich.de:8443/idp/profile/SAML2/SOAP/AttributeQuery"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    </md:AttributeAuthorityDescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="de">e234</md:OrganizationName>
+      <md:OrganizationName xml:lang="en">e234</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="de">Forschungszentrum Jülich GmbH</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="en">Forschungszentrum Jülich GmbH</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="de">http://www.fz-juelich.de</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">http://www.fz-juelich.de</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Jens</md:GivenName>
+      <md:SurName>Heidbüchel</md:SurName>
+      <md:EmailAddress>mailto:j.heidbuechel@fz-juelich.de</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="administrative">
+      <md:GivenName>Jens</md:GivenName>
+      <md:SurName>Heidbüchel</md:SurName>
+      <md:EmailAddress>mailto:j.heidbuechel@fz-juelich.de</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>ITS Service Desk</md:GivenName>
+      <md:SurName>Forschungszentrum Jülich GmbH</md:SurName>
+      <md:EmailAddress>mailto:it-services@fz-juelich.de</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

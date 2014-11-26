@@ -1,0 +1,58 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://ident-shib.sciencespo-rennes.fr/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2014-03-05T16:47:42Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">sciencespo-rennes.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="en">Sciences Po Rennes</mdui:DisplayName>
+          <mdui:Description xml:lang="en">Students and members of Institut d'Etudes Politiques de Rennes</mdui:Description>
+          <mdui:DisplayName xml:lang="fr">Sciences Po Rennes</mdui:DisplayName>
+          <mdui:Description xml:lang="fr">Étudiants et personnels de l'Institut d'Etudes Politiques de Rennes</mdui:Description>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDajCCAlKgAwIBAgIVAPG2ptbp0UjCApRyqdnLPcwZfygNMA0GCSqGSIb3DQEB
+BQUAMCoxKDAmBgNVBAMTH2lkZW50LXNoaWIuc2NpZW5jZXNwby1yZW5uZXMuZnIw
+HhcNMTQwMzA1MDk0NjQxWhcNMzQwMzA1MDk0NjQxWjAqMSgwJgYDVQQDEx9pZGVu
+dC1zaGliLnNjaWVuY2VzcG8tcmVubmVzLmZyMIIBIjANBgkqhkiG9w0BAQEFAAOC
+AQ8AMIIBCgKCAQEAis17JWHBLBfS8PU4tH7WX46gSxcMn1qrK5r7hZgLbyLb2BTJ
+H7S93L3rcoqls2YMcWuziTRweu9vcCalDICVazQlp8VfNQjdGFLqPxuGSbewoimk
+obngfwTck0cb1RHDKFLkzgUc4YJ3rgsriWqTsVlmN+JDz1f/mly0rO3iz7UiYAu5
+EeNwcHgdc+4e4/orknjwp7cWUyRAtwoSXMlQfttYn6ZtQTiZOmF4JSVseP+4Gawj
+VGrZIgysDT+W+9UMwdk8/oFue7wAZaYtoV3imWr0EyrIG7v1FD/58rAQZF8c1Myl
+xsQ3OUC1tAGBLcnoDgVD85N6F8e5v5zAYGepfwIDAQABo4GGMIGDMGIGA1UdEQRb
+MFmCH2lkZW50LXNoaWIuc2NpZW5jZXNwby1yZW5uZXMuZnKGNmh0dHBzOi8vaWRl
+bnQtc2hpYi5zY2llbmNlc3BvLXJlbm5lcy5mci9pZHAvc2hpYmJvbGV0aDAdBgNV
+HQ4EFgQUxhh6YW27b6x27CQ9vu4PZc21OpQwDQYJKoZIhvcNAQEFBQADggEBADXY
+cwvGXPbtQksBGQupD9DIRdE2mmlISK6M3Zuv5c3aPu6QLw1fqHUYGRC5MNas7763
+GLI1ALEfxo7X29gpfXmLfB6hQO2zplYucodgQjI1jQD+Ds5elCgeH8pPAR+g7CDp
+dMQSGjHjulT3jQeJBgcVbH9UaV7X/fOPQ+EWD0E8UOAabzgOtWXCeWHJb/fWYwGD
+iVAdnJJ16ocCmt0N88D7p2ZIJI7bIbPt/WGDoyCNZRfULibmnQLi4S8/gxgdIkTO
+BztWG5dSG8X4uDpNKGFlecW3B4zqa3fGpLv9cwhNaDXlJIw2vgusD7Vtg+HagP5y
+7Av7UaH4E10urfrI2n0=
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://ident-shib.sciencespo-rennes.fr/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://ident-shib.sciencespo-rennes.fr/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://ident-shib.sciencespo-rennes.fr/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Sciences Po Rennes</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Sciences Po Rennes</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:EmailAddress>fed-admin@listes.univ-rennes1.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

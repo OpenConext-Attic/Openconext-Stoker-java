@@ -1,0 +1,93 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="urn:mace:cru.fr:federation:univ-lille1.fr">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2009-03-20T17:10:27Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">univ-lille1.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">Université Lille 1,  Sciences et Technologies</mdui:DisplayName>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDMjCCAhqgAwIBAgIUFVDNOdEJbuHwIfdnn+cRYs6xfq0wDQYJKoZIhvcNAQEF
+BQAwHTEbMBkGA1UEAxMSaWRwLnVuaXYtbGlsbGUxLmZyMB4XDTA5MTAwODA5MTU1
+NVoXDTI5MTAwODA5MTU1NVowHTEbMBkGA1UEAxMSaWRwLnVuaXYtbGlsbGUxLmZy
+MIIBITANBgkqhkiG9w0BAQEFAAOCAQ4AMIIBCQKCAQBsQS+H4uWYOep74yJQf5us
+pkTg19tZEZUjtqkUCBjLt1UJdH1hDiaK+/4qWudwEjcMDvnxBUL8xbIfDDJOXvgh
+bPKYRJMLTEBmBnt5dslkT46+47cTSPDqK748qbBzrucnbhHuWJ7mG9KG9qTXmiLi
+09uwCjeGjnnFu11CKKt1XMJ40/B55W2j1SXiqDHMbdbjRjhfyniVt9t3yp/b4IGh
+79UivcebLkPTpAjLp7TMG4VAUXq6oVwfCLkjH8kzZsO0MJ+IAeX0iTIULONw3E0E
+VAErKUj9FPV9C3zAlPL0oZomDrd0tu7CdreGZRz2u6DCT38XLsVbMumSnvfYFjBF
+AgMBAAGjazBpMEgGA1UdEQRBMD+CEmlkcC51bml2LWxpbGxlMS5mcoYpaHR0cHM6
+Ly9pZHAudW5pdi1saWxsZTEuZnIvaWRwL3NoaWJib2xldGgwHQYDVR0OBBYEFGYf
+a9RpwCPFriHOSMKJSQ9gQ6vzMA0GCSqGSIb3DQEBBQUAA4IBAQBBv8iK1b67jhuz
+ZT6LHjtmHgovO7Qa74jggtKblhiqHAMRZWPCep1fleDjR27rYSvfRGzdSug7tfbl
+EsPyeVqcyKJvD9GXPJuPs/s4VdQmKbldGbBuuFQU6WVGoBlZOXq7wjRMqKd15TK/
+6wE/J0J2TieuAJpFKd6oiPV3YT4ggn6G2lilP1rv2cX6a2qK/j82M7wTLg1rLe5e
+ocgQGRZdfk7m+u4pfrJr1Dsjy7uOjA0QWzfG5jPSFLV8DiliDDPejz+eDyaz2kib
+w3l6kfiJYiwyVlk+O2O5ocwTmZtnVvTo3KAvIZwluV6OKXJXB7+mkU5dPtXHmooU
++HT9dOog
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.univ-lille1.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.univ-lille1.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.univ-lille1.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">univ-lille1.fr</shibmd:Scope>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDMjCCAhqgAwIBAgIUFVDNOdEJbuHwIfdnn+cRYs6xfq0wDQYJKoZIhvcNAQEF
+BQAwHTEbMBkGA1UEAxMSaWRwLnVuaXYtbGlsbGUxLmZyMB4XDTA5MTAwODA5MTU1
+NVoXDTI5MTAwODA5MTU1NVowHTEbMBkGA1UEAxMSaWRwLnVuaXYtbGlsbGUxLmZy
+MIIBITANBgkqhkiG9w0BAQEFAAOCAQ4AMIIBCQKCAQBsQS+H4uWYOep74yJQf5us
+pkTg19tZEZUjtqkUCBjLt1UJdH1hDiaK+/4qWudwEjcMDvnxBUL8xbIfDDJOXvgh
+bPKYRJMLTEBmBnt5dslkT46+47cTSPDqK748qbBzrucnbhHuWJ7mG9KG9qTXmiLi
+09uwCjeGjnnFu11CKKt1XMJ40/B55W2j1SXiqDHMbdbjRjhfyniVt9t3yp/b4IGh
+79UivcebLkPTpAjLp7TMG4VAUXq6oVwfCLkjH8kzZsO0MJ+IAeX0iTIULONw3E0E
+VAErKUj9FPV9C3zAlPL0oZomDrd0tu7CdreGZRz2u6DCT38XLsVbMumSnvfYFjBF
+AgMBAAGjazBpMEgGA1UdEQRBMD+CEmlkcC51bml2LWxpbGxlMS5mcoYpaHR0cHM6
+Ly9pZHAudW5pdi1saWxsZTEuZnIvaWRwL3NoaWJib2xldGgwHQYDVR0OBBYEFGYf
+a9RpwCPFriHOSMKJSQ9gQ6vzMA0GCSqGSIb3DQEBBQUAA4IBAQBBv8iK1b67jhuz
+ZT6LHjtmHgovO7Qa74jggtKblhiqHAMRZWPCep1fleDjR27rYSvfRGzdSug7tfbl
+EsPyeVqcyKJvD9GXPJuPs/s4VdQmKbldGbBuuFQU6WVGoBlZOXq7wjRMqKd15TK/
+6wE/J0J2TieuAJpFKd6oiPV3YT4ggn6G2lilP1rv2cX6a2qK/j82M7wTLg1rLe5e
+ocgQGRZdfk7m+u4pfrJr1Dsjy7uOjA0QWzfG5jPSFLV8DiliDDPejz+eDyaz2kib
+w3l6kfiJYiwyVlk+O2O5ocwTmZtnVvTo3KAvIZwluV6OKXJXB7+mkU5dPtXHmooU
++HT9dOog
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.univ-lille1.fr:8443/idp/profile/SAML1/SOAP/AttributeQuery"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    </md:AttributeAuthorityDescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Université Lille 1,  Sciences et Technologies</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Université Lille 1,  Sciences et Technologies</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>claude vieville</md:SurName>
+      <md:EmailAddress>claude.vieville@univ-lille1.fr</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>brigitte wallaert</md:SurName>
+      <md:EmailAddress>brigitte.wallaert@univ-lille1.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

@@ -1,0 +1,149 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://shibboleth-idp.gwdg.de/gwdg/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://www.aai.dfn.de" registrationInstant="2014-01-16T13:09:19Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://www.aai.dfn.de/en/join/</mdrpi:RegistrationPolicy>
+        <mdrpi:RegistrationPolicy xml:lang="de">https://www.aai.dfn.de/teilnahme/</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">gwdg.de</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="de">Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen</mdui:DisplayName>
+          <mdui:Description xml:lang="de">Wir bieten als Hochschulrechenzentrum für die Georg-August-Universität Göttingen und als Rechen- und IT-Kompetenzzentrum für die Max-Planck-Gesellschaft ein breites Spektrum an Informations- und Kommunikationsleistungen für die Wissenschaft.</mdui:Description>
+          <mdui:Description xml:lang="en">We offer as a university computer center of the Georg-August-University of Göttingen and as computing and IT competence center for the Max Planck Society, a wide range of information and communication services to science.</mdui:Description>
+          <mdui:Logo height="16" width="16">https://www.gwdg.de/fileadmin/images/favicon.ico</mdui:Logo>
+          <mdui:Logo height="72" width="240">https://www.gwdg.de/fileadmin/images/neu/logo.png</mdui:Logo>
+          <mdui:InformationURL xml:lang="de">http://gwdg.de</mdui:InformationURL>
+          <mdui:InformationURL xml:lang="en">http://gwdg.de</mdui:InformationURL>
+          <mdui:PrivacyStatementURL xml:lang="de">http://www.gwdg.de/index.php?id=impressum</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="en">http://www.gwdg.de/index.php?id=impressum</mdui:PrivacyStatementURL>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:KeyName>shibboleth-idp.gwdg.de</ds:KeyName>
+          <ds:X509Data>
+            <ds:X509SubjectName>CN=shibboleth-idp.gwdg.de,O=Gesellschaft fuer wissenschaftliche Datenverarbeitung,L=GOETTINGEN,ST=NIEDERSACHSEN,C=DE</ds:X509SubjectName>
+            <ds:X509Certificate>MIIGCTCCBPGgAwIBAgIHF4B1oKcqfjANBgkqhkiG9w0BAQUFADCBuzELMAkGA1UE
+BhMCREUxFjAUBgNVBAgTDU5JRURFUlNBQ0hTRU4xEzARBgNVBAcTCkdPRVRUSU5H
+RU4xPjA8BgNVBAoTNUdlc2VsbHNjaGFmdCBmdWVyIHdpc3NlbnNjaGFmdGxpY2hl
+IERhdGVudmVyYXJiZWl0dW5nMQ0wCwYDVQQLEwRHV0RHMRAwDgYDVQQDEwdHV0RH
+IENBMR4wHAYJKoZIhvcNAQkBFg9nd2RnLWNhQGd3ZGcuZGUwHhcNMTQwNDMwMTMx
+ODA4WhcNMTkwMjI3MDAwMDAwWjCBmzELMAkGA1UEBhMCREUxFjAUBgNVBAgTDU5J
+RURFUlNBQ0hTRU4xEzARBgNVBAcTCkdPRVRUSU5HRU4xPjA8BgNVBAoTNUdlc2Vs
+bHNjaGFmdCBmdWVyIHdpc3NlbnNjaGFmdGxpY2hlIERhdGVudmVyYXJiZWl0dW5n
+MR8wHQYDVQQDExZzaGliYm9sZXRoLWlkcC5nd2RnLmRlMIIBIjANBgkqhkiG9w0B
+AQEFAAOCAQ8AMIIBCgKCAQEA5YEqdBFXQNiRNJSWaVBGzqEh5Tu8c0UU/9OzzDt2
+CnYc4GVPoXcecHnUlvDZWlt9pABpVQ6cey1sjM45RO4XDSjNaWUjz1cv9qsIYj8w
+i3sZfAnbc3657E2Sloh6oCNpaS5m6mHimdQc+s7qNYF+Z8jzu60y9KOPVoX1Cggz
+Usr6cVjpBjxfx8Hd9ZmZWdXPiHApyEU963KSpf+Vkwgh8P0S/2DftW8huQbCk5Wj
+nhU5C/oUGuZBHfKgV6C3P9RA+oy4J0pnJUvzvnwRxT6CH5dk5C7my6clf3M8d9AR
+FhPwt2RxaGHGL6R5JOkHfYtvAqVcs7/mjAPsFgADSW2OJwIDAQABo4ICLjCCAiow
+OQYDVR0gBDIwMDARBg8rBgEEAYGtIYIsAQEEAwEwEQYPKwYBBAGBrSGCLAIBBAMB
+MAgGBmeBDAECAjAJBgNVHRMEAjAAMAsGA1UdDwQEAwIF4DAdBgNVHSUEFjAUBggr
+BgEFBQcDAgYIKwYBBQUHAwEwHQYDVR0OBBYEFC8ZqXogv+bpEvXmgZrx6XAEeVUG
+MB8GA1UdIwQYMBaAFKbk/5j95Ukyflx18haiTYx0Nd4iMC8GA1UdEQQoMCaCFnNo
+aWJib2xldGgtaWRwLmd3ZGcuZGWBDHNoaWJAZ3dkZy5kZTB5BgNVHR8EcjBwMDag
+NKAyhjBodHRwOi8vY2RwMS5wY2EuZGZuLmRlL2d3ZGctY2EvcHViL2NybC9jYWNy
+bC5jcmwwNqA0oDKGMGh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZ3dkZy1jYS9wdWIv
+Y3JsL2NhY3JsLmNybDCByQYIKwYBBQUHAQEEgbwwgbkwMwYIKwYBBQUHMAGGJ2h0
+dHA6Ly9vY3NwLnBjYS5kZm4uZGUvT0NTUC1TZXJ2ZXIvT0NTUDBABggrBgEFBQcw
+AoY0aHR0cDovL2NkcDEucGNhLmRmbi5kZS9nd2RnLWNhL3B1Yi9jYWNlcnQvY2Fj
+ZXJ0LmNydDBABggrBgEFBQcwAoY0aHR0cDovL2NkcDIucGNhLmRmbi5kZS9nd2Rn
+LWNhL3B1Yi9jYWNlcnQvY2FjZXJ0LmNydDANBgkqhkiG9w0BAQUFAAOCAQEAKK8w
+/Ytq3kzSvek5YglcbnEsa1JFfwxi6z/6l0p+xYB4nAVDWT15f0xLAh/9TRbEagIb
+eAuNmJiL70ONTY2WXph9d2jUwDsRSR9vg1PDbfux8TvEkgZSh2dVewNsUrHw/9gg
+8uGbaIiaKNaVFi58Z4Jx4gCWpJ0p1wdAb6/JurbR0DhtUPWwLFXpEewfTXD9sZEW
+YGsmOqBm6mBudDrpWoxmEougvsI2JgsTV3XaZdVfCi3vuhgUA3IbPt9nVoDbG2E1
+2C0rxeNaWUqzXpReVgkf3qmqvf9Pl+BwQM5Ua5RHHyI4zoP1KaPExje9CuigkVnz
+0k8KqBoqgDYGCrwSLQ==
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://shibboleth-idp.gwdg.de:8443/gwdg/profile/SAML1/SOAP/ArtifactResolution" index="1"/>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://shibboleth-idp.gwdg.de:8443/gwdg/profile/SAML2/SOAP/ArtifactResolution" index="2"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://shibboleth-idp.gwdg.de/gwdg/profile/SAML2/Redirect/SLO"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://shibboleth-idp.gwdg.de/gwdg/profile/SAML2/POST/SLO"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://shibboleth-idp.gwdg.de:8443/gwdg/profile/SAML2/SOAP/SLO"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://shibboleth-idp.gwdg.de/gwdg/profile/Shibboleth/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://shibboleth-idp.gwdg.de/gwdg/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://shibboleth-idp.gwdg.de/gwdg/profile/SAML2/POST-SimpleSign/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://shibboleth-idp.gwdg.de/gwdg/profile/SAML2/Redirect/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">gwdg.de</shibmd:Scope>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:KeyName>shibboleth-idp.gwdg.de</ds:KeyName>
+          <ds:X509Data>
+            <ds:X509SubjectName>CN=shibboleth-idp.gwdg.de,O=Gesellschaft fuer wissenschaftliche Datenverarbeitung,L=GOETTINGEN,ST=NIEDERSACHSEN,C=DE</ds:X509SubjectName>
+            <ds:X509Certificate>MIIGCTCCBPGgAwIBAgIHF4B1oKcqfjANBgkqhkiG9w0BAQUFADCBuzELMAkGA1UE
+BhMCREUxFjAUBgNVBAgTDU5JRURFUlNBQ0hTRU4xEzARBgNVBAcTCkdPRVRUSU5H
+RU4xPjA8BgNVBAoTNUdlc2VsbHNjaGFmdCBmdWVyIHdpc3NlbnNjaGFmdGxpY2hl
+IERhdGVudmVyYXJiZWl0dW5nMQ0wCwYDVQQLEwRHV0RHMRAwDgYDVQQDEwdHV0RH
+IENBMR4wHAYJKoZIhvcNAQkBFg9nd2RnLWNhQGd3ZGcuZGUwHhcNMTQwNDMwMTMx
+ODA4WhcNMTkwMjI3MDAwMDAwWjCBmzELMAkGA1UEBhMCREUxFjAUBgNVBAgTDU5J
+RURFUlNBQ0hTRU4xEzARBgNVBAcTCkdPRVRUSU5HRU4xPjA8BgNVBAoTNUdlc2Vs
+bHNjaGFmdCBmdWVyIHdpc3NlbnNjaGFmdGxpY2hlIERhdGVudmVyYXJiZWl0dW5n
+MR8wHQYDVQQDExZzaGliYm9sZXRoLWlkcC5nd2RnLmRlMIIBIjANBgkqhkiG9w0B
+AQEFAAOCAQ8AMIIBCgKCAQEA5YEqdBFXQNiRNJSWaVBGzqEh5Tu8c0UU/9OzzDt2
+CnYc4GVPoXcecHnUlvDZWlt9pABpVQ6cey1sjM45RO4XDSjNaWUjz1cv9qsIYj8w
+i3sZfAnbc3657E2Sloh6oCNpaS5m6mHimdQc+s7qNYF+Z8jzu60y9KOPVoX1Cggz
+Usr6cVjpBjxfx8Hd9ZmZWdXPiHApyEU963KSpf+Vkwgh8P0S/2DftW8huQbCk5Wj
+nhU5C/oUGuZBHfKgV6C3P9RA+oy4J0pnJUvzvnwRxT6CH5dk5C7my6clf3M8d9AR
+FhPwt2RxaGHGL6R5JOkHfYtvAqVcs7/mjAPsFgADSW2OJwIDAQABo4ICLjCCAiow
+OQYDVR0gBDIwMDARBg8rBgEEAYGtIYIsAQEEAwEwEQYPKwYBBAGBrSGCLAIBBAMB
+MAgGBmeBDAECAjAJBgNVHRMEAjAAMAsGA1UdDwQEAwIF4DAdBgNVHSUEFjAUBggr
+BgEFBQcDAgYIKwYBBQUHAwEwHQYDVR0OBBYEFC8ZqXogv+bpEvXmgZrx6XAEeVUG
+MB8GA1UdIwQYMBaAFKbk/5j95Ukyflx18haiTYx0Nd4iMC8GA1UdEQQoMCaCFnNo
+aWJib2xldGgtaWRwLmd3ZGcuZGWBDHNoaWJAZ3dkZy5kZTB5BgNVHR8EcjBwMDag
+NKAyhjBodHRwOi8vY2RwMS5wY2EuZGZuLmRlL2d3ZGctY2EvcHViL2NybC9jYWNy
+bC5jcmwwNqA0oDKGMGh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZ3dkZy1jYS9wdWIv
+Y3JsL2NhY3JsLmNybDCByQYIKwYBBQUHAQEEgbwwgbkwMwYIKwYBBQUHMAGGJ2h0
+dHA6Ly9vY3NwLnBjYS5kZm4uZGUvT0NTUC1TZXJ2ZXIvT0NTUDBABggrBgEFBQcw
+AoY0aHR0cDovL2NkcDEucGNhLmRmbi5kZS9nd2RnLWNhL3B1Yi9jYWNlcnQvY2Fj
+ZXJ0LmNydDBABggrBgEFBQcwAoY0aHR0cDovL2NkcDIucGNhLmRmbi5kZS9nd2Rn
+LWNhL3B1Yi9jYWNlcnQvY2FjZXJ0LmNydDANBgkqhkiG9w0BAQUFAAOCAQEAKK8w
+/Ytq3kzSvek5YglcbnEsa1JFfwxi6z/6l0p+xYB4nAVDWT15f0xLAh/9TRbEagIb
+eAuNmJiL70ONTY2WXph9d2jUwDsRSR9vg1PDbfux8TvEkgZSh2dVewNsUrHw/9gg
+8uGbaIiaKNaVFi58Z4Jx4gCWpJ0p1wdAb6/JurbR0DhtUPWwLFXpEewfTXD9sZEW
+YGsmOqBm6mBudDrpWoxmEougvsI2JgsTV3XaZdVfCi3vuhgUA3IbPt9nVoDbG2E1
+2C0rxeNaWUqzXpReVgkf3qmqvf9Pl+BwQM5Ua5RHHyI4zoP1KaPExje9CuigkVnz
+0k8KqBoqgDYGCrwSLQ==
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://shibboleth-idp.gwdg.de:8443/gwdg/profile/SAML1/SOAP/AttributeQuery"/>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://shibboleth-idp.gwdg.de:8443/gwdg/profile/SAML2/SOAP/AttributeQuery"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+    </md:AttributeAuthorityDescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="de">e112</md:OrganizationName>
+      <md:OrganizationName xml:lang="en">e112</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="de">Gesellschaft für wissenschaftliche Datenverarbeitung mbH</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="en">Gesellschaft für wissenschaftliche Datenverarbeitung mbH</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="de">http://www.gwdg.de</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">http://www.gwdg.de</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Daniel</md:GivenName>
+      <md:SurName>Adler</md:SurName>
+      <md:EmailAddress>mailto:daniel.adler@gwdg.de</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>Christof</md:GivenName>
+      <md:SurName>Pohl</md:SurName>
+      <md:EmailAddress>mailto:christof.pohl@gwdg.de</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

@@ -1,0 +1,59 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://shibboleth.cndp.fr/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2013-10-31T15:08:09Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">cndp.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">CNDP - Centre National de Documentation Pédagogique</mdui:DisplayName>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDNDCCAhygAwIBAgIVAPGwxNIFT88TgM2ndmBAqxnLIgA6MA0GCSqGSIb3DQEB
+BQUAMB0xGzAZBgNVBAMTEnNoaWJib2xldGguY25kcC5mcjAeFw0xMzEwMzEwODE0
+MTJaFw0zMzEwMzEwODE0MTJaMB0xGzAZBgNVBAMTEnNoaWJib2xldGguY25kcC5m
+cjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANcmMpskeoFHzssZUII5
+4pz7M6i7OXbgHJZR9pMGoAz5vOOt9cjmPsh+ZFkW2tjGAk4dEMzUrdk3lqhMjwdr
+06Nw2FBqUYKG/OP//lPOaYYyF7VaUei4Da7KL+NMsUW4S8gACmwl7NwqCTnhaXQ9
+D8J6ChWjaxQmvUDYVG8ktDsqwbrzUqq+yAbCd6i5EOZOJ169Xg/Y0IUiPMREU7ho
+yQfQHnw7bmkMSIOjoOkEFZK7zZzr0+ce3ZUTjCimv9ys7NCLDSJWVvifwHt2lRFG
+iRaIPyn6Oh308mmoizVTCalVRoYV0w+gVu9d0/WOt3Zj+DaCKIB+eOL0YTylZNTr
+4g0CAwEAAaNrMGkwSAYDVR0RBEEwP4ISc2hpYmJvbGV0aC5jbmRwLmZyhilodHRw
+czovL3NoaWJib2xldGguY25kcC5mci9pZHAvc2hpYmJvbGV0aDAdBgNVHQ4EFgQU
+B/TrtIJ0tEcByCbKeQMho+xJCQMwDQYJKoZIhvcNAQEFBQADggEBAF+sG6yrz/ao
+30uEN8NpTHFmuiFjFeInMboFMb987yjaA1RonVH3+VquF92H1e8ZDBZK/VRdP7xi
+V42K4OajjP8NYPl0+JwHEvJaGNEhXOm1NNhCw6o/H+VYcqtriqunZc5Ob4p6vsXA
+8IC4FI56+0/UFMFrCPpXh5f/3JrjYAzLACLZAOsD4G3eBWdtnfn5oEz1Prpq6U6a
+Rk5+4EQFr07QmhKWuVCb73np6gGnQfI5qs2cUeDEwKSnw9yJfpiuwlGPakiFrfpI
+AUNVNoq0d2wvNKP1kf4vaGmG1/S/s5cBKDp7z5amg6TauBbDwnoKGyoIY9602jMK
+k93krCoGtSQ=
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://shibboleth.cndp.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://shibboleth.cndp.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://shibboleth.cndp.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">CNDP - Centre National de Documentation Pédagogique</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">CNDP - Centre National de Documentation Pédagogique</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>Alexandre LUCAS</md:SurName>
+      <md:EmailAddress>alexandre.lucas@cndp.fr</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>Simon BIGOT</md:SurName>
+      <md:EmailAddress>simon.bigot@cndp.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

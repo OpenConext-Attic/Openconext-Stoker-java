@@ -1,0 +1,89 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="urn:mace:cru.fr:federation:univ-paris1.fr">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2009-06-30T20:41:43Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">univ-paris1.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">Université Paris 1 Panthéon-Sorbonne</mdui:DisplayName>
+          <mdui:Description xml:lang="fr">Personnels, enseignants, chercheurs, étudiants, hébergés et invités de l'université Paris 1 Panthéon-Sorbonne</mdui:Description>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDMzCCAhugAwIBAgIUN4OD7GwJor5x7X/cdaXgiF8OElUwDQYJKoZIhvcNAQEF
+BQAwHTEbMBkGA1UEAxMSaWRwLnVuaXYtcGFyaXMxLmZyMB4XDTA5MDYzMDE4MjIx
+OFoXDTI5MDYzMDE4MjIxOFowHTEbMBkGA1UEAxMSaWRwLnVuaXYtcGFyaXMxLmZy
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk7DsGWWjsYm1Rn/nFfrg
+Ff25b3uadZLPdzBgYurzqIDAZ9Sc39MwxchyFmblmFSqb8vLHM36XKESMWUgmCO7
+5GOFv7AsxhbtcXgLVohVKS47ZkTXnSbjg3eUww7s51lirQViAuA8iqRAZvnvPMFa
+JAbiXe54SIuDI7SQlTfNhpWGUaooDMfmHrgMOkB8MFk0nFDfN1oefPGIUtQ4LKXl
+0Ua1paLUFF1Du76lakyiZ+ssZ3EkIy8pN1OssR/3rHmYDfqodgUeexSikB8IsdHp
+rNU+6NKfVzGQiZtjTT1cqMRBU7ElHtGyliuelZTGN2rWV9pxxDMBCVrCqvBM9yym
+PwIDAQABo2swaTBIBgNVHREEQTA/ghJpZHAudW5pdi1wYXJpczEuZnKGKWh0dHBz
+Oi8vaWRwLnVuaXYtcGFyaXMxLmZyL2lkcC9zaGliYm9sZXRoMB0GA1UdDgQWBBRs
+oNzyg0MZ2ce2hy2748tOvP/+LTANBgkqhkiG9w0BAQUFAAOCAQEAkyfipm/mh/Kt
+jiFkg7p4oQPJkqoBAMEhv1hNqf+8bWBcbhBwrkJUG/MfR3KWfHgnHexPU6Ri35aF
+NOFN5mNQvM8DSTdKvRhZV5cM9+s5x1WGSCnsBrRE/QcV0nhm5Kozlbkki93nPBOF
+YcX73QCPD/T1ewnjA8Pyh8rPoKrT9nOLAdxyENRCucOaXWMM8SAS3wcEuBPIrWX3
+0MjL6pTwDGdoRCZ36w+hP802gvZMKu6GlRudUVPdKa0DYqDcTicA5drs0TnuQnBU
+Q0868rBTfR4z8pLRKvaADmYGslrdNQaXIK9yzi9qzGFQrBUEKJboWW/6hUR7NXuM
+yutCRUw+eg==
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.univ-paris1.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.univ-paris1.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.univ-paris1.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">univ-paris1.fr</shibmd:Scope>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDMzCCAhugAwIBAgIUN4OD7GwJor5x7X/cdaXgiF8OElUwDQYJKoZIhvcNAQEF
+BQAwHTEbMBkGA1UEAxMSaWRwLnVuaXYtcGFyaXMxLmZyMB4XDTA5MDYzMDE4MjIx
+OFoXDTI5MDYzMDE4MjIxOFowHTEbMBkGA1UEAxMSaWRwLnVuaXYtcGFyaXMxLmZy
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk7DsGWWjsYm1Rn/nFfrg
+Ff25b3uadZLPdzBgYurzqIDAZ9Sc39MwxchyFmblmFSqb8vLHM36XKESMWUgmCO7
+5GOFv7AsxhbtcXgLVohVKS47ZkTXnSbjg3eUww7s51lirQViAuA8iqRAZvnvPMFa
+JAbiXe54SIuDI7SQlTfNhpWGUaooDMfmHrgMOkB8MFk0nFDfN1oefPGIUtQ4LKXl
+0Ua1paLUFF1Du76lakyiZ+ssZ3EkIy8pN1OssR/3rHmYDfqodgUeexSikB8IsdHp
+rNU+6NKfVzGQiZtjTT1cqMRBU7ElHtGyliuelZTGN2rWV9pxxDMBCVrCqvBM9yym
+PwIDAQABo2swaTBIBgNVHREEQTA/ghJpZHAudW5pdi1wYXJpczEuZnKGKWh0dHBz
+Oi8vaWRwLnVuaXYtcGFyaXMxLmZyL2lkcC9zaGliYm9sZXRoMB0GA1UdDgQWBBRs
+oNzyg0MZ2ce2hy2748tOvP/+LTANBgkqhkiG9w0BAQUFAAOCAQEAkyfipm/mh/Kt
+jiFkg7p4oQPJkqoBAMEhv1hNqf+8bWBcbhBwrkJUG/MfR3KWfHgnHexPU6Ri35aF
+NOFN5mNQvM8DSTdKvRhZV5cM9+s5x1WGSCnsBrRE/QcV0nhm5Kozlbkki93nPBOF
+YcX73QCPD/T1ewnjA8Pyh8rPoKrT9nOLAdxyENRCucOaXWMM8SAS3wcEuBPIrWX3
+0MjL6pTwDGdoRCZ36w+hP802gvZMKu6GlRudUVPdKa0DYqDcTicA5drs0TnuQnBU
+Q0868rBTfR4z8pLRKvaADmYGslrdNQaXIK9yzi9qzGFQrBUEKJboWW/6hUR7NXuM
+yutCRUw+eg==
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.univ-paris1.fr/idp/profile/SAML1/SOAP/AttributeQuery"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    </md:AttributeAuthorityDescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Université Paris 1 Panthéon-Sorbonne</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Université Paris 1 Panthéon-Sorbonne</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:EmailAddress>fed-admin@univ-paris1.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

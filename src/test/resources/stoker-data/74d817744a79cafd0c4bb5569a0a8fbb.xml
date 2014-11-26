@@ -1,0 +1,88 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://idp.telecom-bretagne.eu/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2010-02-10T18:09:45Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">telecom-bretagne.eu</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">Télécom Bretagne</mdui:DisplayName>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDSDCCAjCgAwIBAgIVAMDsjMGGzs74lgEgGP3m2lZR6SMhMA0GCSqGSIb3DQEB
+BQUAMCIxIDAeBgNVBAMTF2lkcC50ZWxlY29tLWJyZXRhZ25lLmV1MB4XDTEwMDIx
+MDA5NTgyNFoXDTMwMDIxMDA5NTgyNFowIjEgMB4GA1UEAxMXaWRwLnRlbGVjb20t
+YnJldGFnbmUuZXUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDDyA3F
+PUpmxBhBziOEouQX8lgfErTEM0EFV5Fg0lNc8NPn/nWmBtyQxbY1yqkmf34Te5ef
+SdNp39QQ9X6W+y3/p+9k+x6GgVwtvDcGB6fPPtncPHBVMo5V+EeoIE20vUN6TW4H
+g/RJHoqpZEn1x/G01bprZWCBdadbr2BaZcE5jabTB11wu1zu/7mBXVUtBPMTdHh7
+n4M872F8vTeTPVce4WcoDm5ac7qJOnE55t1RyYj7rryDrwThT//NY3sg2IguJn4B
++SGImQDS3C688SsdM42OiOD2xnmwgWU+dkLuPLz1w/fZmK5l5Vb2YWdyyHKshU4+
+FcIQFwgXpnKgTREJAgMBAAGjdTBzMFIGA1UdEQRLMEmCF2lkcC50ZWxlY29tLWJy
+ZXRhZ25lLmV1hi5odHRwczovL2lkcC50ZWxlY29tLWJyZXRhZ25lLmV1L2lkcC9z
+aGliYm9sZXRoMB0GA1UdDgQWBBSzMnv76CtVAByMD9L8/3CVVLT2WjANBgkqhkiG
+9w0BAQUFAAOCAQEAa5ho6vHycEIXOcmcfgpj60G6tS9vNKWLJ+H5zdXf+BcsLuky
+W5xQkgM519BghwJ72xDo4YVyEdp4kEGVKMo6+Vu0bz4AREb4SmMm+N2FCamhK6D8
++9YLDw76+x5xlUVaV0bVGkDAG9IlOzg6gPhoRiJrwg3pzgAiFiysBTTZSPLorTgU
+BqA6X8hXjbPat/Ry48AOmlkbSSuPKbc8Ij78VcDg9HlAurDJ8lyPKL72VBJdT0JY
+f7EOBt1e8Cf7GwVdtvHq3LW88y9UTshQMpZtNxk9lXr6FMwcMG0wM1aOn5HRlGSs
+bm2IAM4xlcyiwzG22vG6NmR4y7NYNG9q6YyiOw==
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.telecom-bretagne.eu/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.telecom-bretagne.eu/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.telecom-bretagne.eu/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">telecom-bretagne.eu</shibmd:Scope>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDSDCCAjCgAwIBAgIVAMDsjMGGzs74lgEgGP3m2lZR6SMhMA0GCSqGSIb3DQEB
+BQUAMCIxIDAeBgNVBAMTF2lkcC50ZWxlY29tLWJyZXRhZ25lLmV1MB4XDTEwMDIx
+MDA5NTgyNFoXDTMwMDIxMDA5NTgyNFowIjEgMB4GA1UEAxMXaWRwLnRlbGVjb20t
+YnJldGFnbmUuZXUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDDyA3F
+PUpmxBhBziOEouQX8lgfErTEM0EFV5Fg0lNc8NPn/nWmBtyQxbY1yqkmf34Te5ef
+SdNp39QQ9X6W+y3/p+9k+x6GgVwtvDcGB6fPPtncPHBVMo5V+EeoIE20vUN6TW4H
+g/RJHoqpZEn1x/G01bprZWCBdadbr2BaZcE5jabTB11wu1zu/7mBXVUtBPMTdHh7
+n4M872F8vTeTPVce4WcoDm5ac7qJOnE55t1RyYj7rryDrwThT//NY3sg2IguJn4B
++SGImQDS3C688SsdM42OiOD2xnmwgWU+dkLuPLz1w/fZmK5l5Vb2YWdyyHKshU4+
+FcIQFwgXpnKgTREJAgMBAAGjdTBzMFIGA1UdEQRLMEmCF2lkcC50ZWxlY29tLWJy
+ZXRhZ25lLmV1hi5odHRwczovL2lkcC50ZWxlY29tLWJyZXRhZ25lLmV1L2lkcC9z
+aGliYm9sZXRoMB0GA1UdDgQWBBSzMnv76CtVAByMD9L8/3CVVLT2WjANBgkqhkiG
+9w0BAQUFAAOCAQEAa5ho6vHycEIXOcmcfgpj60G6tS9vNKWLJ+H5zdXf+BcsLuky
+W5xQkgM519BghwJ72xDo4YVyEdp4kEGVKMo6+Vu0bz4AREb4SmMm+N2FCamhK6D8
++9YLDw76+x5xlUVaV0bVGkDAG9IlOzg6gPhoRiJrwg3pzgAiFiysBTTZSPLorTgU
+BqA6X8hXjbPat/Ry48AOmlkbSSuPKbc8Ij78VcDg9HlAurDJ8lyPKL72VBJdT0JY
+f7EOBt1e8Cf7GwVdtvHq3LW88y9UTshQMpZtNxk9lXr6FMwcMG0wM1aOn5HRlGSs
+bm2IAM4xlcyiwzG22vG6NmR4y7NYNG9q6YyiOw==
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.telecom-bretagne.eu/idp/profile/SAML1/SOAP/AttributeQuery"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    </md:AttributeAuthorityDescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Télécom Bretagne</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Télécom Bretagne</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:EmailAddress>idp-contact@telecom-bretagne.eu</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

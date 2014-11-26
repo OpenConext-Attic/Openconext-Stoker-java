@@ -1,0 +1,111 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://idp.company.ja.net/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://ukfederation.org.uk" registrationInstant="2009-09-30T16:21:51Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">http://ukfederation.org.uk/doc/mdrps-20130902</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">company.ja.net</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="en">Janet</mdui:DisplayName>
+          <mdui:Logo height="100" width="220">https://www.ja.net/sites/all/themes/janetbootstrap/logo.png</mdui:Logo>
+          <mdui:Logo height="16" width="16">https://www.ja.net/sites/all/themes/janetbootstrap/favicon_16x16.png</mdui:Logo>
+        </mdui:UIInfo>
+        <mdui:DiscoHints>
+          <mdui:IPHint>193.62.83.0/24</mdui:IPHint>
+          <mdui:DomainHint>company.ja.net</mdui:DomainHint>
+          <mdui:DomainHint>ukerna.ac.uk</mdui:DomainHint>
+          <mdui:GeolocationHint>geo:51.57732,-1.31070</mdui:GeolocationHint>
+        </mdui:DiscoHints>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+						MIIDxDCCAqwCCQCSYXHhJnkuQDANBgkqhkiG9w0BAQUFADCBozELMAkGA1UEBhMC                                                                                  
+						R0IxFDASBgNVBAgTC094Zm9yZHNoaXJlMQ8wDQYDVQQHEwZEaWRjb3QxMTAvBgNV                                                                                  
+						BAoTKFRoZSBKTlQgQXNzb2NpYXRpb24gdHJhZGluZyBhcyBKQU5FVChVSykxHTAb                                                                                  
+						BgNVBAsTFEpBTkVUKFVLKSBJUyBTdXBwb3J0MRswGQYDVQQDExJpZHAuY29tcGFu                                                                                  
+						eS5qYS5uZXQwHhcNMTMwODI4MDkzMzQ0WhcNMzMwODIzMDkzMzQ0WjCBozELMAkG                                                                                  
+						A1UEBhMCR0IxFDASBgNVBAgTC094Zm9yZHNoaXJlMQ8wDQYDVQQHEwZEaWRjb3Qx                                                                                  
+						MTAvBgNVBAoTKFRoZSBKTlQgQXNzb2NpYXRpb24gdHJhZGluZyBhcyBKQU5FVChV                                                                                  
+						SykxHTAbBgNVBAsTFEpBTkVUKFVLKSBJUyBTdXBwb3J0MRswGQYDVQQDExJpZHAu                                                                                  
+						Y29tcGFueS5qYS5uZXQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDA
+						CHs8wVfzqZ7PrFLGngMY/nmawPUO7E0DcwDNsarh+04vbE3jrcQf7iZNsG8lo/ZF
+						Z8NfNvNwHYZ7z40O7cf5Kr7YSpqCNcC+InWsXOjhRo2blpwSpUSQpH1IzHCMf3Xf
+						efm1vG6Ud5zm2M05GJklL8Imz6u2pLQqgcxsLhe7C1aoP5P2GfQCVukgJ8rtcXN/
+						Hh0JggwZ/ZEKTHL8EJQrU0zAj/YSVeffpmOUAmUVOb8Tdy+NL1PHNNTNkmZ/p8Fb
+						vw7i66T0BDgbjmL/s4pq1DhI51Rh/qaMsCaAH6nGmcmnLmi7RpjQ8cMQlCVBpfWM
+						LRVVoHVjZegHjqqZ1f65AgMBAAEwDQYJKoZIhvcNAQEFBQADggEBAEtsQZdMCu0F
+						3VG7uyuu7UwUJPqfrp2DVd+ZW7ZePOzB0HWxsLKPEl0rdpeE+aMrMh3wbyV+1nJu
+						N7P1L0khqg/Tw4N/30tdbAYQKo+TjguzFCThenplL2zC618RtSyWFCOO2ox+4Arl
+						PhqPY3Zo7m2A1nfYkb9dL5VSbIUFztPgH5JpTTzutkJD9lQssw7JbB2cgkmHN+z/
+						F3+Xa4HqsEp30yzUMbAyA6jhduRqxMxmpDKB1micNlYOOQCKU5m9IBsHd6Vv2MYr
+						VeAgBIGPI/3oLSP+OhTm2TadX03on1OYUn1suuC9ypA5+IKSDb4bKJIq0QrHTFW/
+						Wep0+6npqDM=
+					</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.company.ja.net:8443/idp/profile/SAML1/SOAP/ArtifactResolution" index="1"/>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.company.ja.net:8443/idp/profile/SAML2/SOAP/ArtifactResolution" index="2"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.company.ja.net/idp/profile/Shibboleth/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.company.ja.net/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://idp.company.ja.net/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.company.ja.net/idp/profile/SAML2/Redirect/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">company.ja.net</shibmd:Scope>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+						MIIDxDCCAqwCCQCSYXHhJnkuQDANBgkqhkiG9w0BAQUFADCBozELMAkGA1UEBhMC                                                                                  
+						R0IxFDASBgNVBAgTC094Zm9yZHNoaXJlMQ8wDQYDVQQHEwZEaWRjb3QxMTAvBgNV                                                                                  
+						BAoTKFRoZSBKTlQgQXNzb2NpYXRpb24gdHJhZGluZyBhcyBKQU5FVChVSykxHTAb                                                                                  
+						BgNVBAsTFEpBTkVUKFVLKSBJUyBTdXBwb3J0MRswGQYDVQQDExJpZHAuY29tcGFu                                                                                  
+						eS5qYS5uZXQwHhcNMTMwODI4MDkzMzQ0WhcNMzMwODIzMDkzMzQ0WjCBozELMAkG                                                                                  
+						A1UEBhMCR0IxFDASBgNVBAgTC094Zm9yZHNoaXJlMQ8wDQYDVQQHEwZEaWRjb3Qx                                                                                  
+						MTAvBgNVBAoTKFRoZSBKTlQgQXNzb2NpYXRpb24gdHJhZGluZyBhcyBKQU5FVChV                                                                                  
+						SykxHTAbBgNVBAsTFEpBTkVUKFVLKSBJUyBTdXBwb3J0MRswGQYDVQQDExJpZHAu                                                                                  
+						Y29tcGFueS5qYS5uZXQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDA
+						CHs8wVfzqZ7PrFLGngMY/nmawPUO7E0DcwDNsarh+04vbE3jrcQf7iZNsG8lo/ZF
+						Z8NfNvNwHYZ7z40O7cf5Kr7YSpqCNcC+InWsXOjhRo2blpwSpUSQpH1IzHCMf3Xf
+						efm1vG6Ud5zm2M05GJklL8Imz6u2pLQqgcxsLhe7C1aoP5P2GfQCVukgJ8rtcXN/
+						Hh0JggwZ/ZEKTHL8EJQrU0zAj/YSVeffpmOUAmUVOb8Tdy+NL1PHNNTNkmZ/p8Fb
+						vw7i66T0BDgbjmL/s4pq1DhI51Rh/qaMsCaAH6nGmcmnLmi7RpjQ8cMQlCVBpfWM
+						LRVVoHVjZegHjqqZ1f65AgMBAAEwDQYJKoZIhvcNAQEFBQADggEBAEtsQZdMCu0F
+						3VG7uyuu7UwUJPqfrp2DVd+ZW7ZePOzB0HWxsLKPEl0rdpeE+aMrMh3wbyV+1nJu
+						N7P1L0khqg/Tw4N/30tdbAYQKo+TjguzFCThenplL2zC618RtSyWFCOO2ox+4Arl
+						PhqPY3Zo7m2A1nfYkb9dL5VSbIUFztPgH5JpTTzutkJD9lQssw7JbB2cgkmHN+z/
+						F3+Xa4HqsEp30yzUMbAyA6jhduRqxMxmpDKB1micNlYOOQCKU5m9IBsHd6Vv2MYr
+						VeAgBIGPI/3oLSP+OhTm2TadX03on1OYUn1suuC9ypA5+IKSDb4bKJIq0QrHTFW/
+						Wep0+6npqDM=
+					</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.company.ja.net:8443/idp/profile/SAML1/SOAP/AttributeQuery"/>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.company.ja.net:8443/idp/profile/SAML2/SOAP/AttributeQuery"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    </md:AttributeAuthorityDescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">JISC Collections and Janet Limited</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Janet</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://www.ja.net/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>IT Support</md:GivenName>
+      <md:EmailAddress>mailto:it-support@ja.net</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>IT Support</md:GivenName>
+      <md:EmailAddress>mailto:it-support@ja.net</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

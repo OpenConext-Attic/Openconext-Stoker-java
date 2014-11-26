@@ -4,21 +4,26 @@ import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.joda.time.DateTime;
 
 import java.util.Collection;
+import java.util.Map;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class StokerData {
 
-  private Collection<StokerEntry> entities;
+  private Map<String, StokerEntry> entities;
   private DateTime cacheUntil;
   private DateTime processed;
   private DateTime validUntil;
 
-  public Collection<StokerEntry> getEntities() {
+  public Map<String, StokerEntry> getEntities() {
     return entities;
   }
 
-  public void setEntities(Collection<StokerEntry> entities) {
+  public void setEntitiesMap(Map<String, StokerEntry> entities) {
     this.entities = entities;
+  }
+
+  public Collection<StokerEntry> entities() {
+    return entities.values();
   }
 
   public DateTime getCacheUntil() {

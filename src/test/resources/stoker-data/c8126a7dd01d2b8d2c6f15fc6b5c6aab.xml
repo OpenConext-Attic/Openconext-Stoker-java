@@ -1,0 +1,118 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://idp.kb.se/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="http://www.swamid.se/">
+        <mdrpi:RegistrationPolicy xml:lang="en">http://www.swamid.se/download/18.248ad5af12aa8136533800012293/SWAMID+Metadata+Registration+Practice+Statement-20110714.pdf</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">kb.se</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="sv">Kungliga biblioteket</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">National Library of Sweden</mdui:DisplayName>
+          <mdui:Description xml:lang="sv">Identity Provider för Kungliga biblioteket.</mdui:Description>
+          <mdui:Description xml:lang="en">Identity Provider for National Library of Sweden.</mdui:Description>
+          <mdui:Logo height="100" width="86">https://idp.kb.se/idp/images/kb-logo.png</mdui:Logo>
+          <mdui:Keywords xml:lang="sv">Kungliga+biblioteket national+library+of+sweden </mdui:Keywords>
+          <mdui:Keywords xml:lang="en">Kungliga+biblioteket national+library+of+sweden </mdui:Keywords>
+        </mdui:UIInfo>
+        <mdui:DiscoHints>
+          <mdui:DomainHint>kb.se</mdui:DomainHint>
+          <mdui:IPHint>193.10.249.131/32</mdui:IPHint>
+          <mdui:GeolocationHint>geo:59.33822,18.0722617</mdui:GeolocationHint>
+        </mdui:DiscoHints>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIDEDCCAfigAwIBAgIVANtF15ZO6H7sUe14fLarTWN68i+6MA0GCSqGSIb3DQEB
+BQUAMBQxEjAQBgNVBAMTCWlkcC5rYi5zZTAeFw0xMjA1MTUwODE2MTZaFw0xMzA1
+MTUwODE2MTZaMBQxEjAQBgNVBAMTCWlkcC5rYi5zZTCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBAI5hTWyo9FvDJLFCHChRYSL1wZ7AsiL+RkBl+ath46EZ
+X4tcmMLg9T5qkveFqR5HQF8BK2+i3XcBmnXYqqCyYCUXc7oiKm83xrssgcP4xlAd
+L2H6rNBOaIG5sUqaU1nNb9BmL0Z8fJaamyX9+rqQSGj5JCGdwwR2CMi14bbJvz2W
+fQsGI8HHqTrAp/1RwG3dHsDXjQUHlaOAF3WWX+P/fYJepJPtHPVaurSllD00GQXf
+fswG4IBz+sdv/rId6ydAHMWc8M+oBVkVLzeOjcNOxrm6xpMjXhlsgJkQVcEVgP99
+MLY4FZ0RNVfzrSNB7WUbOnANFOyYEFdaZOAP6Ff6NS8CAwEAAaNZMFcwNgYDVR0R
+BC8wLYIJaWRwLmtiLnNlhiBodHRwczovL2lkcC5rYi5zZS9pZHAvc2hpYmJvbGV0
+aDAdBgNVHQ4EFgQUXOR57Uvaf5MNiogvbh+Pr2X35FUwDQYJKoZIhvcNAQEFBQAD
+ggEBABf3IMAt91LKUJoNU2VoSaHa+JYfjUkJp29lO1+GacoPrsbMkt4f09ALaqUB
+D3uTAP8IYWyxboESqHNXmk+rFKIYS4j1n6nx+Nomqs4bcY5qUcXOjTEUSKj67D3A
+eqmzb8ICVXHuejQqf1qA0nxSmDqO4ci13W7pF8Sy15J6WY+gi/qvwQLuCE7zD3qM
+FgBz0aBdSFpgIPo6Y7PLEyfutclknp+AE4S/Mzkxyrl72hoyWoct6fPuRVfROFxN
+eXhXEiHIleIlDkOMy3mgyjg2l2azS/K4Um12iEbCxONc8UvQipy2nzJ6XT8qp483
+HoPbenzIMS3KvKqUl64+5qwAZhM=
+
+                    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.kb.se:8443/idp/profile/SAML1/SOAP/ArtifactResolution" index="1"/>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.kb.se:8443/idp/profile/SAML2/SOAP/ArtifactResolution" index="2"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.kb.se/idp/profile/Shibboleth/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.kb.se/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://idp.kb.se/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.kb.se/idp/profile/SAML2/Redirect/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">kb.se</shibmd:Scope>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+MIIDEDCCAfigAwIBAgIVANtF15ZO6H7sUe14fLarTWN68i+6MA0GCSqGSIb3DQEB
+BQUAMBQxEjAQBgNVBAMTCWlkcC5rYi5zZTAeFw0xMjA1MTUwODE2MTZaFw0xMzA1
+MTUwODE2MTZaMBQxEjAQBgNVBAMTCWlkcC5rYi5zZTCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBAI5hTWyo9FvDJLFCHChRYSL1wZ7AsiL+RkBl+ath46EZ
+X4tcmMLg9T5qkveFqR5HQF8BK2+i3XcBmnXYqqCyYCUXc7oiKm83xrssgcP4xlAd
+L2H6rNBOaIG5sUqaU1nNb9BmL0Z8fJaamyX9+rqQSGj5JCGdwwR2CMi14bbJvz2W
+fQsGI8HHqTrAp/1RwG3dHsDXjQUHlaOAF3WWX+P/fYJepJPtHPVaurSllD00GQXf
+fswG4IBz+sdv/rId6ydAHMWc8M+oBVkVLzeOjcNOxrm6xpMjXhlsgJkQVcEVgP99
+MLY4FZ0RNVfzrSNB7WUbOnANFOyYEFdaZOAP6Ff6NS8CAwEAAaNZMFcwNgYDVR0R
+BC8wLYIJaWRwLmtiLnNlhiBodHRwczovL2lkcC5rYi5zZS9pZHAvc2hpYmJvbGV0
+aDAdBgNVHQ4EFgQUXOR57Uvaf5MNiogvbh+Pr2X35FUwDQYJKoZIhvcNAQEFBQAD
+ggEBABf3IMAt91LKUJoNU2VoSaHa+JYfjUkJp29lO1+GacoPrsbMkt4f09ALaqUB
+D3uTAP8IYWyxboESqHNXmk+rFKIYS4j1n6nx+Nomqs4bcY5qUcXOjTEUSKj67D3A
+eqmzb8ICVXHuejQqf1qA0nxSmDqO4ci13W7pF8Sy15J6WY+gi/qvwQLuCE7zD3qM
+FgBz0aBdSFpgIPo6Y7PLEyfutclknp+AE4S/Mzkxyrl72hoyWoct6fPuRVfROFxN
+eXhXEiHIleIlDkOMy3mgyjg2l2azS/K4Um12iEbCxONc8UvQipy2nzJ6XT8qp483
+HoPbenzIMS3KvKqUl64+5qwAZhM=
+
+                    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.kb.se:8443/idp/profile/SAML1/SOAP/AttributeQuery"/>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.kb.se:8443/idp/profile/SAML2/SOAP/AttributeQuery"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    </md:AttributeAuthorityDescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">KB</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="sv">Kungliga biblioteket</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="en">National Library of Sweden</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://kb.se</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="administrative">
+      <md:Company>National Library of Sweden</md:Company>
+      <md:SurName>Mattias Olsson</md:SurName>
+      <md:EmailAddress>mattias.olsson@kb.se</md:EmailAddress>
+      <md:TelephoneNumber>+46700073534</md:TelephoneNumber>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:Company>National Library of Sweden</md:Company>
+      <md:SurName>Mattias Olsson</md:SurName>
+      <md:EmailAddress>swamid@kb.se</md:EmailAddress>
+      <md:TelephoneNumber>+46700073534</md:TelephoneNumber>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="support">
+      <md:Company>National Library of Sweden</md:Company>
+      <md:SurName>swamid@kb.se</md:SurName>
+      <md:EmailAddress>swamid@kb.se</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

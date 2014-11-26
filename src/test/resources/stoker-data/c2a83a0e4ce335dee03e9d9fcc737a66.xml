@@ -1,0 +1,57 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://auth.agrosupdijon.fr/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2014-05-09T14:10:41Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">agrosupdijon.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="en">Agrosup DIJON INSSAAE</mdui:DisplayName>
+          <mdui:Description xml:lang="en">Students</mdui:Description>
+          <mdui:DisplayName xml:lang="fr">Agrosup DIJON INSSAAE</mdui:DisplayName>
+          <mdui:Description xml:lang="fr">Enseignants ; chercheurs ; documentalistes ; étudiants</mdui:Description>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDPDCCAiSgAwIBAgIVAN9nAc/jY36hxrK5oQ/KqjAbjnCMMA0GCSqGSIb3DQEB
+BQUAMB8xHTAbBgNVBAMTFGF1dGguYWdyb3N1cGRpam9uLmZyMB4XDTE0MDUxMjA5
+NDYzNloXDTM0MDUxMjA5NDYzNlowHzEdMBsGA1UEAxMUYXV0aC5hZ3Jvc3VwZGlq
+b24uZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCdf0IvLcqavsNY
+cZ/SvKmM3KdjpOBdc0FsdBOJRCV/uQauirZSxE9VgE2MGTvVMPt2L9nR+JMznDpA
+1GKo6oUAIXhBE9BNZCG390qAFOXxrvqkULqWxcLh0r4S3fIedq8rLUab9NVnYwN8
+hvOeZQBO06ocmFbtkJjLGUwGqBqTW5PtUV3X0Zh9EXhY+ViruutXIGzyilH+b6eI
+836I5F0MDXE8oHboau6+w4sP977QLJbQU8xXmw2QloSFpkThoJ0ExGwJmtgVQYEN
+cPSSVQI80UeAmLvPQIqo8H0ebJAWLumL4z01W1/Zm4IMTp04R252U7FbDLTEiZRG
+78e/qIHBAgMBAAGjbzBtMEwGA1UdEQRFMEOCFGF1dGguYWdyb3N1cGRpam9uLmZy
+hitodHRwczovL2F1dGguYWdyb3N1cGRpam9uLmZyL2lkcC9zaGliYm9sZXRoMB0G
+A1UdDgQWBBSmpVNWWBQe7203DC0x0nDL0wh/BDANBgkqhkiG9w0BAQUFAAOCAQEA
+Yv95oCB4bPj/ltSf9StUpnJ2z+y2XnVisIpcIsWE5IUJtfza7V0OwO71Ey/GCSKx
+kubwUxJHO1eTdzkce1ajnWW0s7oimDyBalnd+uLG5fESVtAme4hdMrfHVxka10b1
+liQbtPIneokIW/Z4W7h1PUmU+z435uZkJZhQjNbfOtiVhe/7c+ETyVy9LH1SKtLF
+TcyS0/H/Q8cq6DNdeFTwXHFcPRGrFLIFOYN0O/91Fm594fY4tSRF9rXnWZkmBDf0
+esBdxlabPOobsW4ezBttykeeWzbjGEQe6pQQuhnSYOR3du1zAuDmbSosyY2EWqCE
+iN6XFe4H5SWBUGO/Kgpxzg==
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://auth.agrosupdijon.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://auth.agrosupdijon.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://auth.agrosupdijon.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Agrosup DIJON INSSAAE</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Agrosup DIJON INSSAAE</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:EmailAddress>hostmaster@agrosupdijon.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

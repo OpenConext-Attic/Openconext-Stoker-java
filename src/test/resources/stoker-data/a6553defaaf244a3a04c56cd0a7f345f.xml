@@ -1,0 +1,60 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://federation.agrocampus-ouest.fr/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2013-02-27T17:16:43Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">agrocampus-ouest.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">AGROCAMPUS OUEST</mdui:DisplayName>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDZjCCAk6gAwIBAgIVALlE+KiCBNQALvnetyzr7WFhuKaRMA0GCSqGSIb3DQEB
+BQUAMCkxJzAlBgNVBAMTHmZlZGVyYXRpb24uYWdyb2NhbXB1cy1vdWVzdC5mcjAe
+Fw0xMjEyMjAxMDE4MzBaFw0zMjEyMjAxMDE4MzBaMCkxJzAlBgNVBAMTHmZlZGVy
+YXRpb24uYWdyb2NhbXB1cy1vdWVzdC5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEP
+ADCCAQoCggEBAMojdY5dsi66PVE/E/BJ+JMLKFX1DXfjr1EhuN6EL2iDQRX6yn3+
+cU4ng5pBxf7f/il3ClFAkshpIoSGbqzcfeS67N9pxhD0yAD/s3ljoFQ7UP5VoCvI
+iYaPcPSCzEmUguCyWoZctNQBSNqZJOiYpy0QJqHtXge3CiD7cF4xQK+lJxxFBtkW
+74vtAG9f0MIyhioBRqAlwfHF1v3WuWk7E+5P6jqWS2iVs6eG88tNZdXfzW9faDPj
+8/h5XMWUsQXzQ2V1c0oT1Zva7aSix6t7+DxW4OwHR8BkeTxs/hVuigr8FcR12KmT
+0DxDCUiiXtefGjgTa+pCagTXoyEklnihrtsCAwEAAaOBhDCBgTBgBgNVHREEWTBX
+gh5mZWRlcmF0aW9uLmFncm9jYW1wdXMtb3Vlc3QuZnKGNWh0dHBzOi8vZmVkZXJh
+dGlvbi5hZ3JvY2FtcHVzLW91ZXN0LmZyL2lkcC9zaGliYm9sZXRoMB0GA1UdDgQW
+BBTXOuWNbcdej3DUhAmdgQvMWVquFDANBgkqhkiG9w0BAQUFAAOCAQEAf6fKMGX4
+N304qzgFikEqzsksyCK0WTN7U5U8FAHUUFbh8Fh026uYbopScyQcZ/ylJdUB7h0N
+CXbbce96Y7WXwZBdtMlMDya7hMzCaCgsuNqFLSXnh1HhuWKG7K5zBy50wLuHEBx+
+McIqs5yi8GpYWmS6sVE8EVZetU62NaiA2t3hgqPkCodjYQkVkd3x576bjaqmhbr6
+XZdv1L/uqqycvp33bKDQ43435KdThNlpjWWtu3LQ1akUBJ31dv8gAwUha2xX6kU8
+2MCUHWkgnXy+8hvKPj5LOXuJ4W44Y6Tvt5LxNGh5Mt8srDpZt8ivktQ9oa+PjXob
+5Adfu8PBDYuGpA==
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://federation.agrocampus-ouest.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://federation.agrocampus-ouest.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://federation.agrocampus-ouest.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">AGROCAMPUS OUEST</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">AGROCAMPUS OUEST</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>Lionel DURANDET</md:SurName>
+      <md:EmailAddress>lionel.durandet@agrocampus-ouest.fr</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>Emmanuel DOLLÉ</md:SurName>
+      <md:EmailAddress>emmanuel.dolle@agrocampus-ouest.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

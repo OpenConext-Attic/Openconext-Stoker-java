@@ -1,0 +1,103 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://gidp.geant.net">
+    <md:Extensions>
+      <mdattr:EntityAttributes>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://refeds.org/category/hide-from-discovery</saml:AttributeValue>
+        </saml:Attribute>
+      </mdattr:EntityAttributes>
+      <mdrpi:RegistrationInfo registrationAuthority="http://ukfederation.org.uk" registrationInstant="2014-05-14T11:50:00Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">http://ukfederation.org.uk/doc/mdrps-20130902</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">gidp.geant.net</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="en">GEANT Identity Provider</mdui:DisplayName>
+          <mdui:Logo height="69" width="199">https://www.edugain.org/GIdP.png</mdui:Logo>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+						MIIEkzCCA3ugAwIBAgIRAMu+xHPPachtpqZqP5LsTqswDQYJKoZIhvcNAQEFBQAw
+						NjELMAkGA1UEBhMCTkwxDzANBgNVBAoTBlRFUkVOQTEWMBQGA1UEAxMNVEVSRU5B
+						IFNTTCBDQTAeFw0xMzEyMTMwMDAwMDBaFw0xNjEyMTIyMzU5NTlaMDwxITAfBgNV
+						BAsTGERvbWFpbiBDb250cm9sIFZhbGlkYXRlZDEXMBUGA1UEAxMOZ2lkcC5nZWFu
+						dC5uZXQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDGyGX8egmFqg1S
+						BpnwdMh7Gwco3avst57R/6TTgnGeajqjk5q7E6kzT33UHXG37kXJehuA2NBIhwoo
+						S8vBpMfsdhgj1ta98d9VdpjM84vJI8qj5zdOV1t+rQ1RejXxla5Fp0Rpj7BoKFye
+						WQ/vKrdk/G9rhpZS8DiIKqmNtkakxigm9aGse5r3zaYE6rb2Pb7VXBGkEVq96s5v
+						Z/iN6eGWfGy28XopRKboHpjVdR/AkyMARfFd1qLtGh3OddXykKgkwbKfYY3sKUYK
+						rqoeq1J6vF3KYYc1WlHuldnW0X+YjskiwX40USuZklxbv2mXublmhk1H5IgN7F2D
+						X8jJ124bAgMBAAGjggGUMIIBkDAfBgNVHSMEGDAWgBQMvZNoDPPeq6NJays3V0fq
+						kOO57TAdBgNVHQ4EFgQUCsQex91m+Wk7E+C4/38Sf3T80yAwDgYDVR0PAQH/BAQD
+						AgWgMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMC
+						MCIGA1UdIAQbMBkwDQYLKwYBBAGyMQECAh0wCAYGZ4EMAQIBMDoGA1UdHwQzMDEw
+						L6AtoCuGKWh0dHA6Ly9jcmwudGNzLnRlcmVuYS5vcmcvVEVSRU5BU1NMQ0EuY3Js
+						MG0GCCsGAQUFBwEBBGEwXzA1BggrBgEFBQcwAoYpaHR0cDovL2NydC50Y3MudGVy
+						ZW5hLm9yZy9URVJFTkFTU0xDQS5jcnQwJgYIKwYBBQUHMAGGGmh0dHA6Ly9vY3Nw
+						LnRjcy50ZXJlbmEub3JnMEIGA1UdEQQ7MDmCDmdpZHAuZ2VhbnQubmV0ghNwcm9k
+						LWdpZHAuZ2VhbnQubmV0ghJ1YXQtZ2lkcC5nZWFudC5uZXQwDQYJKoZIhvcNAQEF
+						BQADggEBAB3iJ9REvIWq6OkRaiGMBN5wrH8RY0QulseOufbf7Cclx58+Y5hqf+bZ
+						1gNQQfGQB8wFw2HaHg/X7RyHA6GRPgjz2w6hLQqI5aWdoKpF26jSbfnQ0Ia+Ko6J
+						9JTawaCJzEqDOYO0vfdK19sOtouZoMpFyj5IGKUhJQfnXl4IxRAKbxOsdmZnlKfC
+						MHfKZ3Hkd137e5Vl6PPCD1SgKKyxklGL7kvUJLaI5H+fmyUZhYdLkabuViam16ok
+						ulsPPNORMXuSAaPbctgKJYdjK3D608c8SiZpm3hV/XBMYgDBb5NBTq3UZBbUsYRm
+						dDPF827oNvkbCcANbb1YmRBmFHWFe+E=
+					</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor use="encryption">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+						MIIEkzCCA3ugAwIBAgIRAMu+xHPPachtpqZqP5LsTqswDQYJKoZIhvcNAQEFBQAw
+						NjELMAkGA1UEBhMCTkwxDzANBgNVBAoTBlRFUkVOQTEWMBQGA1UEAxMNVEVSRU5B
+						IFNTTCBDQTAeFw0xMzEyMTMwMDAwMDBaFw0xNjEyMTIyMzU5NTlaMDwxITAfBgNV
+						BAsTGERvbWFpbiBDb250cm9sIFZhbGlkYXRlZDEXMBUGA1UEAxMOZ2lkcC5nZWFu
+						dC5uZXQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDGyGX8egmFqg1S
+						BpnwdMh7Gwco3avst57R/6TTgnGeajqjk5q7E6kzT33UHXG37kXJehuA2NBIhwoo
+						S8vBpMfsdhgj1ta98d9VdpjM84vJI8qj5zdOV1t+rQ1RejXxla5Fp0Rpj7BoKFye
+						WQ/vKrdk/G9rhpZS8DiIKqmNtkakxigm9aGse5r3zaYE6rb2Pb7VXBGkEVq96s5v
+						Z/iN6eGWfGy28XopRKboHpjVdR/AkyMARfFd1qLtGh3OddXykKgkwbKfYY3sKUYK
+						rqoeq1J6vF3KYYc1WlHuldnW0X+YjskiwX40USuZklxbv2mXublmhk1H5IgN7F2D
+						X8jJ124bAgMBAAGjggGUMIIBkDAfBgNVHSMEGDAWgBQMvZNoDPPeq6NJays3V0fq
+						kOO57TAdBgNVHQ4EFgQUCsQex91m+Wk7E+C4/38Sf3T80yAwDgYDVR0PAQH/BAQD
+						AgWgMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMC
+						MCIGA1UdIAQbMBkwDQYLKwYBBAGyMQECAh0wCAYGZ4EMAQIBMDoGA1UdHwQzMDEw
+						L6AtoCuGKWh0dHA6Ly9jcmwudGNzLnRlcmVuYS5vcmcvVEVSRU5BU1NMQ0EuY3Js
+						MG0GCCsGAQUFBwEBBGEwXzA1BggrBgEFBQcwAoYpaHR0cDovL2NydC50Y3MudGVy
+						ZW5hLm9yZy9URVJFTkFTU0xDQS5jcnQwJgYIKwYBBQUHMAGGGmh0dHA6Ly9vY3Nw
+						LnRjcy50ZXJlbmEub3JnMEIGA1UdEQQ7MDmCDmdpZHAuZ2VhbnQubmV0ghNwcm9k
+						LWdpZHAuZ2VhbnQubmV0ghJ1YXQtZ2lkcC5nZWFudC5uZXQwDQYJKoZIhvcNAQEF
+						BQADggEBAB3iJ9REvIWq6OkRaiGMBN5wrH8RY0QulseOufbf7Cclx58+Y5hqf+bZ
+						1gNQQfGQB8wFw2HaHg/X7RyHA6GRPgjz2w6hLQqI5aWdoKpF26jSbfnQ0Ia+Ko6J
+						9JTawaCJzEqDOYO0vfdK19sOtouZoMpFyj5IGKUhJQfnXl4IxRAKbxOsdmZnlKfC
+						MHfKZ3Hkd137e5Vl6PPCD1SgKKyxklGL7kvUJLaI5H+fmyUZhYdLkabuViam16ok
+						ulsPPNORMXuSAaPbctgKJYdjK3D608c8SiZpm3hV/XBMYgDBb5NBTq3UZBbUsYRm
+						dDPF827oNvkbCcANbb1YmRBmFHWFe+E=
+					</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://gidp.geant.net/simplesamlphp/saml2/idp/SingleLogoutService.php"/>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://gidp.geant.net/simplesamlphp/saml2/idp/SSOService.php"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Delivery of Advanced Network Technology to Europe Limited</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">GEANT Identity Provider</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://www.geant.net/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>eduGAIN OT</md:GivenName>
+      <md:EmailAddress>mailto:edugain-ot@geant.net</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>eduGAIN OT</md:GivenName>
+      <md:EmailAddress>mailto:edugain-ot@geant.net</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

@@ -1,0 +1,105 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://idp.cue-lillenorddefrance.fr/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2014-06-16T16:33:41Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">cue-lillenorddefrance.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="en">Communauté d'Universités et d'Etablissements - Lille Nord de France</mdui:DisplayName>
+          <mdui:Description xml:lang="en">Personnels, Formateurs et étudiants</mdui:Description>
+          <mdui:DisplayName xml:lang="fr">Communauté d'Universités et d'Etablissements - Lille Nord de France</mdui:DisplayName>
+          <mdui:Description xml:lang="fr">Personnels, Formateurs et étudiants</mdui:Description>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIEhjCCA26gAwIBAgIRANSLXSw4ru5ryYhm5hf/p58wDQYJKoZIhvcNAQEFBQAw
+NjELMAkGA1UEBhMCTkwxDzANBgNVBAoTBlRFUkVOQTEWMBQGA1UEAxMNVEVSRU5B
+IFNTTCBDQTAeFw0xNDA2MTYwMDAwMDBaFw0xNzA2MTUyMzU5NTlaMEoxITAfBgNV
+BAsTGERvbWFpbiBDb250cm9sIFZhbGlkYXRlZDElMCMGA1UEAxMcaWRwLmN1ZS1s
+aWxsZW5vcmRkZWZyYW5jZS5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC
+ggEBAPFaRQj5mYaG4U4ROsOmg7AtHftdd/UNBNDz36zXv99uRcrbhSi+rVrgfsnC
+elpbxwACvNNRYvxov5oxBFR9UeFT9sSzrM+PacXR1Qa435AP8hao5TmGR4O8i4JW
+ahGqQHjwooVCoZt1i0ri2aE5tI4HVp8GBl1lNGRlTPYDWjh4a/irL0JeqMs8DAnN
+swJBuiJ4I1exC3/KIy37cqMleGnpwbx1E1RKPitFtbpHKENiYIgAPmhnNDk1FQOj
+F6O2eIGwKguruSAMJe/ObpYCObIdYXhxBMiSAUX8KQpx5ASBxzE4BgT+rdrOv82q
+9z1Z71Tb2bPSXZ24PzLyTwIMX4sCAwEAAaOCAXkwggF1MB8GA1UdIwQYMBaAFAy9
+k2gM896ro0lrKzdXR+qQ47ntMB0GA1UdDgQWBBQyUKxCROm0WgHBk0YYobumdPLD
+ejAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEF
+BQcDAQYIKwYBBQUHAwIwIgYDVR0gBBswGTANBgsrBgEEAbIxAQICHTAIBgZngQwB
+AgEwOgYDVR0fBDMwMTAvoC2gK4YpaHR0cDovL2NybC50Y3MudGVyZW5hLm9yZy9U
+RVJFTkFTU0xDQS5jcmwwbQYIKwYBBQUHAQEEYTBfMDUGCCsGAQUFBzAChilodHRw
+Oi8vY3J0LnRjcy50ZXJlbmEub3JnL1RFUkVOQVNTTENBLmNydDAmBggrBgEFBQcw
+AYYaaHR0cDovL29jc3AudGNzLnRlcmVuYS5vcmcwJwYDVR0RBCAwHoIcaWRwLmN1
+ZS1saWxsZW5vcmRkZWZyYW5jZS5mcjANBgkqhkiG9w0BAQUFAAOCAQEAM5EI+tv8
+A6F8sdy0LjO+LcVeIO7i7QMaaN6CQyn1wh/P+rEBk0mk6kiCqDbjksjAsGTPYYZ7
+Fdq4bS6Bmqd9BQyZMbq4Sm3eFiMqa87oDZHjsuiWWIccmrCKAIWKr447PpDBBs95
+GOL5hwuqjHIPvb1qKFUBvriW0B8ujEdcJl3ja/oy0oBz8xlSmpvCZPS6vNc0cCn+
+Ym0QTm2dtTLNmPUW4DcV32K0eJCsrrT/nNy18Vw5aatD6U3TuggE7Ocgcb+QUsH+
+k3M5769UhOUotF3wRjXyBQsbW81d7LsdsxPvhAF9GQiX3uGrBDEYWK4Uq3KQE0/L
+pjRCf2fUkk8Bag==
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.cue-lillenorddefrance.fr/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.cue-lillenorddefrance.fr/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.cue-lillenorddefrance.fr/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">cue-lillenorddefrance.fr</shibmd:Scope>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIEhjCCA26gAwIBAgIRANSLXSw4ru5ryYhm5hf/p58wDQYJKoZIhvcNAQEFBQAw
+NjELMAkGA1UEBhMCTkwxDzANBgNVBAoTBlRFUkVOQTEWMBQGA1UEAxMNVEVSRU5B
+IFNTTCBDQTAeFw0xNDA2MTYwMDAwMDBaFw0xNzA2MTUyMzU5NTlaMEoxITAfBgNV
+BAsTGERvbWFpbiBDb250cm9sIFZhbGlkYXRlZDElMCMGA1UEAxMcaWRwLmN1ZS1s
+aWxsZW5vcmRkZWZyYW5jZS5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC
+ggEBAPFaRQj5mYaG4U4ROsOmg7AtHftdd/UNBNDz36zXv99uRcrbhSi+rVrgfsnC
+elpbxwACvNNRYvxov5oxBFR9UeFT9sSzrM+PacXR1Qa435AP8hao5TmGR4O8i4JW
+ahGqQHjwooVCoZt1i0ri2aE5tI4HVp8GBl1lNGRlTPYDWjh4a/irL0JeqMs8DAnN
+swJBuiJ4I1exC3/KIy37cqMleGnpwbx1E1RKPitFtbpHKENiYIgAPmhnNDk1FQOj
+F6O2eIGwKguruSAMJe/ObpYCObIdYXhxBMiSAUX8KQpx5ASBxzE4BgT+rdrOv82q
+9z1Z71Tb2bPSXZ24PzLyTwIMX4sCAwEAAaOCAXkwggF1MB8GA1UdIwQYMBaAFAy9
+k2gM896ro0lrKzdXR+qQ47ntMB0GA1UdDgQWBBQyUKxCROm0WgHBk0YYobumdPLD
+ejAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEF
+BQcDAQYIKwYBBQUHAwIwIgYDVR0gBBswGTANBgsrBgEEAbIxAQICHTAIBgZngQwB
+AgEwOgYDVR0fBDMwMTAvoC2gK4YpaHR0cDovL2NybC50Y3MudGVyZW5hLm9yZy9U
+RVJFTkFTU0xDQS5jcmwwbQYIKwYBBQUHAQEEYTBfMDUGCCsGAQUFBzAChilodHRw
+Oi8vY3J0LnRjcy50ZXJlbmEub3JnL1RFUkVOQVNTTENBLmNydDAmBggrBgEFBQcw
+AYYaaHR0cDovL29jc3AudGNzLnRlcmVuYS5vcmcwJwYDVR0RBCAwHoIcaWRwLmN1
+ZS1saWxsZW5vcmRkZWZyYW5jZS5mcjANBgkqhkiG9w0BAQUFAAOCAQEAM5EI+tv8
+A6F8sdy0LjO+LcVeIO7i7QMaaN6CQyn1wh/P+rEBk0mk6kiCqDbjksjAsGTPYYZ7
+Fdq4bS6Bmqd9BQyZMbq4Sm3eFiMqa87oDZHjsuiWWIccmrCKAIWKr447PpDBBs95
+GOL5hwuqjHIPvb1qKFUBvriW0B8ujEdcJl3ja/oy0oBz8xlSmpvCZPS6vNc0cCn+
+Ym0QTm2dtTLNmPUW4DcV32K0eJCsrrT/nNy18Vw5aatD6U3TuggE7Ocgcb+QUsH+
+k3M5769UhOUotF3wRjXyBQsbW81d7LsdsxPvhAF9GQiX3uGrBDEYWK4Uq3KQE0/L
+pjRCf2fUkk8Bag==
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.cue-lillenorddefrance.fr/profile/SAML1/SOAP/AttributeQuery"/>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    </md:AttributeAuthorityDescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Communauté d'Universités et d'Etablissements - Lille Nord de France</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Communauté d'Universités et d'Etablissements - Lille Nord de France</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:EmailAddress>info-infra.dir@espe-lnf.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

@@ -1,0 +1,62 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="urn:mace:cru.fr:federation:univ-lyon1.fr">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2009-10-26T16:20:23Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">univ-lyon1.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">Université de Lyon 1 - Claude Bernard</mdui:DisplayName>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIErjCCA5agAwIBAgIRAJaT1KIfHVmld1Ki1N6X4JEwDQYJKoZIhvcNAQEFBQAw
+NjELMAkGA1UEBhMCTkwxDzANBgNVBAoTBlRFUkVOQTEWMBQGA1UEAxMNVEVSRU5B
+IFNTTCBDQTAeFw0xMzA0MjQwMDAwMDBaFw0xNjA0MjMyMzU5NTlaMD8xITAfBgNV
+BAsTGERvbWFpbiBDb250cm9sIFZhbGlkYXRlZDEaMBgGA1UEAxMRaWRwLnVuaXYt
+bHlvbjEuZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDtWeh0Zke9
+VBmOOwQUqf25+aw8KTGC/6gwSoj48vGDm6Oo0u8TiEplFSzBBd2CZK2A4vO2iNHz
+tlxBw01s9BDKIS4A9cnGTr9KQXbJj05BfPfwnlAhMexADwxKc24v3w2tZnALLRLp
+xD1tpfP3JRf2TDFCq1y1pVN0HplxNjWq7AT2bSJUmostjN4SXLVHg40boGJSc6b3
+c4CdvhkTa/PjCCkyNO1tVLTRgpQIUelsPAsgAbRlzH/S34s4GmmkL5oUAO0W2vnf
+0giExMB5QP4byQ+SFIJiaJw5ZrCe7RcxXZt1hFLCJ/0sX3oHDXZQJElF1FpDpt8S
+U/EB6tT8iVQhAgMBAAGjggGsMIIBqDAfBgNVHSMEGDAWgBQMvZNoDPPeq6NJays3
+V0fqkOO57TAdBgNVHQ4EFgQUE4rmZUoHIwpShp68L3WD9y55Ns4wDgYDVR0PAQH/
+BAQDAgWgMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUF
+BwMCMCIGA1UdIAQbMBkwDQYLKwYBBAGyMQECAh0wCAYGZ4EMAQIBMDoGA1UdHwQz
+MDEwL6AtoCuGKWh0dHA6Ly9jcmwudGNzLnRlcmVuYS5vcmcvVEVSRU5BU1NMQ0Eu
+Y3JsMG0GCCsGAQUFBwEBBGEwXzA1BggrBgEFBQcwAoYpaHR0cDovL2NydC50Y3Mu
+dGVyZW5hLm9yZy9URVJFTkFTU0xDQS5jcnQwJgYIKwYBBQUHMAGGGmh0dHA6Ly9v
+Y3NwLnRjcy50ZXJlbmEub3JnMFoGA1UdEQRTMFGCEWlkcC51bml2LWx5b24xLmZy
+gh1kc2ktYXV0aC1pZHAtMDEudW5pdi1seW9uMS5mcoIdZHNpLWF1dGgtaWRwLTAy
+LnVuaXYtbHlvbjEuZnIwDQYJKoZIhvcNAQEFBQADggEBALIuJEuGICDAEKB10oVx
+GgSCfY2N00sOT860fZaylYXy96htcUDVvRoRZSo7OuRVk96f+U4HZRSEkvD3bhsX
+/oZUquuVhRbhPcSCe73Qz4sF+2B1wOg6CL5BE858+1eJOPAwK20JfnDmccQzvHoX
+3xa4LljRG+Z4OkdEuDNzYmAgXHMkA2IORjN8uvySFMP03wweZsyL5fBgA0IT8Qke
+VqZtCnPLGw0lpJMz0tCH9WZRMyNTtYJzW0GThz2c3fyHHDNY0vwKTq8nB7Pjfrx3
+EIUd53kRJ1997x3KgQj/cLYxglqpnTSxvDbGXuXUEIZHPxwbk9mlLnyXNhPHQc/w
+sE4=
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.univ-lyon1.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.univ-lyon1.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.univ-lyon1.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Université de Lyon 1 - Claude Bernard</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Université de Lyon 1 - Claude Bernard</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:EmailAddress>shibboleth@univ-lyon1.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

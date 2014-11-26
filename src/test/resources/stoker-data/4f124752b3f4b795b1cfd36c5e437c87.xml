@@ -1,0 +1,58 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://idp.enit.fr/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2013-10-08T16:39:40Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">enit.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">ENIT Ecole Nationale Ingénieurs Tarbes</mdui:DisplayName>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDGDCCAgCgAwIBAgIVAP4SLqi+2pminMR8C652zJZyirCyMA0GCSqGSIb3DQEB
+BQUAMBYxFDASBgNVBAMTC2lkcC5lbml0LmZyMB4XDTExMDYyODEyNTYyMVoXDTMx
+MDYyODEyNTYyMVowFjEUMBIGA1UEAxMLaWRwLmVuaXQuZnIwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQCBzWn8nDXCVpi+0KdNV9lzB3Q9HfFrZcMiLZaj
+o6rzdI1VtYnTE0fgHOfQX0fwiSBhRFmwaTMVHDy6jRZQWkB8Zg7IxBdvQnEn7tUx
+gLW0/gZ6Pgw4V/ZRimpWUn0Ga/s7EBv7Nsyn7HZhRLse0t7d8dTgAD01TivVHx54
+SEOiZF5b+GFJJjeGJHpxTwj7Dto0Pr0vhmQ+4C3ppPigrrideIc9EaiiW+kAm/q1
+4tNlttLaOUp3u5l+5lDfUlfcPiHYGCgXdmkJ/Hg6iIoYl6A+QdqiSFuUO8z/Jk0G
+mdGixe/BrTC0fWjwOF4EG8b2TbYYjBVU3/BwA319eP4tqdvHAgMBAAGjXTBbMDoG
+A1UdEQQzMDGCC2lkcC5lbml0LmZyhiJodHRwczovL2lkcC5lbml0LmZyL2lkcC9z
+aGliYm9sZXRoMB0GA1UdDgQWBBTidErzqd3TgXkbgGawiY3XHdywljANBgkqhkiG
+9w0BAQUFAAOCAQEAR2vDr33t9oTs96KycknrBoQk+I1nGpvaogo0qNbK1db0/NIW
+HjsiQgteVwvIm2BWsYjeaNiKI3VFAJ2jd0DVTIHASrq4Zuhv73VrEVfPPv/BcAot
+QyZM/38k0QU0zzr/XobhBP2pk5l7CMtYnmYKamQBvQrFq+JWe6mg6rXpLt5dai3q
+sHNSMvsplcRaenBakuEP6IJ5+X73tg4BvnTXHF8gSE5zoE1Fvoo4j8WlzX5VFpnm
+ynWSKIvu7JYtfAV0YXTDZ1JWanatwUv2PFIeGBfg8jh3f+xU7+nOiGsC3sOfr4dK
+YcFtZchDCMTlBKAW8xGvvTVS6hZSzntZe4Z97w==
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.enit.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.enit.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.enit.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">ENIT Ecole Nationale Ingénieurs Tarbes</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">ENIT Ecole Nationale Ingénieurs Tarbes</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>Viret</md:SurName>
+      <md:EmailAddress>jean-marc.viret@enit.fr</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>Barriere</md:SurName>
+      <md:EmailAddress>jean-philippe.barriere@enit.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

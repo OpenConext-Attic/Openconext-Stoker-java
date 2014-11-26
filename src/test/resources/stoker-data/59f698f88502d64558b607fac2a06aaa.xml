@@ -1,0 +1,101 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="urn:mace:cru.fr:federation:univ-poitiers.fr">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2009-05-18T10:46:20Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">univ-poitiers.fr</shibmd:Scope>
+        <shibmd:Scope regexp="false">etu.univ-poitiers.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">Université de Poitiers</mdui:DisplayName>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIEsDCCA5igAwIBAgIQUMcwKhTYAJRU4aUw5HaMrDANBgkqhkiG9w0BAQsFADBk
+MQswCQYDVQQGEwJOTDEWMBQGA1UECBMNTm9vcmQtSG9sbGFuZDESMBAGA1UEBxMJ
+QW1zdGVyZGFtMQ8wDQYDVQQKEwZURVJFTkExGDAWBgNVBAMTD1RFUkVOQSBTU0wg
+Q0EgMjAeFw0xNDEwMjEwMDAwMDBaFw0xNzEwMjAyMzU5NTlaMEkxITAfBgNVBAsT
+GERvbWFpbiBDb250cm9sIFZhbGlkYXRlZDEkMCIGA1UEAxMbc2hpYmJvbGV0aC51
+bml2LXBvaXRpZXJzLmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA
+1RVveanaMybAIRz/nZF/4XqBKU2rMLEbis9diusj/44VXzaRlXcjyfaoZa+SK8bI
+JQVsT/yGXI/WWaqhHXXaB0chqkrYfHZPdoYweFwTjynD1hJUhxamlGSBD30u0BPD
+7jTPKZxYvjwLJqppV9oZsCMSfWTznFotfBtmxIWMlF6bpR5c1foca0IL620MUzLC
+DBz4f0UyiWOL3kOkd4b8OauXR/YwfJiVckJjkk0F5WffPRDnDNj3/pLd+PFbhShS
+qT8gRkx7pF/XlJwTrXZMnQpcSNbY9XF6tkhaaLoA18XC7iWgsOhIjzJbDYuaFRQd
+XGlzCbWkM+dqX+vKPWgy8wIDAQABo4IBdzCCAXMwHwYDVR0jBBgwFoAUW9CKHJoy
+W+C13ZZUG+GGKLD9tr0wHQYDVR0OBBYEFGvidQi286gq4y5V1p4rm72/NncwMA4G
+A1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMB
+BggrBgEFBQcDAjAiBgNVHSAEGzAZMA0GCysGAQQBsjEBAgIdMAgGBmeBDAECATA6
+BgNVHR8EMzAxMC+gLaArhilodHRwOi8vY3JsLnVzZXJ0cnVzdC5jb20vVEVSRU5B
+U1NMQ0EyLmNybDBsBggrBgEFBQcBAQRgMF4wNQYIKwYBBQUHMAKGKWh0dHA6Ly9j
+cnQudXNlcnRydXN0LmNvbS9URVJFTkFTU0xDQTIuY3J0MCUGCCsGAQUFBzABhhlo
+dHRwOi8vb2NzcC51c2VydHJ1c3QuY29tMCYGA1UdEQQfMB2CG3NoaWJib2xldGgu
+dW5pdi1wb2l0aWVycy5mcjANBgkqhkiG9w0BAQsFAAOCAQEAP4KsWoHSMRjZYLyu
+BuoF2RGmBsH02+QB9og6g6FBGEzSoFlKTonSOzSINKVI8hLSAG/AH0qEoscIRHkU
+tg1DWMbvz5m6vH3jBX35hjY9W2R2ajE0UBRXAjJG7duQ0t5qb5OlOO8OUcsVp8hq
+fZ321PY8oouA8yDBPL+G1k/Qf5rPZKfTG2l9CTjW3biiKHY8jyJBQIT8UQTFKX2j
+WxJcX4OyP3Ryyoc1e+ElHZdGRjKKpDd24hKUHiBtwaiio4jXRSzVw7dUUblKCMVN
+27h8pxrE4bUEWHkfxXKfWihDx6GPfk+exNY0mhn1Eunh288jAyt96C7uq2rXL9wg
+Yjdn9A==
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIEhTCCA22gAwIBAgIQBJ1RI0pR2rrSRRLdVKx5rTANBgkqhkiG9w0BAQUFADA2
+MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
+U1NMIENBMB4XDTExMTAyMDAwMDAwMFoXDTE0MTAxOTIzNTk1OVowVTELMAkGA1UE
+BhMCRlIxIDAeBgNVBAoMF1VuaXZlcnNpdMOpIGRlIFBvaXRpZXJzMSQwIgYDVQQD
+ExtzaGliYm9sZXRoLnVuaXYtcG9pdGllcnMuZnIwggEiMA0GCSqGSIb3DQEBAQUA
+A4IBDwAwggEKAoIBAQC1XxY06+ZPTDJka2NP1PlhuHEcWC/21H1BsZGGrxbrHlbz
+s4sYedSqLpR3Zt9wsPrkXGnyIenQNG1v5u3UjTSal94cWpkuRJGXHxBzIqFlrgdP
+fFYHn97O4efhzE/vI5tCmX8goWN/o6dTYqCXI2p0zBg/QVmkSWsNbCxj/jx/V2eZ
+70lMqt5HdJKrAEEBx6Tfn1Ru4+8Bq4YovcSMDf72PBvasCxoQVrmeJ9sJhLopv2r
+4+Rp1PTyuHTd1byJCi5/0ljpT83UrTmhJUMwWJxWMA9YMLmOBhIeB6k4/azxdrne
+Dnu9ahLuM9jhzJazuPebmc74IMe17vzclelyx8+7AgMBAAGjggFuMIIBajAfBgNV
+HSMEGDAWgBQMvZNoDPPeq6NJays3V0fqkOO57TAdBgNVHQ4EFgQUj3qD3F4yQ3cR
+udqfsQda8hqTZ/8wDgYDVR0PAQH/BAQDAgWgMAwGA1UdEwEB/wQCMAAwHQYDVR0l
+BBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMBgGA1UdIAQRMA8wDQYLKwYBBAGyMQEC
+Ah0wOgYDVR0fBDMwMTAvoC2gK4YpaHR0cDovL2NybC50Y3MudGVyZW5hLm9yZy9U
+RVJFTkFTU0xDQS5jcmwwbQYIKwYBBQUHAQEEYTBfMDUGCCsGAQUFBzAChilodHRw
+Oi8vY3J0LnRjcy50ZXJlbmEub3JnL1RFUkVOQVNTTENBLmNydDAmBggrBgEFBQcw
+AYYaaHR0cDovL29jc3AudGNzLnRlcmVuYS5vcmcwJgYDVR0RBB8wHYIbc2hpYmJv
+bGV0aC51bml2LXBvaXRpZXJzLmZyMA0GCSqGSIb3DQEBBQUAA4IBAQB35DdMvMd/
+G/GOPo1URiKh4LWbGQ1P6AcYNwuhCMr4DZaiQX00sezEizuAjnFjnc/wax3zaESS
+IvpJEuuAM7rIrwLGm9zcKPhbceus9OiMffWENEB0sKT0fAZBsfuO4Q8akk2EfoUp
+sYq3kH65TYG4BLtYzVdY0MkE/fUxNT97YLoVwFgIglQPhvamLi1xFnEc5H/1mLHQ
+Hg1wq8LaDsoAUv1hG6Oalvl56Sa3y9FIhueUv0Z+kNvvTyK9hHtC1iDRyoLANajH
+ag7GwpQkZHUpuTGM1wrdwNJAN7lcXenuuAivqj6wxk11YMxw/38jH2rKtpXyxdnv
+1eZuFfizJq0c
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://shibboleth.univ-poitiers.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://shibboleth.univ-poitiers.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://shibboleth.univ-poitiers.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Université de Poitiers</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Université de Poitiers</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>Duthilleul Benjamin</md:SurName>
+      <md:EmailAddress>benjamin.duthilleul@univ-poitiers.fr</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>Lionel Lombardi</md:SurName>
+      <md:EmailAddress>lionel.lombardi@univ-poitiers.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

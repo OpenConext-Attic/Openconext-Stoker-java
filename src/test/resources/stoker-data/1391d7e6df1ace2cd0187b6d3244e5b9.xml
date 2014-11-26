@@ -1,0 +1,53 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://id.ucly.fr/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2012-06-25T16:52:35Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">ucly.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">Université Catholique de Lyon</mdui:DisplayName>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDFDCCAfygAwIBAgIVALIQSKLiYZiTtbhSIn/FqoqHWb/ZMA0GCSqGSIb3DQEB
+BQUAMBUxEzARBgNVBAMTCmlkLnVjbHkuZnIwHhcNMTIwNTA5MTQ0MzU3WhcNMzIw
+NTA5MTQ0MzU3WjAVMRMwEQYDVQQDEwppZC51Y2x5LmZyMIIBIjANBgkqhkiG9w0B
+AQEFAAOCAQ8AMIIBCgKCAQEApA+WTKh4qbC76TAzEqDdG6i/6gxQLbPiLXGU/mJV
+w46XAgXuxZm3Edm0DEq5pdOwOIN/NDsqTk+aDHsYFxI957r9LLnJ0n1pWsZNluga
+PqwY2MOwyxfquiTkTQmOhK9M1xF+LYLectQ749SXejWTb5B96ys0ttzV4fSPChxL
+/L6puCfpVPGR58A9S15/MuAsMYM9UCLi2FoAF+lHlT99Ahx7VEgicMx1JELeDsYf
+yO0niRcKXEYC4j3KgOP3ADPImYdb2nhx8WHCYgphpMHY151KZv5XdaT2GLOOnJPa
+sDgDd+RcY/M7kKqGEnRUAMUCJnqML/CtYNwqidftlrso0wIDAQABo1swWTA4BgNV
+HREEMTAvggppZC51Y2x5LmZyhiFodHRwczovL2lkLnVjbHkuZnIvaWRwL3NoaWJi
+b2xldGgwHQYDVR0OBBYEFGuAsMRpkg/OYgexd/zImIz8WPTSMA0GCSqGSIb3DQEB
+BQUAA4IBAQAp96dB5+rGpdlCSVU6XZB6hygG5wNWTVm+alAjFtKQW2iqz1RgoVm4
+D2T+28kF/xlbFBUrDha5CNuZ1Dfq8Whfad4SZs9pzm/3I/2DBH/KO6guHXUe5rjT
+icWlXaDm7uvJrZSAQbZky/A9Bgyv0oJK+UHfvtIa2tNo5gjEcc92rRPwoWPDW6Yy
+0+reX1eRTjDbz+ZAkIqg6P/9UQsMzyjKIqfGCJ/YJDRvbJEGiZ2fkrhnIyziYq9a
+n/OTAPlhjqHKZtxHYzJu4AfZBp3arPgA0KW/Mt/HG8bpwymTxUyzxKzgT57qGXPF
+Nux35LKdonFdnt+x6OlpMgxGu0NaExZW
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://id.ucly.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://id.ucly.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://id.ucly.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Université Catholique de Lyon</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Université Catholique de Lyon</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:EmailAddress>support.informatique@univ-catholyon.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

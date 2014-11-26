@@ -3,7 +3,6 @@ package nl.surfnet.coin.stoker;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Collections2;
 import com.google.common.collect.ImmutableMap;
-import com.google.common.collect.Maps;
 import org.apache.commons.io.IOUtils;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.slf4j.Logger;
@@ -117,7 +116,7 @@ public class Stoker {
   }
 
   public Collection<StokerEntry> getEduGainServiceProviders() {
-    return Collections2.filter(stokerData.getEntities(), onlyServiceProviders);
+    return Collections2.filter(stokerData.entities(), onlyServiceProviders);
   }
 
   public Collection<StokerEntry> getEduGainServiceProviders(final Collection<String> spEntityIds) {

@@ -1,0 +1,61 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://idp.ipb.fr/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2011-08-29T14:12:44Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">ipb.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="fr">IPB - Bordeaux INP</mdui:DisplayName>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIEYjCCA0qgAwIBAgIRALgbEIwRuh3U84klcQg/9UAwDQYJKoZIhvcNAQEFBQAw
+NjELMAkGA1UEBhMCTkwxDzANBgNVBAoTBlRFUkVOQTEWMBQGA1UEAxMNVEVSRU5B
+IFNTTCBDQTAeFw0xNDA1MjgwMDAwMDBaFw0xNzA1MjcyMzU5NTlaMDgxITAfBgNV
+BAsTGERvbWFpbiBDb250cm9sIFZhbGlkYXRlZDETMBEGA1UEAxMKaWRwLmlwYi5m
+cjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAK4nVfui+Zt1Trzesy1o
+2T60W4uaIWixKu80BtFxgCW8wacQ9wOwFYWm4LfKRILmNI0p8OnXD+9wHaBOnx44
+wof+tuWZJjXVqvdgq9WIZ+3VSEJkI/wvA7KgHdPaVSPWX6OHDU0K1gm74OjEdHb+
+hFPBiyZ3VW8GALHDUWWjYjDJGUoqOKf/Y0nymNWREKN7y18BqcFhW3JMTHRoepse
+fu5uRqhYU/0YHaZD97oW7fo25N3EF3Ca59uWPYG/1Twhd/OwlIBpTzAbPt903YNk
+RtchHYflp1oJKqkz/dW1h7ueGPKz6QZj4ebM7pwF4fL0TwDtsre67jL8KjtFodvj
+vEcCAwEAAaOCAWcwggFjMB8GA1UdIwQYMBaAFAy9k2gM896ro0lrKzdXR+qQ47nt
+MB0GA1UdDgQWBBTnzkMBxq38x6wZ8nj2FKqHYXDW6DAOBgNVHQ8BAf8EBAMCBaAw
+DAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwIgYD
+VR0gBBswGTANBgsrBgEEAbIxAQICHTAIBgZngQwBAgEwOgYDVR0fBDMwMTAvoC2g
+K4YpaHR0cDovL2NybC50Y3MudGVyZW5hLm9yZy9URVJFTkFTU0xDQS5jcmwwbQYI
+KwYBBQUHAQEEYTBfMDUGCCsGAQUFBzAChilodHRwOi8vY3J0LnRjcy50ZXJlbmEu
+b3JnL1RFUkVOQVNTTENBLmNydDAmBggrBgEFBQcwAYYaaHR0cDovL29jc3AudGNz
+LnRlcmVuYS5vcmcwFQYDVR0RBA4wDIIKaWRwLmlwYi5mcjANBgkqhkiG9w0BAQUF
+AAOCAQEAe8v3WPdLO5+RWtLXf40JeFjGPbFgf9pdsJwpnHCkD7up8PapvqwxENzD
+Pj6laE+YWc6GXI1IeCX7Niye/09BBtn4SW4KVIp8u9qLiDQsrmb9c56xosPQP2/l
+9fC8VzlwnAQ/hrQjyXOA6WaEGRMK5LeWDXZfkos+afU0m/gVl4i57rRNM/B1AgO2
+wORHtv4Q51ZnfSkDLOjKG98VQKN2RTtPvrnj4TnIvp8KSFbfH7ETyJq8l5nA2lHs
+ZKgUrRmjDmCf5UuCYHwMtOgFzULqTmmHdveUn/tYTyooHhj9tGz0NOXuzji6RUPt
+6XlibuDkkJwzRII2QYI3FB+8/h7Vqg==
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.ipb.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.ipb.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.ipb.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">IPB - Bordeaux INP</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">IPB - Bordeaux INP</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>Moniez</md:SurName>
+      <md:EmailAddress>philippe.moniez@ipb.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>

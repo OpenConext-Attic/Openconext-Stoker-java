@@ -1,0 +1,61 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://eliot.isae.fr/idp/shibboleth">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://federation.renater.fr/" registrationInstant="2014-05-13T08:51:05Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://services.renater.fr/federation/en/metadata_registration_practice_statement</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">isae.fr</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="en">ISAE</mdui:DisplayName>
+          <mdui:Description xml:lang="en">ISAE Employees and students</mdui:Description>
+          <mdui:DisplayName xml:lang="fr">ISAE Institut Supérieur de l'Aéronautique et de l'Espace</mdui:DisplayName>
+          <mdui:Description xml:lang="fr">Employés et étudiants ISAE</mdui:Description>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>
+					      MIIDHzCCAgegAwIBAgIUUF5LStU9oX9W8OSO7seziErEk2MwDQYJKoZIhvcNAQEF
+BQAwGDEWMBQGA1UEAxMNZWxpb3QuaXNhZS5mcjAeFw0xNDA0MTAwODQxMDRaFw0z
+NDA0MTAwODQxMDRaMBgxFjAUBgNVBAMTDWVsaW90LmlzYWUuZnIwggEiMA0GCSqG
+SIb3DQEBAQUAA4IBDwAwggEKAoIBAQDWVaMV3mMeY0J7vAJiDrPzjoYBBnGlWQCT
+Z5i+9tCVoQ67vjsuFZL4ZoRGkjVQH7Dskk1URknskk4/VYv2xyh84z6uD6w/x7K5
+GLAaZErI3jBim9m+xZyt6fczF5upF835K2M7zygoLqytfw++26LrcKlgcRnIIb43
+au+iLlWmsyn6/LW4W1uyvEnZ++mUTpDWTXnSqBdwPcoCDIZD8Gxa1s6X4fOYwPKJ
+/JG+1rsp1yzoTkR40of9ZoufEAj7JwxfgsGw3D234mttq3NfhWznhG0xLEOXAHrB
+bgHiq8/3bOdDP9RlHRC1xQs6wchEHCkN0J2bDixcfRqY4rwUumjTAgMBAAGjYTBf
+MD4GA1UdEQQ3MDWCDWVsaW90LmlzYWUuZnKGJGh0dHBzOi8vZWxpb3QuaXNhZS5m
+ci9pZHAvc2hpYmJvbGV0aDAdBgNVHQ4EFgQUo4NH7dIbfnxOrheABU7lrQSs4pQw
+DQYJKoZIhvcNAQEFBQADggEBAAVIAhB9Tzy+3wcWouCFXa4otqppu79egey/moyB
+UmkQbgK/WK/t4Fz8QXSQpxsl6NAgDRoKy2KB853uZ+/5y6Pb52ud4mH5UuO+wET8
+Y+vBglWCCGwAmHXqJCj92bZBmbc2jyCLaB3nwjrhnesvd0gY+QOGCQvIzyBX/5Bo
+n/M8NyW5g94ZiS1rrgfw4yeUcjXdIy8iV0w8PLYlootxA93eTBBBJZmwL5UWOz1d
+vLVV2/HCTPHrGBYGv4LlacaMicPW9OXKWnzG3FNfqXYclvCFDxJJvu4ZojdjgNoT
+b4uZkuDSDQgxcqdqqSriAnunZenW8oqMOHkocH9i2GtE1NA=
+					    </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://eliot.isae.fr/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://eliot.isae.fr/idp/profile/SAML2/Redirect/SSO"/>
+      <md:SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://eliot.isae.fr/idp/profile/Shibboleth/SSO"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">ISAE Institut Supérieur de l'Aéronautique et de l'Espace</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">ISAE Institut Supérieur de l'Aéronautique et de l'Espace</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://unknown.site.com</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>Mouchoir</md:SurName>
+      <md:EmailAddress>david.mouchoir@isae.fr</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:SurName>Villemur</md:SurName>
+      <md:EmailAddress>jacques.villemur@isae.fr</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
